@@ -1,0 +1,62 @@
+
+\chapter{ Interludium - podstawy geometrii analitycznej }\label{podstawy geometrii analitycznej}
+
+W rozdziale tym ostatecznie rozprawimy się z tym, co to jest płaszczyzna $\real^2$ i jak wykonywać operacje na jej podzbiorach. Wprowadzę również rachunek wektorowy: nie tylko jest on cholernie wykorzystywany w zagadnieniach fizycznych (rysowanie pól siłowych), ale pozwala również ładnie opowiadać o przesunięciach obiektów na płaszczyźnie oraz pozwala efektywnie i szybko wyliczać pola niektórych figur.  
+
+No to może zacznijmy oficjalnie
+
+\begin{mydef} 
+	Płaszczyzną kartezjańską nazywamy zbiór par punktów $$\Big \{ (x, y): x,y \in \real \Big \}$$ i oznaczamy przez $\real^2$.
+\end{mydef}
+
+Para punktów $(x,y)$ jest czymś innym od np. $5$ czy $6$. Co ją odróżnia? No np. dla $5$ wiesz, że istnieje element $\frac{1}{5}$, taki, że $5 \times \frac{1}{5} = 1$. Dla pary $(3,4)$ nie wiadomo, czym w ogóle jest mnożenie (określić je można na tysiące sposobów, z których niektóre są bardzo przydatne w fizyce). 
+
+Parę punktów często utożsamia się z punktem na rysunku z zaznaczonymi osiami, które są do siebie prostopadłe. Np. na rysunku \ref{plain} zaznaczyłem punkt $(x,y)$ dla pewnych dodatnich rzeczywistych $x$ i $y$. Na rysunku tym widać coś, czego nie możemy uniknąć: często na rysunkach umieszcza się oznaczenia, które nie powinny tam się znaleźć. Np. podpisuje się punkty na osiach jako $x$ i $y$, co często sami robiliśmy. Ponieważ rysunek ma odpowiadać parom liczb, zatem tak oficjalnie powinno się umieszczać na osiach punkty $(x,0)$ i $(0,y)$. Ale tego nie robimy, bo to mało wygodne. Często po prostu pisze się to, co wygodnie zapisać, no i znaczenia czego powinniśmy się łatwo domyślić.
+
+\begin{figure}[h]\label{plain}
+	\includegraphics[width=.95\textwidth]{./img/plain_truth.pdf}
+	\caption{Jakie oznaczenia funkcjonują na płaszczyźnie?}
+\end{figure} 
+
+\section*{O co chodziło Kartezjuszowi?}
+
+Był on pierwszym człowiekiem, o którym wiemy, że powiązał algebrę z geometrią i analizą. Chodzi tak na prawdę o zobaczenie, że często opłaca się patrzeć na funkcje tak, jakby były podzbiorami płaszczyzny. O co chodzi? 
+
+Przypominam, że funkcję rzeczywistą $f$ definiujemy najczęściej poprzez zadanie jej dziedziny $A \subset \real$ i przeciwdziedziny $\real$
+$$f: A \mapsto \real$$
+a następnie przytaczamy pewien wzór algebraiczny, który mówi, co robić dla poszczególnych $x \in A$, np. 
+$$f(x) = x^2 - 5x + 12.$$
+
+Taki wzorek to właśnie nasze algebraiczne rozumienie funkcji. A jak dokładnie rozumieć funkcję geometrycznie? Często po prostu rysujemy jej wykres. 
+
+\begin{mydef} 
+	Wykresem funkcji $f: \real \mapsto \real$ nazywamy zbiór $$G(f) = \Big \{ (x,y) \in \real^2 : y = f(x) \Big \}.$$ Wykres zwany jest również grafem.
+\end{mydef}
+
+Zapis $\{ (x,y) \in \real^2 : y = f(x)\}$ rozumiemy tak: weź $(x,y)$ spełniające warunek $y=f(x)$.
+
+Fajnie, przykładowo nasz dwumianik ma graf, który zapisujemy jako $$G(f) = \Big \{ (x,y) \in \real^2 : y = x^2 - 5x + 12 \Big \}.$$
+
+Jakie ma to znaczenie? Ogromne! Dzięki temu możemy ściśle uzasadnić, na czym polegają zagadnienia rozwiązywania równości i nierówności, tak jak w rozdziale \ref{wykresy funkcji 1}. Zanim to zrobimy, przećwiczysz sobie jednak rysowanie:
+
+\begin{task}
+	\item Naszkicuj na $\real^2$ zbiory
+	\begin{task}
+		\item $A = \{ (x,y) \in \real^2 : x > 0\}$
+		\item $B = \{ (x,y) \in \real^2 : x \geq 0\}$
+		\item $C = \{ (x,y) \in \real^2 : y > 3\}$
+		\item $D = \{ (x,y) \in \real^2 : 10 \geq y > 5\}$		
+		\item $E = \{ (x,y) \in \real^2 : 10 \geq y > 5 \wedge 2 < x < 3\}$\label{intersection}
+		\item[]\tip Znaczek $\wedge$ znasz z rozdziału \ref{logika}.
+		\item $F = \{ (x,y) \in \real^2 : y > x\}$								
+	\end{task}
+	\item $G = \{ (x,y) \in \real^2 : 10 \geq y > 5 \}$ a $H  = \{ (x,y) \in \real^2 :  2 < x < 3\}$. Narysuj $$G \cap H.$$
+	\item[]\tip To ma związek z \ref{intersection}.
+	\item To zadanie w duchu przypominające dawne zadania z egzaminu z matematyki na SGH, gdy jeszcze nie było nowej matury. Narysuj $$\{ (x,y) \in \real^2 : |x-y| = 4\}$$
+\end{task}
+
+
+
+
+
+
