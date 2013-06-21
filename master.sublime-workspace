@@ -424,18 +424,43 @@
 	"buffers":
 	[
 		{
-			"file": "parallelTemperingMaster.tex",
+			"file": "tex/introduction.tex",
 			"settings":
 			{
-				"buffer_size": 575,
+				"buffer_size": 70,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "pracamgr.cls",
+			"file": "misc/citationCommand.tex",
 			"settings":
 			{
-				"buffer_size": 5702,
+				"buffer_size": 600,
+				"line_ending": "Unix",
+				"name": "% The \\cite command functions as follows:"
+			}
+		},
+		{
+			"file": "bibliography/myBooks.bib",
+			"settings":
+			{
+				"buffer_size": 64505,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "misc/swap_kernel.tex",
+			"settings":
+			{
+				"buffer_size": 6810,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/matteo/Documents/Dropbox/PT/Questions_in_Order/tex/MHG_algorithm.tex",
+			"settings":
+			{
+				"buffer_size": 4090,
 				"line_ending": "Unix"
 			}
 		},
@@ -443,23 +468,23 @@
 			"file": "mystyle.sty",
 			"settings":
 			{
-				"buffer_size": 185,
+				"buffer_size": 1360,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "pracamgr2.cls",
+			"file": "parallelTemperingMaster.tex",
 			"settings":
 			{
-				"buffer_size": 5836,
+				"buffer_size": 676,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "misc/matteo_master.tex",
+			"file": "tex/theory.tex",
 			"settings":
 			{
-				"buffer_size": 201001,
+				"buffer_size": 16829,
 				"line_ending": "Unix"
 			}
 		}
@@ -467,7 +492,7 @@
 	"build_system": "Packages/User/MyTex.sublime-build",
 	"command_palette":
 	{
-		"height": 285.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
@@ -520,23 +545,53 @@
 	},
 	"file_history":
 	[
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/Corrispondenza.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/random_walk.tex",
+		"/home/matteo/Documents/Dropbox/PT/Questions_in_Order/mystyle.sty",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Biology_Group_Seminar/parallel_tempering_presentation.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/quicky.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/classDetails.sty",
+		"/home/matteo/.config/sublime-text-2/Packages/User/MyTex.sublime-build",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/myBooks.bib",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/myrefs.bib",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/settings/classDetails.sty",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/.gitignore",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/README.md",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/master.sublime-project",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/parallelTemperingMaster.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/eccaNoNotes.bst",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/ecca_pl.bst",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/summary.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/simulations.bib",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/rblarba.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/matteo_master.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/simulationsResults.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/pracamgr2.cls",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/parallelTemperingMaster.lof",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/parallelTemperingMaster.toc",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/parallelTemperingMaster.lot",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/master.sublime-workspace",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/parallelTemperingMaster.aux",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/introduction.tex",
+		"/home/matteo/Documents/Scienza/Corepetizioni/Esercizi/Sistematizzato/estremamente_sistematizzato/tex/logics.tex",
+		"/home/matteo/Documents/Scienza/Corepetizioni/Esercizi/Sistematizzato/estremamente_sistematizzato/high_school_manual.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/theory.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/implementation.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/abstract.tex",
+		"/home/matteo/Documents/Scienza/Corepetizioni/Esercizi/Sistematizzato/estremamente_sistematizzato/tex/logics.aux",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/pracamgr.cls",
 		"/home/matteo/Documents/Scienza/Latex/Poligon/xetex_test.tex",
 		"/home/matteo/Documents/Scienza/Latex/Practice/practice.tex",
 		"/home/matteo/Documents/Scienza/Latex/Tests/russian_handwriting.pdf",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/pracamgr2.cls",
 		"/home/matteo/Documents/Scienza/Latex/Tests/russian_handwriting.tex",
 		"/home/matteo/Documents/Scienza/Latex/Tests/full_control.tex",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/mystyle.sty",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/matteo_master.tex",
 		"/home/matteo/Documents/Scienza/Corepetizioni/Esercizi/Sistematizzato/estremamente_sistematizzato/mystyle.sty",
 		"/home/matteo/.config/sublime-text-2/Packages/User/LaTeXTools/LaTeX.sublime-build",
 		"/home/matteo/.config/sublime-text-2/Packages/User/LaTeXTools/LaTeX.sublime-commands",
 		"/home/matteo/.config/sublime-text-2/Packages/User/LaTeXTools/evince/evince_sync",
-		"/home/matteo/.config/sublime-text-2/Packages/User/MyTex.sublime-build",
 		"/home/matteo/.config/sublime-text-2/Packages/LaTeXTools/LaTeX.sublime-build",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/parallelTemperingMaster.log",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/parallelTemperingMaster.tex",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/master.sublime-project",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/histogram.svg",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/matteo_master.tex",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/stateSpaces/stateSpaces.R",
@@ -617,37 +672,7 @@
 		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/intro_2_S4.R",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Simulations[]Methods.R",
 		"/home/matteo/Desktop/R_Ideas.R",
-		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/testingContrasts.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/simulation.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Simulations[]Headers.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Parallel_Tempering_Simulations[]Headers.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Parallel_Tempering_Simulations[]Methods.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Metropolis_Hastings_Simulations[]Headers.R",
-		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/scripts/inputControl.R",
-		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/scripts/smieci3.R",
-		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/testingReferenceClasses2.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Loading_Objects.R~",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Loading_Objects.R",
-		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/object_oriented_programming_1.R",
-		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/OOP-S4Test.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Parallel_Tempering_Simulations.R~",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Metropolis_Hastings_Simulations.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Simulations_Methods.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Simulations_Headers.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Parallel_Tempering_Simulations.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Methods.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Simulation_Inputs.R",
-		"/home/matteo/Desktop/Prezentacja_R_and_SAS_Pomysły",
-		"/home/matteo/Documents/Scienza/Informatica/DataBases/Project_Database/Subpages/diagram.html",
-		"/home/matteo/Documents/Scienza/Informatica/DataBases/Project_Database/super.sql",
-		"/home/matteo/Documents/Scienza/Informatica/DataBases/Project_Database/index.html",
-		"/home/matteo/Documents/Scienza/Informatica/DataBases/Project_Database/Subpages/sql_statement.html",
-		"/home/matteo/Documents/Scienza/Informatica/Date_bases/Project_Database/index.html",
-		"/var/www/cinema/app/Model/Movie.php",
-		"/var/www/cinema/app/Controller/TheatresController.php",
-		"/var/www/cinema/app/Controller/ShowsController.php",
-		"/var/www/cinema/app/View/Layouts/default.ctp",
-		"/var/www/cinema/app/View/Pages/home.ctp"
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/testingContrasts.R"
 	],
 	"find":
 	{
@@ -665,6 +690,35 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"cite",
+			"promo",
+			"geyer",
+			"cite",
+			"bfseries",
+			"geyer",
+			"bib",
+			"publisher",
+			"team",
+			"R-team",
+			"geyer",
+			"Geyer",
+			"Charles",
+			"Geyer",
+			"Maxime",
+			"format.note output",
+			"note",
+			"Miasojed",
+			"is catalog of 292 entries was generated by calibre on Friday, 21. June 2013 17:38\nThis catalog",
+			"*{",
+			"\\newpage",
+			"Wprowadzenie",
+			"\\addcontentsline",
+			"\\addcontentsline{toc}{chapter}{Wprowadzenie}",
+			"textbf",
+			"abstract",
+			"topskip",
+			"opskip",
+			"titlepage",
 			"tytul",
 			"\\k",
 			" \n",
@@ -763,36 +817,7 @@
 			"noOfChainNumbers",
 			"noOfIterations",
 			"noOf",
-			"tmpNoOfIterations",
-			"noOfIterations",
-			"initialStatesDimension",
-			"tmpProblemDimension",
-			"problemDimension",
-			"noOfSlots",
-			"noOfTransposition",
-			"temperaturesNo",
-			"transpositionsNo",
-			"noOfTranspositions",
-			"temperaturesNo",
-			"noOfTemperatures",
-			"tmpNoOfTemperatures",
-			"initialStatesnoOfTemperatures",
-			"noOfTemperatures",
-			"vector",
-			"proposalCovariancesCholeskised",
-			"targetDensity",
-			"unnormalisedDensity",
-			"proposedStates",
-			"getProposalLogsOfUnnormalisedDensities",
-			"targetDensity",
-			"updateStatesAfterRandomWalk",
-			"updateSwapUProbs",
-			"proposal",
-			"transpositionsUpdateForProposal",
-			"lastSwapUProbs",
-			"transpositionHistory",
-			"lastProposalSwapProbabilities",
-			"Liang_Tempered_Real_Values[[1]]"
+			"tmpNoOfIterations"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -800,6 +825,10 @@
 		"regex": false,
 		"replace_history":
 		[
+			"BłażejMiasojedow",
+			"CharlesJ.Geyer",
+			"%format.note output",
+			"",
 			"strategyNo",
 			"tmpStrategyNo",
 			"strategyNo",
@@ -923,11 +952,7 @@
 			"noOfIterations",
 			"whichSlotNo",
 			"freeSlotNo",
-			"initialStates",
-			"inputIndices",
-			"noOfIndices",
-			"initialPoints",
-			"targetDensity"
+			"initialStates"
 		],
 		"reverse": true,
 		"show_context": true,
@@ -938,28 +963,27 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "parallelTemperingMaster.tex",
+					"file": "tex/introduction.tex",
 					"settings":
 					{
-						"buffer_size": 575,
+						"buffer_size": 70,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								499,
-								499
+								70,
+								70
 							]
 						],
 						"settings":
 						{
-							"spell_check": true,
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -967,34 +991,27 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 1,
-					"file": "pracamgr.cls",
+					"file": "misc/citationCommand.tex",
 					"settings":
 					{
-						"buffer_size": 5702,
+						"buffer_size": 600,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								600,
+								600
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LaTeX/TeX.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"auto_name": "% The \\cite command functions as follows:",
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1004,74 +1021,46 @@
 				},
 				{
 					"buffer": 2,
-					"file": "mystyle.sty",
+					"file": "bibliography/myBooks.bib",
 					"settings":
 					{
-						"buffer_size": 185,
+						"buffer_size": 64505,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								185,
-								185
+								47782,
+								47782
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"tab_size": 2,
+							"syntax": "Packages/LaTeX/Bibtex.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 25738.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "pracamgr2.cls",
+					"file": "misc/swap_kernel.tex",
 					"settings":
 					{
-						"buffer_size": 5836,
+						"buffer_size": 6810,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2441,
-								2441
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/TeX.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1241.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "misc/matteo_master.tex",
-					"settings":
-					{
-						"buffer_size": 201001,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1754,
-								1754
+								6810,
+								6810
 							]
 						],
 						"settings":
@@ -1081,6 +1070,121 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/matteo/Documents/Dropbox/PT/Questions_in_Order/tex/MHG_algorithm.tex",
+					"settings":
+					{
+						"buffer_size": 4090,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3237,
+								3237
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 673.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"file": "mystyle.sty",
+					"settings":
+					{
+						"buffer_size": 1360,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								266,
+								266
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "parallelTemperingMaster.tex",
+					"settings":
+					{
+						"buffer_size": 676,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								676,
+								676
+							]
+						],
+						"settings":
+						{
+							"spell_check": true,
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "tex/theory.tex",
+					"settings":
+					{
+						"buffer_size": 16829,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4427,
+								4431
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1564.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1128,7 +1232,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 112.0
+		"height": 164.0
 	},
 	"replace":
 	{
@@ -1153,16 +1257,16 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 242.0,
+	"side_bar_width": 306.0,
 	"status_bar_visible": true
 }

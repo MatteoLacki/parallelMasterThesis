@@ -10,3 +10,39 @@
 
 \usepackage{natbib}
 \usepackage[pdfpagelabels]{hyperref}
+
+\usepackage{enumitem}
+\usepackage{textcomp}
+
+
+  %Shortcuts
+
+\newcommand{\real}{\mathbb{R}}  
+\newcommand{\swap}{\mathcal{S}_{\beta}} 
+\newcommand{\metro}{M_{\Sigma,\beta}} 
+\newcommand{\metrobis}[1]{M_{\Sigma_{#1},\beta_{#1}}} 
+\newcommand{\xsol}{X_\text{sol}}  
+\newcommand{\dip}{\mathrm{d } \pi}  
+\newcommand{\stepone}[1]{X^{\textcolor{blue}}{[#1]}}
+\newcommand{\steptwo}[1]{\widetilde{X}^{\textcolor{blue}}{[#1]}}
+
+\newcommand{\fracc}[2]{\Big( {#1 \over #2} \Big)}
+\newcommand{\tip}{\fbox{\textcolor{red}{Wskazówka}}\,\,\,}  
+
+\usepackage{xcolor}
+\definecolor{adriatico}{rgb}{.2,.40,.90}
+\definecolor{red}{rgb}{.8,.3,.1}
+\definecolor{green}{rgb}{.2,.8,.1}
+\definecolor{brownie}{rgb}{.174,.104,.43}
+
+\newlist{assumptions}{enumerate}{1}
+\setlist[assumptions,1]{label=\textcolor{green}{Assumption No. \arabic*}}
+
+\newlist{questions}{enumerate}{1}
+\setlist[questions,1]{label=\textcolor{adriatico}{Question No. \arabic*}}
+
+\newlist{algorithm}{enumerate}{1}
+\setlist[algorithm,1]{label=\textcolor{brownie}{Step \Roman*}}
+
+\newlist{strategy}{enumerate}{1}
+\setlist[strategy,1]{label=\textcolor{red}{Strategy \Roman*}}
