@@ -1,0 +1,1168 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"trans",
+				"tmpTranspositionHistory"
+			],
+			[
+				"tranosN",
+				"transpositionsNo"
+			],
+			[
+				"itera",
+				"iterationsNo"
+			],
+			[
+				"gri",
+				"grid"
+			],
+			[
+				"grid",
+				"gridLength"
+			],
+			[
+				"transpositi",
+				"transpositionHistory"
+			],
+			[
+				"tran",
+				"lastTranspositionNo"
+			],
+			[
+				"propo",
+				"proposalCovariancesCholeskised"
+			],
+			[
+				"temp",
+				"temperatures"
+			],
+			[
+				"space",
+				"spaceDim"
+			],
+			[
+				"che",
+				"checkIterationsNo"
+			],
+			[
+				"targ",
+				"targetUDensity"
+			],
+			[
+				"sig",
+				"sigma2"
+			],
+			[
+				"Mixtures",
+				"mixtures"
+			],
+			[
+				"ite",
+				"iterationsNo"
+			],
+			[
+				"tar",
+				"targetMeasure"
+			],
+			[
+				"state",
+				"stateSpace"
+			],
+			[
+				"uMea",
+				"uMeasures"
+			],
+			[
+				"Unn",
+				"unnormalisedDensity"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"it",
+				"iterationsNo"
+			],
+			[
+				"tm",
+				"temperatures"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"tmp",
+				"tmpStates"
+			],
+			[
+				"Met",
+				"MetropolisHasting"
+			],
+			[
+				"Rela",
+				"RealStateSpaces"
+			],
+			[
+				"Al",
+				"algorithm"
+			],
+			[
+				"sim",
+				"sigma"
+			],
+			[
+				"mix",
+				"mixturesMeans"
+			],
+			[
+				"unno",
+				"unnormalisedDensity"
+			],
+			[
+				"ree",
+				"require"
+			],
+			[
+				"no",
+				"noOfIterations"
+			],
+			[
+				"Tempe",
+				"Temperature"
+			],
+			[
+				"slo",
+				"slotNo"
+			],
+			[
+				"update",
+				"updatedStates"
+			],
+			[
+				"proposal",
+				"proposalAccepted"
+			],
+			[
+				"transl",
+				"translatorFromLexicOrderToTranspositions"
+			],
+			[
+				"translator",
+				"translateLexicToTranspositions"
+			],
+			[
+				"tra",
+				"transposition"
+			],
+			[
+				"not",
+				"noOfTranspositions"
+			],
+			[
+				"translat",
+				"translateLexicToTranspositions"
+			],
+			[
+				"updat",
+				"updateSwapUProbs"
+			],
+			[
+				"stat",
+				"stateSpace"
+			],
+			[
+				"las",
+				"lastStates"
+			],
+			[
+				"ins",
+				"insertStates"
+			],
+			[
+				"lastSwap",
+				"lastSwapLogProbability"
+			],
+			[
+				"proposalSwap",
+				"proposalSwapLogProbability"
+			],
+			[
+				"targe",
+				"targetLogDensities"
+			],
+			[
+				"pro",
+				"proposalSwap"
+			],
+			[
+				"last",
+				"lastStatesLogUnDensities"
+			],
+			[
+				"inver",
+				"inverseTemperatures"
+			],
+			[
+				"get",
+				"getProposalLogsOfUnnormalisedDensities"
+			],
+			[
+				"curren",
+				"currentStates"
+			],
+			[
+				"prop",
+				"proposedStates"
+			],
+			[
+				"log",
+				"logDenProposedStates"
+			],
+			[
+				"cov",
+				"covarianceMatrixNo"
+			],
+			[
+				"covar",
+				"proposalCovariancesCholeskised"
+			],
+			[
+				"detailed",
+				"detailedOutput"
+			],
+			[
+				"lex",
+				"lexicNumber"
+			],
+			[
+				"enli",
+				"enlistedAdditionalInfo"
+			],
+			[
+				"real",
+				"realFiniteDimensionalStateSpaceStructure"
+			],
+			[
+				"init",
+				"initialStates"
+			],
+			[
+				"ini",
+				"initialStatesNoOfChains"
+			],
+			[
+				"simu",
+				"simulatedStates"
+			],
+			[
+				"si",
+				"simulatedStates"
+			],
+			[
+				"ife",
+				"ifelse"
+			],
+			[
+				"noO",
+				"noOfSlots"
+			],
+			[
+				"i",
+				"initialStatesNoOfChains"
+			],
+			[
+				"nof",
+				"noOfChains"
+			],
+			[
+				"noOf",
+				"noOfSteps"
+			],
+			[
+				"initia",
+				"initializeStateSpaceStructure"
+			],
+			[
+				"in",
+				"inputIndices"
+			],
+			[
+				"strat",
+				"strategyNumber"
+			],
+			[
+				"st",
+				"strategyNumber"
+			],
+			[
+				"cur",
+				"currentStates"
+			],
+			[
+				"cure",
+				"currentStatesLogDensities"
+			],
+			[
+				"numer",
+				"numeric"
+			],
+			[
+				"int",
+				"inverseTemperatures"
+			],
+			[
+				"Tempere",
+				"temperatures"
+			],
+			[
+				"pa",
+				"ParallelTempering"
+			],
+			[
+				"num",
+				"numeration"
+			],
+			[
+				"cu",
+				"currentStates"
+			],
+			[
+				"probl",
+				"problemDimension"
+			],
+			[
+				"initi",
+				"initialPoints"
+			],
+			[
+				"inti",
+				"initialPoints"
+			],
+			[
+				"initalize",
+				"initializeDataStructures"
+			],
+			[
+				"prob",
+				"problemDimension"
+			],
+			[
+				"check",
+				"check"
+			],
+			[
+				"con",
+				"conditionChangingSmokesToNo"
+			],
+			[
+				"Da",
+				"Daily_Smokes"
+			],
+			[
+				"Smoke",
+				"Smokes"
+			],
+			[
+				"co",
+				"conditionEliminatingInconsistentObservations"
+			],
+			[
+				"D",
+				"Daily_Smokes"
+			],
+			[
+				"cont",
+				"contrasts"
+			],
+			[
+				"e",
+				"else"
+			],
+			[
+				"T",
+				"TRUE"
+			],
+			[
+				"Si",
+				"Simulation"
+			],
+			[
+				"Init",
+				"Initial_Points"
+			],
+			[
+				"Ini",
+				"Initial_Points"
+			],
+			[
+				"Targe",
+				"Target_Density"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"Target",
+				"Call_Target_Density"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"mysql_c",
+				"mysql_connect"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "parallelTemperingMaster.tex",
+			"settings":
+			{
+				"buffer_size": 575,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pracamgr.cls",
+			"settings":
+			{
+				"buffer_size": 5702,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mystyle.sty",
+			"settings":
+			{
+				"buffer_size": 185,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pracamgr2.cls",
+			"settings":
+			{
+				"buffer_size": 5836,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "misc/matteo_master.tex",
+			"settings":
+			{
+				"buffer_size": 201001,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/MyTex.sublime-build",
+	"command_palette":
+	{
+		"height": 285.0,
+		"selected_items":
+		[
+			[
+				"git",
+				"Github: Open File"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"LaTex",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"Late",
+				"Set Syntax: LaTeX"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/matteo/Documents/Scienza/Latex/Poligon/xetex_test.tex",
+		"/home/matteo/Documents/Scienza/Latex/Practice/practice.tex",
+		"/home/matteo/Documents/Scienza/Latex/Tests/russian_handwriting.pdf",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/pracamgr2.cls",
+		"/home/matteo/Documents/Scienza/Latex/Tests/russian_handwriting.tex",
+		"/home/matteo/Documents/Scienza/Latex/Tests/full_control.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/mystyle.sty",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/matteo_master.tex",
+		"/home/matteo/Documents/Scienza/Corepetizioni/Esercizi/Sistematizzato/estremamente_sistematizzato/mystyle.sty",
+		"/home/matteo/.config/sublime-text-2/Packages/User/LaTeXTools/LaTeX.sublime-build",
+		"/home/matteo/.config/sublime-text-2/Packages/User/LaTeXTools/LaTeX.sublime-commands",
+		"/home/matteo/.config/sublime-text-2/Packages/User/LaTeXTools/evince/evince_sync",
+		"/home/matteo/.config/sublime-text-2/Packages/User/MyTex.sublime-build",
+		"/home/matteo/.config/sublime-text-2/Packages/LaTeXTools/LaTeX.sublime-build",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/parallelTemperingMaster.log",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/parallelTemperingMaster.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/master.sublime-project",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/histogram.svg",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/matteo_master.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/stateSpaces/stateSpaces.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/stateSpaces/realStateSpaces.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/terzoPrototipo/Distributions_to_check/tested_distribution.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/terzoPrototipo/Distributions_to_check/Liang_Example.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/targetMeasures/targetUnnormalisedDensities.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/simulations/simulations.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/scripts/Matteo_Analysis.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/examplarySession.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/algorithms/algorithms.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/targetMeasures/targetLiangDensities.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/targetMeasures/targetMeasures.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/algorithms/parallelTemperings.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/scripts/forMichal[]data1.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/scripts/forMichal[]data2.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/terzoPrototipo/Main_Simulation.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/terzoPrototipo/Functions/additional_functions.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/terzoPrototipo/Functions/additional_functions_for_simulation.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/terzoPrototipo/Distributions_to_check/My_Example.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/targetUnnormalisedDensities.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/targetLiangDensities.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/targetMeasures.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/realStateSpace.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/stateSpace.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/parallelTempering.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/algorithm.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/simulations.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/liangRealStateSpace.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/to+do",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Distributions_to_check/Liang_Example.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Functions/generating_plots_in_a_stupid_way.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Functions/ploting.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/LiangExample.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Functions/simulation_mechanism.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Simulazioni_Stochastiche/aprile_ultimo.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/unnormalisedDensities.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/loadingObjects.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Functions/additional_functions.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Functions/additional_functions_for_simulation.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/testing_parallel_tempering.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Main_Simulation.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/lab_MIMUW7.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/preparingSwapUpdates.R",
+		"/home/matteo/Desktop/Linux ideas",
+		"/home/matteo/Downloads/review_form_5.txt",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Distributions_to_check/My_Example.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Distributions_to_check/tested_distribution.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/preparingCovariances.R",
+		"/home/matteo/Upload/fileSplitting/subScript.R",
+		"/home/matteo/Upload/fileSplitting/mainFile.R",
+		"/home/matteo/Upload/fileSplitting/sufFolder/subFile2.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/preparingShows.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Functions/original_Metropolis_Hasting.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/preparingGoodUnitManagement.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/preparingDataStructureMethods.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/stateSpaceStructure.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/testing.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/testingReferenceClasses7.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/.gitignore",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Strategies_to_check/tested_strategies.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Functions/ploting.R~",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Simulations.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/.Rhistory",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_III/Progetto_3/Tex/presenting_project_structure.Rnw",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_III/Progetto_3/Tex/examplary_code_comparison.Rnw",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_III/Progetto_3/Main_File.Rnw",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Project_backup/Hello/mystyle.sty",
+		"/home/matteo/Documents/Dropbox/R/Projekt_I_R_TOGETHER/mystyle.sty",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Project_backup/Hello/Main.tex",
+		"/home/matteo/Documents/Dropbox/R/Projekt_I_R_TOGETHER/Tex/Matteo_Modelling.Rnw",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/metaInfo/texTabelki/mystyle.sty",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/metaInfo/texTabelki/Main.tex",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/metaInfo/texTabelki/Main_File.Rnw",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/metaInfo/texTabelki/examplary_fastness_comparison.Rnw",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/scripts/smieciTyczaceSieModelowania.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/scripts/smieci.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/intro_2_S4.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Simulations[]Methods.R",
+		"/home/matteo/Desktop/R_Ideas.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/testingContrasts.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/simulation.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Simulations[]Headers.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Parallel_Tempering_Simulations[]Headers.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Parallel_Tempering_Simulations[]Methods.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Metropolis_Hastings_Simulations[]Headers.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/scripts/inputControl.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/scripts/smieci3.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/testingReferenceClasses2.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Loading_Objects.R~",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Loading_Objects.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/object_oriented_programming_1.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/OOP-S4Test.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Parallel_Tempering_Simulations.R~",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Metropolis_Hastings_Simulations.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Simulations_Methods.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Simulations_Headers.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Parallel_Tempering_Simulations.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Methods.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Simulation_Inputs.R",
+		"/home/matteo/Desktop/Prezentacja_R_and_SAS_Pomysły",
+		"/home/matteo/Documents/Scienza/Informatica/DataBases/Project_Database/Subpages/diagram.html",
+		"/home/matteo/Documents/Scienza/Informatica/DataBases/Project_Database/super.sql",
+		"/home/matteo/Documents/Scienza/Informatica/DataBases/Project_Database/index.html",
+		"/home/matteo/Documents/Scienza/Informatica/DataBases/Project_Database/Subpages/sql_statement.html",
+		"/home/matteo/Documents/Scienza/Informatica/Date_bases/Project_Database/index.html",
+		"/var/www/cinema/app/Model/Movie.php",
+		"/var/www/cinema/app/Controller/TheatresController.php",
+		"/var/www/cinema/app/Controller/ShowsController.php",
+		"/var/www/cinema/app/View/Layouts/default.ctp",
+		"/var/www/cinema/app/View/Pages/home.ctp"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"tytul",
+			"\\k",
+			" \n",
+			"sdsd",
+			"ploit",
+			"transpositionHistory",
+			"lastTranspositionNo",
+			"transpositionHistory",
+			"accepted",
+			"iterationsNO",
+			"here",
+			"updatedStates",
+			"colnames",
+			"do.call",
+			"grid",
+			"OTHER_VALUE_ESTABLISHER",
+			"Liang_Density_Values_For_Contour_gg2plot",
+			"target",
+			"Hello",
+			"HERE",
+			"iteration",
+			"show",
+			"OMG",
+			"show",
+			"iterationsNo",
+			"proposeLogsOfUMeasures",
+			"lastStatesLogUDensities",
+			"strategyNo",
+			"translatorFromLexicOrderToTranspositions",
+			"strategyNumber",
+			"tmpStrategyNumber",
+			"strategyNumber",
+			"swapStrategy",
+			"updateSwapUProbs",
+			"OMG3",
+			"OMG",
+			"OMG4",
+			"updateSwapUProbs",
+			"lastSwapUProbs",
+			"show",
+			"proposeLogsOfUMeasures",
+			"updateSwapUProbs",
+			"proposeLogsOfUMeasures",
+			"updatedStates",
+			"prepareSimulation",
+			"getIteration",
+			"getStates",
+			"temperatures",
+			"iteration",
+			"show",
+			"tmpTemp",
+			"tmpNoOfIterations",
+			"noOfIterations",
+			"algorithmInitializator",
+			"HERE",
+			"chol",
+			"detailedOutput",
+			"temperaturesNo",
+			"proposeLogsOfUMeasures",
+			"targetDensity",
+			"proposeLogsOfUMeasures",
+			"getProposalLogsOfUDensities",
+			"insertStates",
+			"freeSlotNo",
+			"freeSlotNo -1",
+			"initialStates",
+			"temperaturesNo",
+			"ParallelTempering",
+			"problemDimension",
+			"translatorFromLexicOrderToTranspositions",
+			"prepareSimulation",
+			"proposalCovariances",
+			"insertTemperatures",
+			"temperatures",
+			"showState",
+			"temperatures",
+			"algorithmInitializator",
+			"parallelTemperingInitializator",
+			"Simulation",
+			"stateSpace",
+			"getProposalLogsOfUnnormalisedDensities",
+			"stateSpace",
+			"initiali",
+			"  ",
+			"targetDensity",
+			"getProposalLogsOfUnnormalisedDensities",
+			"targetDensity",
+			"problemDimension",
+			"noOfIterations",
+			"simpleCovariance",
+			"noOfIterations",
+			"noOf",
+			"noOfLastTransposition",
+			"noOf",
+			"noOfCols",
+			"noOfChainNumbers",
+			"noOfIterations",
+			"noOf",
+			"tmpNoOfIterations",
+			"noOfIterations",
+			"initialStatesDimension",
+			"tmpProblemDimension",
+			"problemDimension",
+			"noOfSlots",
+			"noOfTransposition",
+			"temperaturesNo",
+			"transpositionsNo",
+			"noOfTranspositions",
+			"temperaturesNo",
+			"noOfTemperatures",
+			"tmpNoOfTemperatures",
+			"initialStatesnoOfTemperatures",
+			"noOfTemperatures",
+			"vector",
+			"proposalCovariancesCholeskised",
+			"targetDensity",
+			"unnormalisedDensity",
+			"proposedStates",
+			"getProposalLogsOfUnnormalisedDensities",
+			"targetDensity",
+			"updateStatesAfterRandomWalk",
+			"updateSwapUProbs",
+			"proposal",
+			"transpositionsUpdateForProposal",
+			"lastSwapUProbs",
+			"transpositionHistory",
+			"lastProposalSwapProbabilities",
+			"Liang_Tempered_Real_Values[[1]]"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"strategyNo",
+			"tmpStrategyNo",
+			"strategyNo",
+			"strategy",
+			"strategyNo",
+			"tmpIterationsNo",
+			"iterationsNo",
+			"initializeAlgorithm",
+			"proposeLogsOfUMeasures",
+			"spaceDim",
+			"checkTemperatures",
+			"initializeAlgorithm",
+			"spaceDim",
+			"initializeParallelTempering",
+			"algorithm",
+			"getProposalLogsOfUDensities",
+			"spaceDim",
+			"iterationsNo",
+			"simpleProposalCovariance",
+			"iterationsNo",
+			"lastTranspositionNo",
+			"colsNo",
+			"chainNumbersNo",
+			"iterationsNo",
+			"tmpIterationsNo",
+			"iterationsNo",
+			"initialStatesDim",
+			"tmpSpaceDim",
+			"spaceDim",
+			"slotsNo",
+			"transpositionsNo",
+			"temperaturesNo",
+			"tmpTemperaturesNo",
+			"initialStatesTemperaturesNo",
+			"temperaturesNo",
+			"swapProposal",
+			"dataForPlot",
+			"dataw",
+			"data",
+			"plotData",
+			"data",
+			"LiangProposalCovariancesCholeskised",
+			"LiangProposalCovariances",
+			"LiangMeansAndCovariances",
+			"LiangInitialPoints",
+			"LiangNoOfTemperatures",
+			"LiangInverseTemperatures",
+			"LiangTemperatures",
+			"LiangMeansOfMixtures",
+			"LiangSpaceDimension",
+			"LiangProblemDimension",
+			"LiangClusterSigma",
+			"LiangClustesSigma",
+			"LiangClustersWeights",
+			"LiangNoOfClusters",
+			"subsection",
+			"proposalLogUDensities",
+			"lexics",
+			"Lexic",
+			"Lex",
+			"Prob",
+			"Probs",
+			"lastStatesLogUDensities",
+			"lastLogProbability",
+			"proposal",
+			"proposalLexic",
+			"extraSwapUProbabilities",
+			"noOfChainNumbers",
+			"chainNumbers",
+			"transpositionsUpdateForProposal",
+			"updatedStates",
+			"findTranspositionsForUpdate",
+			"ParallelTempering",
+			"initializeStateSpace",
+			"stateSpace",
+			"initializeRealStateSpace",
+			"initializeStateSpace",
+			"initializeRealStateSpaceStructure",
+			"stateSpace",
+			"updateLastStates",
+			"generateTranspositions",
+			"transposition",
+			"Transposition",
+			"transposition",
+			"transposion",
+			"transposition",
+			"permutationsForUpdate",
+			"lastStates",
+			"stateSpace",
+			"swapIwithJ",
+			"lastSwapUProbabilities",
+			"strategyNo",
+			"jes",
+			"permutation",
+			"lastProposalSwapProbabilities",
+			"lastSwapProbabilities",
+			"lastProposalLogUnDensities",
+			"lastStatesLogUnDensities",
+			"statesUpdatedByRandomWalk",
+			"stateUpdatedByRandomWalk",
+			"noOfLexicals",
+			"lexicals",
+			"translateLexicalToTranspostions",
+			"massTranslateLexicalToTranspostions",
+			"noOfLastPermutation",
+			"proposalCovariances",
+			"proposalCovariancesCholeskised",
+			"function(){}",
+			"noOfIterations",
+			"noOfTemperatures",
+			"tmpNoOfTemperatures",
+			"tmpNoOfIterations",
+			"stateSpaceStructure",
+			"",
+			"freeSlotNo",
+			"lastSlotNo",
+			"simulatedStates",
+			"tmpNoOfIterations",
+			"noOfIterations",
+			"noOfTemperatures",
+			"noOfIterations",
+			"whichSlotNo",
+			"freeSlotNo",
+			"initialStates",
+			"inputIndices",
+			"noOfIndices",
+			"initialPoints",
+			"targetDensity"
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "parallelTemperingMaster.tex",
+					"settings":
+					{
+						"buffer_size": 575,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								499,
+								499
+							]
+						],
+						"settings":
+						{
+							"spell_check": true,
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "pracamgr.cls",
+					"settings":
+					{
+						"buffer_size": 5702,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/TeX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "mystyle.sty",
+					"settings":
+					{
+						"buffer_size": 185,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								185,
+								185
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "pracamgr2.cls",
+					"settings":
+					{
+						"buffer_size": 5836,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2441,
+								2441
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/TeX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1241.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "misc/matteo_master.tex",
+					"settings":
+					{
+						"buffer_size": 201001,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1754,
+								1754
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"master",
+				"master/parallelTemperingMaster.tex"
+			],
+			[
+				"hits",
+				"Implementation/histogram.svg"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 242.0,
+	"status_bar_visible": true
+}

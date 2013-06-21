@@ -1,0 +1,53 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.pdf",
+				"*.aux"
+			],
+			"path": "/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.pdf",
+				"*.aux",
+				"*.lof",
+				"*.toc",
+				"*.lot",
+				"*.tex~",
+				"*.synctex.gz",
+				"*.nav",
+				"*.sty~",
+				"*.out",
+				"*.snm",
+				"*.jpg",
+				"*.png"
+			],
+			"path": "/home/matteo/Documents/Scienza/Laurea_di_Matematica/master"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.pdf",
+				"*.aux",
+				"*.lof",
+				"*.toc",
+				"*.lot",
+				"*.tex~",
+				"*.synctex.gz",
+				"*.nav",
+				"*.sty~",
+				"*.out",
+				"*.snm",
+				"*.jpg",
+				"*.png",
+				"*.blg",
+				"*.bbl"
+			],
+			"path": "/home/matteo/Documents/Scienza/Laurea_di_Matematica/Biology_Group_Seminar"
+		}
+	]
+}
