@@ -1,0 +1,223 @@
+\documentclass[a4paper]{article}
+
+\usepackage{entityDiagramStyle}
+\usepackage{tikz}
+\usetikzlibrary{matrix}
+
+\begin{document}
+
+\mydescription{3}{.25}{
+	
+	SIMULATIONS\\
+	
+	\begin{tabular}{ l }
+	  	stateSpace\\
+	  	algorithm\\
+	  	targetMeasure\\
+	\end{tabular}   
+	\\
+
+	\begin{tabular}{ l }
+	  	initialize\\
+	  	checkTemperatures\\
+	  	checkIterationsNo\\
+	  	simulate\\
+	\end{tabular}
+	\\
+}
+
+\mydescription{3}{.25}{
+	
+	TARGET MEASURES\\
+	
+	\begin{tabular}{ l }
+	  	realDensityValues\\
+	\end{tabular}   
+	\\
+
+	\begin{tabular}{ l }
+	  	initialize\\
+	  	measure\\
+	  	establishTrueValues\\
+	\end{tabular}
+	\\
+}
+
+\mydescription{3}{.25}{
+	
+	TARGET UNNORMALISED DENSITIES\\
+	
+	\begin{tabular}{ l }
+	  	targetUDensity\\
+	\end{tabular}   
+	\\
+
+	\begin{tabular}{ l }
+	  	initialize\\
+	  	show\\
+	  	measure\\
+	\end{tabular}
+	\\
+}
+
+\mydescription{3}{.3}{
+	
+	TARGET LIANG DENSITY\\
+	
+	\begin{tabular}{ l }
+	  	mixturesNo\\
+	  	mixturesWeight\\
+	  	sigma\\
+	  	sigma2\\
+	  	weightConstant\\
+	  	mixtureMeans\\
+	\end{tabular}   
+	\\
+
+	\begin{tabular}{ l }
+	  	initialize\\
+	  	show\\
+	  	measure\\
+	  	establishTrueValues
+	\end{tabular}
+	\\
+}
+	
+\mydescription{3}{.4}{
+	
+	STATE SPACES\\
+		
+	\begin{tabular}{ l }
+	  	iterationsNo\\
+	  	targetMeasure\\
+	\end{tabular}   
+	\\
+
+	\begin{tabular}{ l }
+	  	initialize\\
+	  	initializeStateSpace\\
+	  	prepareDataForPlot\\
+	  	show\\
+	  	showState\\
+	  	showStateSpace\\
+	  	proposeLogsOfMeasures\\
+	  	randomWalkProposal\\
+	  	updateStatesAfterRandomWalk\\
+	  	updateStatesAfterSwap\\
+	\end{tabular}
+	\\
+}	  	
+	
+
+\mydescription{3}{.4}{	
+	REAL STATE SPACES\\
+	
+	\begin{tabular}{ l }
+	  	spaceDim\\
+	  	temperatures\\
+	  	temperaturesNo\\
+	  	simulatedStates\\
+	  	proposedStates\\
+	  	lastStates\\
+	  	quasiMetric\\
+	  	freeSlotNo\\
+	  	slotsNo\\
+	  	proposalCovariancesCholeskised\\
+	  	simpleProposalCovariance\\
+	  	dataForPlot\\
+	\end{tabular}   
+	\\
+
+	\begin{tabular}{ l }
+	  	initializeRealStateSpace\\
+	  	simulationTerminated\\
+	  	insertStates\\
+	  	getStates\\
+	  	getIteration\\
+	  	updateStatesAfterRandomWalk\\
+	  	updateStatesAfterSwap\\
+	  	showRealStateSpace\\
+	  	plotAllChains\\
+	  	plotBaseTemperature\\
+	  	proposeLogsOfUMeasures\\
+	  	randomWalkProposal\\
+	  	measureQuasiDistance\\
+
+	\end{tabular}
+	\\
+}
+
+
+\mydescription{3}{.33}{	
+	ALGORITHMS\\
+	
+	\begin{tabular}{ l }
+	  	iterationsNo\\
+	  	stateSpace\\
+	  	simulationFinished\\
+	\end{tabular}   
+	\\
+
+	\begin{tabular}{ l }
+	  	initialize\\
+	  	initializeAlgorithm\\
+	  	prepareSimulation\\
+	  	show\\
+	  	algorithmShow\\
+	  	getDataForVisualisation\\
+	  	makeStepOfTheAlgorithm\\
+	  	simulate\\
+	\end{tabular}
+	\\
+}
+
+\mydescription{3}{.55}{	
+	PARALLEL TEMPERINGS\\
+	
+	\begin{tabular}{ l }
+	  	temperatures\\
+	  	temperaturesNo\\
+	  	inverseTemperatures\\
+	  	strategyNo\\
+	  	translatorFromLexicOrderToTranspositions\\
+	  	transpositionsNo\\
+	  	lastSwapProbs\\
+	  	swapProposal\\
+	  	swapProposalLexic\\
+	  	lastStatesLogUDensities\\
+	  	proposalLogUDensities\\
+	  	updatedStates\\
+	  	lastTranspositionNo\\
+	  	transpositionHistory\\
+	  	acceptedRandomWalksNo\\
+	  	rejectedRandomWalksNo\\
+	  	acceptedSwapsNo\\
+	  	detailedOutput\\
+	\end{tabular}   
+	\\
+
+	\begin{tabular}{ l }
+	  	initializeParallelTempering\\
+	  	insertStrategyNo\\
+	  	insertTranspositions\\
+	  	parallelTemperingShow\\
+	  	plotHistory\\
+	  	algorithmShow\\
+	  	getDataForVisualisation\\
+	  	randomWalk\\
+		randomWalkRejection\\
+		updateAfterRandomWalk\\
+		swap\\
+		swapProposalGeneration\\
+		swapRejectionAndUpdate\\
+		updateSwapUProbs\\
+		findTranspositionsForUpdate\\
+		generateTranspositions\\
+	  	translateLexicToTranspositions\\
+	  	translateTranspositionsToLexic\\
+	  	swapStrategy\\
+	\end{tabular}
+	\\
+}
+
+\end{document}

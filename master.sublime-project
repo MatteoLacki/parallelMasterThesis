@@ -5,7 +5,20 @@
 			"file_exclude_patterns":
 			[
 				"*.pdf",
-				"*.aux"
+				"*.aux",
+				"*.lof",
+				"*.toc",
+				"*.lot",
+				"*.tex~",
+				"*.synctex.gz",
+				"*.nav",
+				"*.sty~",
+				"*.out",
+				"*.snm",
+				"*.jpg",
+				"*.png",
+				"*.R~",
+				"*.svg"
 			],
 			"path": "/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation"
 		},
@@ -24,7 +37,9 @@
 				"*.out",
 				"*.snm",
 				"*.jpg",
-				"*.png"
+				"*.png",
+				"*.R~",
+				"*.svg"
 			],
 			"path": "/home/matteo/Documents/Scienza/Laurea_di_Matematica/master"
 		},
