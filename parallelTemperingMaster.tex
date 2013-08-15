@@ -12,7 +12,6 @@
 	
 	\include{./tex/abstract}
 
- 
 	\tableofcontents
 	
 	\addcontentsline{toc}{section}{List of figures}
@@ -35,3 +34,22 @@
 	\bibliography{./bibliography/myBooks}
 
 \end{document}
+
+
+
+
+
+
+%%% Przydatne
+
+\begin{figure}
+	\begin{minipage}[b]{.5\linewidth}
+		\centering \includegraphics[scale=1]{./img/KS1.eps}
+		\subcaption{Sample points and level sets of an examplary \ecdf.}\label{simpleEcdf}
+	\end{minipage}%
+	\begin{minipage}[b]{.5\linewidth}
+		\centering \includegraphics[scale=1]{./img/KS2.eps}
+	\subcaption{Division of the state-space.}\label{fig:1b}
+	\end{minipage}
+	\caption{Calculations of the KS-distance.}\label{fig:1}
+\end{figure}

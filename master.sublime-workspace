@@ -4,12 +4,264 @@
 		"selected_items":
 		[
 			[
-				"Lin",
-				"LiangWangExample"
+				"proposedSt",
+				"proposedState"
+			],
+			[
+				"current",
+				"currentCDF"
+			],
+			[
+				"dis",
+				"distinctPointsNo"
+			],
+			[
+				"mixtu",
+				"mixturesWeight"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"res",
+				"resolution"
+			],
+			[
+				"curren",
+				"currentPoint"
+			],
+			[
+				"max",
+				"maximiser"
+			],
+			[
+				"ecd",
+				"ecdfNorthWest"
+			],
+			[
+				"ecdf",
+				"ecdfUpLeft"
+			],
+			[
+				"poin",
+				"pointWithInfo"
+			],
+			[
+				"ecf",
+				"ecdfData"
+			],
+			[
+				"rown",
+				"rowsNo"
+			],
+			[
+				"ECDF",
+				"ecdfData"
+			],
+			[
+				"ec",
+				"ecdf2"
+			],
+			[
+				"e",
+				"ecdfData"
+			],
+			[
+				"data",
+				"dataForPlot"
+			],
+			[
+				"dataF",
+				"dataForKolmogorov"
+			],
+			[
+				"dat",
+				"detailedOutput"
+			],
+			[
+				"targ",
+				"targetDensity"
+			],
+			[
+				"algo",
+				"algorithm"
+			],
+			[
+				"call",
+				"callSuper"
+			],
+			[
+				"ch",
+				"chainsNo"
+			],
+			[
+				"chain",
+				"chainsNo"
+			],
+			[
+				"ita",
+				"iterationsNo"
+			],
+			[
+				"no",
+				"iterationsNo"
+			],
+			[
+				"name",
+				"targetMeasureName"
+			],
+			[
+				"stat",
+				"stateSpaceName"
+			],
+			[
+				"alo",
+				"algorithmName"
+			],
+			[
+				"non-",
+				"non-2D"
+			],
+			[
+				"get",
+				"getLogAlpha"
+			],
+			[
+				"last",
+				"lastStatesLogUDensities"
+			],
+			[
+				"proposa",
+				"proposalLogUDensities"
+			],
+			[
+				"propo",
+				"proposalCovariances"
+			],
+			[
+				"pro",
+				"proposalCovariances"
+			],
+			[
+				"targe",
+				"targetMeasure"
+			],
+			[
+				"si",
+				"sigma"
+			],
+			[
+				"mixt",
+				"mixturesMeans"
+			],
+			[
+				"means",
+				"meansWithSigmas"
+			],
+			[
+				"simulat",
+				"simulationsNo"
+			],
+			[
+				"contour",
+				"contourData"
+			],
+			[
+				"sim",
+				"simpleSwap"
+			],
+			[
+				"temper",
+				"temperaturesNo"
 			],
 			[
 				"temp",
 				"temperaturesNo"
+			],
+			[
+				"poss",
+				"possibleSwaps"
+			],
+			[
+				"strate",
+				"swapStrategy"
+			],
+			[
+				"strat",
+				"strategyNo"
+			],
+			[
+				"slo",
+				"slotsNo"
+			],
+			[
+				"tem",
+				"temperatures"
+			],
+			[
+				"tar",
+				"targetMeasureName"
+			],
+			[
+				"sta",
+				"stateSpaceName"
+			],
+			[
+				"pa",
+				"parallel"
+			],
+			[
+				"cha",
+				"chainNames"
+			],
+			[
+				"qua",
+				"quasiMetric"
+			],
+			[
+				"inita",
+				"initialStates"
+			],
+			[
+				"chains",
+				"chainsNo"
+			],
+			[
+				"ini",
+				"initialStates"
+			],
+			[
+				"tmp",
+				"tmpNoOfChains"
+			],
+			[
+				"state",
+				"state-space"
+			],
+			[
+				"init",
+				"initialStatesDim"
+			],
+			[
+				"insi",
+				"initialStatesDim"
+			],
+			[
+				"initalSta",
+				"initialStatesDim"
+			],
+			[
+				"initia",
+				"initialStatesDim"
+			],
+			[
+				"pnom",
+				"pnorms"
+			],
+			[
+				"Lin",
+				"LiangWangExample"
 			],
 			[
 				"updated",
@@ -44,20 +296,12 @@
 				"lastTranspositionNo"
 			],
 			[
-				"propo",
-				"proposalCovariancesCholeskised"
-			],
-			[
 				"space",
 				"spaceDim"
 			],
 			[
 				"che",
 				"checkIterationsNo"
-			],
-			[
-				"targ",
-				"targetUDensity"
 			],
 			[
 				"sig",
@@ -70,14 +314,6 @@
 			[
 				"ite",
 				"iterationsNo"
-			],
-			[
-				"tar",
-				"targetMeasure"
-			],
-			[
-				"state",
-				"stateSpace"
 			],
 			[
 				"uMea",
@@ -104,10 +340,6 @@
 				"length"
 			],
 			[
-				"tmp",
-				"tmpStates"
-			],
-			[
 				"Met",
 				"MetropolisHasting"
 			],
@@ -118,10 +350,6 @@
 			[
 				"Al",
 				"algorithm"
-			],
-			[
-				"sim",
-				"sigma"
 			],
 			[
 				"mix",
@@ -136,16 +364,8 @@
 				"require"
 			],
 			[
-				"no",
-				"noOfIterations"
-			],
-			[
 				"Tempe",
 				"Temperature"
-			],
-			[
-				"slo",
-				"slotNo"
 			],
 			[
 				"update",
@@ -180,10 +400,6 @@
 				"updateSwapUProbs"
 			],
 			[
-				"stat",
-				"stateSpace"
-			],
-			[
 				"las",
 				"lastStates"
 			],
@@ -200,28 +416,8 @@
 				"proposalSwapLogProbability"
 			],
 			[
-				"targe",
-				"targetLogDensities"
-			],
-			[
-				"pro",
-				"proposalSwap"
-			],
-			[
-				"last",
-				"lastStatesLogUnDensities"
-			],
-			[
 				"inver",
 				"inverseTemperatures"
-			],
-			[
-				"get",
-				"getProposalLogsOfUnnormalisedDensities"
-			],
-			[
-				"curren",
-				"currentStates"
 			],
 			[
 				"prop",
@@ -256,19 +452,7 @@
 				"realFiniteDimensionalStateSpaceStructure"
 			],
 			[
-				"init",
-				"initialStates"
-			],
-			[
-				"ini",
-				"initialStatesNoOfChains"
-			],
-			[
 				"simu",
-				"simulatedStates"
-			],
-			[
-				"si",
 				"simulatedStates"
 			],
 			[
@@ -292,16 +476,8 @@
 				"noOfSteps"
 			],
 			[
-				"initia",
-				"initializeStateSpaceStructure"
-			],
-			[
 				"in",
 				"inputIndices"
-			],
-			[
-				"strat",
-				"strategyNumber"
 			],
 			[
 				"st",
@@ -328,10 +504,6 @@
 				"temperatures"
 			],
 			[
-				"pa",
-				"ParallelTempering"
-			],
-			[
 				"num",
 				"numeration"
 			],
@@ -342,115 +514,63 @@
 			[
 				"probl",
 				"problemDimension"
-			],
-			[
-				"initi",
-				"initialPoints"
-			],
-			[
-				"inti",
-				"initialPoints"
-			],
-			[
-				"initalize",
-				"initializeDataStructures"
-			],
-			[
-				"prob",
-				"problemDimension"
-			],
-			[
-				"check",
-				"check"
-			],
-			[
-				"con",
-				"conditionChangingSmokesToNo"
-			],
-			[
-				"Da",
-				"Daily_Smokes"
-			],
-			[
-				"Smoke",
-				"Smokes"
-			],
-			[
-				"co",
-				"conditionEliminatingInconsistentObservations"
-			],
-			[
-				"D",
-				"Daily_Smokes"
-			],
-			[
-				"cont",
-				"contrasts"
-			],
-			[
-				"e",
-				"else"
-			],
-			[
-				"T",
-				"TRUE"
-			],
-			[
-				"Si",
-				"Simulation"
-			],
-			[
-				"Init",
-				"Initial_Points"
-			],
-			[
-				"Ini",
-				"Initial_Points"
-			],
-			[
-				"Targe",
-				"Target_Density"
-			],
-			[
-				"fun",
-				"function"
-			],
-			[
-				"Target",
-				"Call_Target_Density"
-			],
-			[
-				"print",
-				"print_r"
-			],
-			[
-				"mysql_c",
-				"mysql_connect"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "rm( list = ls())\ndirectory <- \"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation\"\nsetwd(directory)\n\nsource(\"./targetMeasures/targetMeasures.R\")\nsource(\"./targetMeasures/targetUnnormalisedDensities.R\")\nsource(\"./targetMeasures/targetLiangDensities.R\")\nsource(\"./stateSpaces/stateSpaces.R\")\nsource(\"./stateSpaces/realStateSpaces.R\")\nsource(\"./algorithms/algorithms.R\")\nsource(\"./algorithms/parallelTemperings.R\")\nsource(\"./simulations/simulations.R\")\n\n\nLiangWangExample <- simulation$new(\n	iterationsNo= 100000,\n	strategyNo 	= 3,\n	example 	= TRUE\n)\n\nLiangWangExample\nLiangWangExample$simulate()\nLiangWangExample	\nLiangWangExample$algorithm$plotHistory()\n\nsvg(\"histogram.svg\", width=6, height=4)\n	LiangWangExample$algorithm$plotHistory()\ndev.off()\n\nhead(LiangWangExample$stateSpace$simulatedStates)",
-			"file": "/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/examplarySession.R",
-			"file_size": 808,
-			"file_write_time": 1371930468000000,
+			"file": "tex/implementation.tex",
 			"settings":
 			{
-				"buffer_size": 812,
+				"buffer_size": 6831,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mystyle.sty",
+			"settings":
+			{
+				"buffer_size": 2909,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "@book{ JohnSchember,\n    author_sort = \"Schember, John\",\n    author = \"John Schember\",\n    calibreid = \"1\",\n    year = \"2012\",\n    month = \"Oct\",\n    publisher = \"calibre\",\n    title = \"Calibre Quick Start Guide\",\n    title_sort = \"Calibre Quick Start Guide\" }\n\n@book{ DaviddeLaCroix,\n    author_sort = \"CROIX, DAVID DE LA \\& MICHEL, PHILIPPE\",\n    author = \"David de La Croix and Philippe Michel\",\n    calibreid = \"2\",\n    isbn = \"\",\n    year = \"2002\",\n    month = \"Nov\",\n    publisher = \"Cambridge University Press\",\n    title = \"A Theory of Economic Growth: Dynamics and Policy in Overlapping Generations\",\n    title_sort = \"Theory of Economic Growth: Dynamics and Policy in Overlapping Generations, A\" }\n\n@book{ DavidRomer,\n    author_sort = \"Romer, David\",\n    author = \"David Romer\",\n    calibreid = \"3\",\n    isbn = \"\",\n    year = \"1997\",\n    month = \"Jan\",\n    publisher = \"McGraw-Hill/Irwin\",\n    title = \"Advanced Macroeconomics\",\n    title_sort = \"Advanced Macroeconomics\" }\n\n@book{ AndreuMas-Colell,\n    author_sort = \"Mas-Colell, Andreu \\& Whinston, Michael D. \\& Green, Jerry R.\",\n    author = \"Andreu Mas-Colell and Michael D. Whinston and Jerry R. Green\",\n    calibreid = \"4\",\n    isbn = \"\",\n    year = \"1995\",\n    month = \"Jun\",\n    publisher = \"Oxford University Press, USA\",\n    title = \"Microeconomic Theory\",\n    title_sort = \"Microeconomic Theory\" }\n\n@book{ KevinWainwright,\n    author_sort = \"Wainwright, Kevin \\& Chiang, Alpha\",\n    author = \"Kevin Wainwright and Alpha Chiang\",\n    calibreid = \"5\",\n    isbn = \"\",\n    year = \"1967\",\n    month = \"Jan\",\n    publisher = \"McGraw-Hill\",\n    title = \"Fundamental Methods of Mathematical Economics\",\n    title_sort = \"Fundamental Methods of Mathematical Economics\" }\n\n@book{ HalR.Varian,\n    author_sort = \"Varian, Hal R. \\& Varian, 3rd Edition \\& Reviews, Cram101 Textbook\",\n    author = \"Hal R. Varian and 3rd Edition Varian and Cram101 Textbook Reviews\",\n    calibreid = \"6\",\n    isbn = \"\",\n    year = \"2006\",\n    month = \"Oct\",\n    publisher = \"Academic Internet Publishers Incorporated\",\n    title = \"Microeconomic Analysis\",\n    title_sort = \"Microeconomic Analysis\" }\n\n@book{ LarsLjungqvist,\n    author_sort = \"Ljungqvist, Lars \\& Sargent, Thomas J.\",\n    author = \"Lars Ljungqvist and Thomas J. Sargent\",\n    calibreid = \"7\",\n    isbn = \"\",\n    year = \"2000\",\n    month = \"Jan\",\n    publisher = \"Mit Press\",\n    title = \"Recursive MacRoeconomic Theory\",\n    title_sort = \"Recursive MacRoeconomic Theory\" }\n\n@book{ AlfredoMedio,\n    author_sort = \"Medio, Alfredo \\& Lines, Marji\",\n    author = \"Alfredo Medio and Marji Lines\",\n    calibreid = \"8\",\n    isbn = \"\",\n    year = \"2001\",\n    month = \"Nov\",\n    publisher = \"Cambridge University Press\",\n    title = \"Nonlinear Dynamics: A Primer\",\n    title_sort = \"Nonlinear Dynamics: A Primer\" }\n\n@book{ CarlE.Walsh,\n    author_sort = \"Walsh, Carl E.\",\n    author = \"Carl E. Walsh\",\n    calibreid = \"9\",\n    isbn = \"\",\n    year = \"1998\",\n    month = \"Jan\",\n    publisher = \"Mit Press\",\n    title = \"Monetary Theory and Policy\",\n    title_sort = \"Monetary Theory and Policy\" }\n\n@book{ L.P.Hansen,\n    author_sort = \"Hansen, L. P. \\& Sargent, T. J. \\& Turmuhambetova, G. \\& Will\",\n    author = \"L. P. Hansen and T. J. Sargent and G. Turmuhambetova and Will\",\n    calibreid = \"10\",\n    year = \"2006\",\n    month = \"May\",\n    publisher = \"Elsevier\",\n    title = \"Robust Control and Model Misspecification\",\n    title_sort = \"Robust Control and Model Misspecification\" }\n\n@book{ ThomasJ.Sargent,\n    author_sort = \"Sargent, Thomas J.\",\n    author = \"Thomas J. Sargent\",\n    calibreid = \"11\",\n    isbn = \"\",\n    year = \"1999\",\n    month = \"Mar\",\n    publisher = \"Princeton Univ Pr\",\n    title = \"Recursive Linear Models of Dynamic Economies\",\n    title_sort = \"Recursive Linear Models of Dynamic Economies\" }\n\n@book{ DaronAcemoglu,\n    author_sort = \"Acemoglu, Daron\",\n    author = \"Daron Acemoglu\",\n    calibreid = \"12\",\n    isbn = \"\",\n    year = \"2009\",\n    month = \"Jan\",\n    publisher = \"Princeton University Press\",\n    title = \"Introduction to Modern Economic Growth\",\n    title_sort = \"Introduction to Modern Economic Growth\" }\n\n@book{ AdamBobrowski,\n    author_sort = \"Bobrowski, Adam\",\n    author = \"Adam Bobrowski\",\n    calibreid = \"13\",\n    isbn = \"\",\n    year = \"2005\",\n    month = \"Sep\",\n    publisher = \"Cambridge University Press\",\n    title = \"Functional Analysis for Probability and Stochastic Processes: An Introduction\",\n    title_sort = \"Functional Analysis for Probability and Stochastic Processes: An Introduction\" }\n\n@book{ WalterRudin,\n    author_sort = \"Rudin, Walter\",\n    author = \"Walter Rudin\",\n    calibreid = \"14\",\n    isbn = \"\",\n    year = \"1991\",\n    month = \"Jan\",\n    publisher = \"McGraw-Hill\",\n    title = \"Functional Analysis\",\n    title_sort = \"Functional Analysis\" }\n\n@book{ WalterRudin,\n    author_sort = \"Rudin, Walter\",\n    author = \"Walter Rudin\",\n    calibreid = \"15\",\n    isbn = \"\",\n    year = \"1962\",\n    month = \"Jan\",\n    publisher = \"John Wiley \\& Sons\",\n    title = \"Fourier Analysis on Groups\",\n    title_sort = \"Fourier Analysis on Groups\" }\n\n@book{ A.Ya.Khinchin,\n    author_sort = \"Khinchin, A. Ya. \\& Mathematics\",\n    author = \"A. Ya. Khinchin and Mathematics\",\n    calibreid = \"17\",\n    isbn = \"\",\n    year = \"1957\",\n    month = \"Jun\",\n    publisher = \"Dover Publications\",\n    title = \"Mathematical Foundations of Information Theory\",\n    title_sort = \"Mathematical Foundations of Information Theory\" }\n\n@book{ CharalambosD.Aliprantis,\n    author_sort = \"Aliprantis, Charalambos D. \\& Border, Kim C.\",\n    author = \"Charalambos D. Aliprantis and Kim C. Border\",\n    calibreid = \"19\",\n    isbn = \"\",\n    year = \"1994\",\n    month = \"Jan\",\n    publisher = \"Springer\",\n    title = \"Infinite Dimensional Analysis: A Hitchhiker's Guide\",\n    title_sort = \"Infinite Dimensional Analysis: A Hitchhiker's Guide\" }\n\n@book{ JohnStachurski,\n    author_sort = \"Stachurski, John\",\n    author = \"John Stachurski\",\n    calibreid = \"20\",\n    isbn = \"\",\n    year = \"2009\",\n    month = \"Jan\",\n    publisher = \"The MIT Press\",\n    title = \"Economic Dynamics: Theory and Computation\",\n    title_sort = \"Economic Dynamics: Theory and Computation\" }\n\n@book{ BonaMiklos,\n    author_sort = \"Miklos, Bona\",\n    author = \"Bona Miklos\",\n    calibreid = \"21\",\n    year = \"2012\",\n    month = \"Oct\",\n    publisher = \"Walter Rudin Series in Advanced Mathematics\",\n    title = \"Introduction to Enumerative Combinatorics\",\n    title_sort = \"Rudin[]Introduction to Enumerative Combinatorics\" }\n\n@book{ MarstonMorse,\n    author_sort = \"Morse, Marston \\& Cairns, Stewart S.\",\n    author = \"Marston Morse and Stewart S. Cairns\",\n    calibreid = \"22\",\n    isbn = \"\",\n    year = \"1969\",\n    month = \"Feb\",\n    publisher = \"Academic Press\",\n    title = \"Critical Point Theory in Global Analysis and Differential Topology, Volume 33: An Introduction\",\n    title_sort = \"Critical Point Theory in Global Analysis and Differential Topology, Volume 33: An Introduction\" }\n\n@book{ JohnWillardMilnor,\n    author_sort = \"Milnor, John Willard\",\n    author = \"John Willard Milnor\",\n    calibreid = \"23\",\n    year = \"1958\",\n    month = \"Oct\",\n    publisher = \"Princeton University\",\n    title = \"Differential Topology\",\n    title_sort = \"Differential Topology\" }\n\n@book{ JohnWillardMilnor,\n    author_sort = \"Milnor, John Willard\",\n    author = \"John Willard Milnor\",\n    calibreid = \"24\",\n    isbn = \"\",\n    year = \"1997\",\n    month = \"Nov\",\n    publisher = \"Princeton University Press\",\n    title = \"Topology From the Differentiable Viewpoint\",\n    title_sort = \"Topology From the Differentiable Viewpoint\" }\n\n@book{ SiegfriedCarl,\n    author_sort = \"Carl, Siegfried \\& Heikkilä, Seppo\",\n    author = \"Siegfried Carl and Seppo Heikkilä\",\n    calibreid = \"27\",\n    isbn = \"\",\n    year = \"2010\",\n    month = \"Dec\",\n    publisher = \"Springer\",\n    title = \"Fixed Point Theory in Ordered Sets and Applications: From Differential and Integral Equations to Game Theory\",\n    title_sort = \"Fixed Point Theory in Ordered Sets and Applications: From Differential and Integral Equations to Game Theory\" }\n\n@book{ AlfredTarski,\n    author_sort = \"Tarski, Alfred\",\n    author = \"Alfred Tarski\",\n    calibreid = \"28\",\n    year = \"2012\",\n    month = \"Oct\",\n    publisher = \"Pacific Journal of Mathematics\",\n    title = \"A lattice-theoretical fixpoint theorem and its applications\",\n    title_sort = \"A lattice-theoretical fixpoint theorem and its applications\" }\n\n@book{ HalseyRoyden,\n    author_sort = \"Royden, Halsey \\& Fitzpatrick, Patrick\",\n    author = \"Halsey Royden and Patrick Fitzpatrick\",\n    calibreid = \"35\",\n    isbn = \"\",\n    year = \"2010\",\n    month = \"Jan\",\n    publisher = \"Pearson Education\",\n    title = \"Real Analysis, Books a La Carte Edition\",\n    title_sort = \"Real Analysis, Books a La Carte Edition\" }\n\n@book{ AndrzejGranas,\n    author_sort = \"Granas, Andrzej \\& Dugundji, James\",\n    author = \"Andrzej Granas and James Dugundji\",\n    calibreid = \"36\",\n    isbn = \"\",\n    year = \"2003\",\n    month = \"Jun\",\n    publisher = \"Springer\",\n    title = \"Fixed Point Theory\",\n    title_sort = \"Fixed Point Theory\" }\n\n@book{ AlexandreB.Tsybakov,\n    author_sort = \"Tsybakov, Alexandre B.\",\n    author = \"Alexandre B. Tsybakov\",\n    calibreid = \"38\",\n    isbn = \"\",\n    year = \"2009\",\n    month = \"Jan\",\n    publisher = \"Springer\",\n    title = \"Introduction to Nonparametric Estimation\",\n    title_sort = \"Introduction to Nonparametric Estimation\" }\n\n@book{ RyszardZieliński((matematyk).),\n    author_sort = \"Zieliński, Ryszard\",\n    author = \"Ryszard Zieliński ((matematyk).)\",\n    calibreid = \"39\",\n    isbn = \"\",\n    year = \"1990\",\n    month = \"Oct\",\n    publisher = \"Państwowe Wydawn. Naukowe\",\n    title = \"Siedem Wykładów Wprowadzających Do Statystyki Matematycznej\",\n    title_sort = \"Siedem Wykładów Wprowadzających Do Statystyki Matematycznej\" }\n\n@book{ WuYiHsiang,\n    author_sort = \"Hsiang, Wu Yi\",\n    author = \"Wu Yi Hsiang\",\n    calibreid = \"42\",\n    isbn = \"\",\n    year = \"1998\",\n    month = \"Jan\",\n    publisher = \"World Scientific\",\n    title = \"Lectures on Lie Groups\",\n    title_sort = \"Lectures on Lie Groups\" }\n\n@book{ HarryJ.Lipkin,\n    author_sort = \"Lipkin, Harry J. \\& Physics\",\n    author = \"Harry J. Lipkin and Physics\",\n    calibreid = \"45\",\n    isbn = \"\",\n    year = \"2002\",\n    month = \"Jul\",\n    publisher = \"Dover Publications\",\n    title = \"Lie Groups for Pedestrians\",\n    title_sort = \"Lie Groups for Pedestrians\" }\n\n@book{ LawrenceC.Evans,\n    author_sort = \"Evans, Lawrence C. \\& Gariepy, Ronald F.\",\n    author = \"Lawrence C. Evans and Ronald F. Gariepy\",\n    calibreid = \"46\",\n    isbn = \"\",\n    year = \"1992\",\n    month = \"Feb\",\n    publisher = \"CRC-Press\",\n    title = \"Measure Theory and Fine Properties of Functions\",\n    title_sort = \"Measure Theory and Fine Properties of Functions\" }\n\n@book{ VladimirI.Bogachev,\n    author_sort = \"Bogachev, Vladimir I.\",\n    author = \"Vladimir I. Bogachev\",\n    calibreid = \"47\",\n    isbn = \"\",\n    year = \"2007\",\n    month = \"Jan\",\n    publisher = \"Springer\",\n    title = \"Measure Theory\",\n    title_sort = \"Measure Theory\" }\n\n@book{ ManuelS.Santos,\n    author_sort = \"Santos, Manuel S.\",\n    author = \"Manuel S. Santos\",\n    calibreid = \"48\",\n    year = \"2012\",\n    month = \"Oct\",\n    publisher = \"Econometrica\",\n    title = \"Smoothness of the Policy Function in Discrete Time Economic Models\",\n    title_sort = \"Smoothness of the Policy Function in Discrete Time Economic Models\" }\n\n@book{ A.Araujo,\n    author_sort = \"Araujo, A.\",\n    author = \"A. Araujo\",\n    calibreid = \"49\",\n    year = \"2012\",\n    month = \"Oct\",\n    publisher = \"Econometrica\",\n    title = \"The Once But Not Twice Differentiability of the Policy Function\",\n    title_sort = \"Once But Not Twice Differentiability of the Policy Function, The\" }\n\n@book{ JürgenAppell,\n    author_sort = \"Appell, Jürgen \\& Zabrejko, Petr P.\",\n    author = \"Jürgen Appell and Petr P. Zabrejko\",\n    calibreid = \"50\",\n    isbn = \"\",\n    year = \"1990\",\n    month = \"Jan\",\n    publisher = \"Cambridge University Press\",\n    title = \"Nonlinear Superposition Operators\",\n    title_sort = \"Nonlinear Superposition Operators\" }\n\n@book{ MITteam,\n    author_sort = \"MIT team\",\n    author = \"MIT team\",\n    calibreid = \"53\",\n    year = \"2012\",\n    month = \"Oct\",\n    publisher = \"Mit Press\",\n    title = \"Fredholm Operators\",\n    title_sort = \"Fredholm Operators\" }\n\n@book{ MITteam,\n    author_sort = \"MIT team\",\n    author = \"MIT team\",\n    calibreid = \"54\",\n    year = \"2012\",\n    month = \"Oct\",\n    publisher = \"Mit Press\",\n    title = \"Parametric Transversality\",\n    title_sort = \"Parametric Transversality\" }\n\n@book{ MITteam,\n    author_sort = \"MIT team\",\n    author = \"MIT team\",\n    calibreid = \"55\",\n    year = \"2012\",\n    month = \"Oct\",\n    publisher = \"Mit Press\",\n    title = \"Compact operators\",\n    title_sort = \"Compact operators\" }\n\n@book{ JeanLeray,\n    author_sort = \"Leray, Jean \\& Schauder, Jules\",\n    author = \"Jean Leray and Jules Schauder\",\n    calibreid = \"56\",\n    year = \"1934\",\n    month = \"Oct\",\n    publisher = \"University of Tennessee, Department of Mathematics\",\n    title = \"Topologie Et Équations Fonctionnelles\",\n    title_sort = \"Topologie Et Équations Fonctionnelles\" }\n\n@book{ MordecaiAvriel,\n    author_sort = \"Avriel, Mordecai \\& Diewert, Erwin \\& Schaible, Siegfried \\& Zang, Israel\",\n    author = \"Mordecai Avriel and Erwin Diewert and Siegfried Schaible and Israel Zang\",\n    calibreid = \"58\",\n    isbn = \"\",\n    year = \"1988\",\n    month = \"Jan\",\n    publisher = \"SIAM\",\n    title = \"Generalized Concavity\",\n    title_sort = \"Generalized Concavity\" }\n\n@book{ MITteam,\n    author_sort = \"MIT team\",\n    author = \"MIT team\",\n    calibreid = \"59\",\n    year = \"2012\",\n    month = \"Nov\",\n    publisher = \"Mit Press\",\n    title = \"Smale's Sard Theorem\",\n    title_sort = \"Smale's Sard Theorem\" }\n\n@book{ МаркАлександровичКрасносельский,\n    author_sort = \"Красносельский, Марк Александрович \\& Забрейко, Петр Петрович\",\n    author = \"Марк Александрович Красносельский and Петр Петрович Забрейко\",\n    calibreid = \"60\",\n    year = \"1975\",\n    month = \"Oct\",\n    publisher = \"Наука\",\n    title = \"Геометрические методы нелинейного анализа\",\n    title_sort = \"Геометрические методы нелинейного анализа\" }\n\n@book{ JuhaHeinonen,\n    author_sort = \"Heinonen, Juha\",\n    author = \"Juha Heinonen\",\n    calibreid = \"62\",\n    isbn = \"\",\n    year = \"2005\",\n    month = \"Oct\",\n    publisher = \"Univ.\",\n    title = \"Lectures on Lipschitz Analysis\",\n    title_sort = \"Lectures on Lipschitz Analysis\" }\n\n@book{ R.K.Singh,\n    author_sort = \"Singh, R. K. \\& Manhas, J. S.\",\n    author = \"R. K. Singh and J. S. Manhas\",\n    calibreid = \"63\",\n    isbn = \"\",\n    year = \"1993\",\n    month = \"Nov\",\n    publisher = \"Elsevier\",\n    title = \"Composition Operators on Function Spaces\",\n    title_sort = \"Composition Operators on Function Spaces\" }\n\n@book{ RaduPrecup,\n    author_sort = \"Radu Precup\",\n    author = \"Radu Precup\",\n    calibreid = \"64\",\n    year = \"1995\",\n    month = \"Nov\",\n    publisher = \"Journal of the Juliusz Schauder Center\",\n    title = \"A Granas type approach to some continuation theorems and periodic boundary value problems with impulses\",\n    title_sort = \"A Granas type approach to some continuation theorems and periodic boundary value problems with impulses\" }\n\n@book{ DorotheeHaroske,\n    author_sort = \"Haroske, Dorothee \\& Runst, Thomas \\& Schmeisser, Hans-Jürgen\",\n    author = \"Dorothee Haroske and Thomas Runst and Hans-Jürgen Schmeisser\",\n    calibreid = \"65\",\n    isbn = \"\",\n    year = \"2003\",\n    month = \"Apr\",\n    publisher = \"Springer\",\n    title = \"Function Spaces, Differential Operators and Nonlinear Analysis: The Hans Triebel Anniversary Volume\",\n    title_sort = \"Function Spaces, Differential Operators and Nonlinear Analysis: The Hans Triebel Anniversary Volume\" }\n\n@book{ LaurentSchwartz,\n    author_sort = \"Schwartz, Laurent\",\n    author = \"Laurent Schwartz\",\n    calibreid = \"66\",\n    isbn = \"\",\n    year = \"1978\",\n    month = \"Jan\",\n    publisher = \"Hermann\",\n    title = \"Théorie Des Distributions. Troisième Cycle Et Recherche\",\n    title_sort = \"Théorie Des Distributions. Troisième Cycle Et Recherche\" }\n\n@book{ EduardoD.Sontag,\n    author_sort = \"Sontag, Eduardo D.\",\n    author = \"Eduardo D. Sontag\",\n    calibreid = \"69\",\n    isbn = \"\",\n    year = \"1990\",\n    month = \"Jan\",\n    publisher = \"Springer\",\n    title = \"Mathematical Control Theory: Deterministic Finite Dimensional Systems\",\n    title_sort = \"Mathematical Control Theory: Deterministic Finite Dimensional Systems\" }\n\n@book{ EdwardC.Titchmarsh,\n    author_sort = \"Titchmarsh, Edward C.\",\n    author = \"Edward C. Titchmarsh\",\n    calibreid = \"70\",\n    isbn = \"\",\n    year = \"1975\",\n    month = \"Jan\",\n    publisher = \"Oxford University Press, USA\",\n    title = \"The Theory of Functions\",\n    title_sort = \"Theory of Functions, The\" }\n\n@book{ H.L.Royden,\n    author_sort = \"Royden, H. L. \\& Fitzpatrick, Patrick\",\n    author = \"H. L. Royden and Patrick Fitzpatrick\",\n    calibreid = \"71\",\n    isbn = \"\",\n    year = \"1968\",\n    month = \"Jan\",\n    publisher = \"Pearson\",\n    title = \"Real Analysis\",\n    title_sort = \"Real Analysis\" }\n\n@book{ WalterRudin,\n    author_sort = \"Rudin, Walter\",\n    author = \"Walter Rudin\",\n    calibreid = \"72\",\n    isbn = \"\",\n    year = \"1970\",\n    month = \"Jan\",\n    publisher = \"McGraw-Hill\",\n    title = \"Real and Complex Analysis\",\n    title_sort = \"Real and Complex Analysis\" }\n\n@book{ HerbertAmann,\n    author_sort = \"Amann, Herbert \\& Escher, Joachim\",\n    author = \"Herbert Amann and Joachim Escher\",\n    calibreid = \"73\",\n    isbn = \"\",\n    year = \"1999\",\n    month = \"Oct\",\n    publisher = \"Birkhäuser\",\n    title = \"Analysis II\",\n    title_sort = \"Analysis II\" }\n\n@book{ HerbertAmann,\n    author_sort = \"Amann, Herbert \\& Escher, Joachim\",\n    author = \"Herbert Amann and Joachim Escher\",\n    calibreid = \"74\",\n    isbn = \"\",\n    year = \"2008\",\n    month = \"Jan\",\n    publisher = \"Birkhäuser Basel\",\n    title = \"Analysis III\",\n    title_sort = \"Analysis III\" }\n\n@book{ HerbertAmann,\n    author_sort = \"Amann, Herbert \\& Escher, Joachim\",\n    author = \"Herbert Amann and Joachim Escher\",\n    calibreid = \"75\",\n    isbn = \"\",\n    year = \"1998\",\n    month = \"Jan\",\n    publisher = \"Springer DE\",\n    title = \"Analysis I\",\n    title_sort = \"Analysis I\" }\n\n@book{ RalphAbraham,\n    author_sort = \"Abraham, Ralph \\& Marsden, Jerrold E. \\& Ratiu, Tudor\",\n    author = \"Ralph Abraham and Jerrold E. Marsden and Tudor Ratiu\",\n    calibreid = \"76\",\n    isbn = \"\",\n    year = \"1983\",\n    month = \"Jan\",\n    publisher = \"Springer\",\n    title = \"Manifolds, Tensor Analysis, and Applications\",\n    title_sort = \"Manifolds, Tensor Analysis, and Applications\" }\n\n@book{ MeiMichaelSpivakBianZhu,\n    author_sort = \"Zhu, Mei Michael Spivak Bian\",\n    author = \"Mei Michael Spivak Bian Zhu\",\n    calibreid = \"78\",\n    isbn = \"\",\n    year = \"2006\",\n    month = \"Jan\",\n    publisher = \"People Post\",\n    title = \"Calculus on Manifolds\",\n    title_sort = \"Calculus on Manifolds\" }\n\n@book{ V.I.Arnold,\n    author_sort = \"Arnold, V. I. \\& Vogtmann, K. \\& Weinstein, A.\",\n    author = \"V. I. Arnold and K. Vogtmann and A. Weinstein\",\n    calibreid = \"79\",\n    isbn = \"\",\n    year = \"2010\",\n    month = \"Dec\",\n    publisher = \"Springer\",\n    title = \"Mathematical Methods of Classical Mechanics\",\n    title_sort = \"Mathematical Methods of Classical Mechanics\" }\n\n@book{ MichaelSpivak,\n    author_sort = \"Spivak, Michael\",\n    author = \"Michael Spivak\",\n    calibreid = \"80\",\n    isbn = \"\",\n    year = \"1979\",\n    month = \"Oct\",\n    publisher = \"Publish or Perish, inc.\",\n    title = \"A Comprehensive Introduction to Differential Geometry\",\n    title_sort = \"Comprehensive Introduction to Differential Geometry, A\" }\n\n@book{ SergeLang,\n    author_sort = \"Lang, Serge\",\n    author = \"Serge Lang\",\n    calibreid = \"81\",\n    isbn = \"\",\n    year = \"1995\",\n    month = \"Mar\",\n    publisher = \"Springer\",\n    title = \"Differential and Riemannian Manifolds\",\n    title_sort = \"Differential and Riemannian Manifolds\" }\n\n@book{ LawrenceC.Evans,\n    author_sort = \"Evans, Lawrence C.\",\n    author = \"Lawrence C. Evans\",\n    calibreid = \"82\",\n    isbn = \"\",\n    year = \"2002\",\n    month = \"Jan\",\n    publisher = \"American Mathematical Soc.\",\n    title = \"Partial Differential Equations\",\n    title_sort = \"Partial Differential Equations\" }\n\n@book{ ValentinVladimirovichPetrov,\n    author_sort = \"Petrov, Valentin Vladimirovich\",\n    author = \"Valentin Vladimirovich Petrov\",\n    calibreid = \"84\",\n    isbn = \"\",\n    year = \"1975\",\n    month = \"Oct\",\n    publisher = \"Springer-Verlag\",\n    title = \"Sums of Independent Random Variables\",\n    title_sort = \"Sums of Independent Random Variables\" }\n\n@book{ YuriE.Gliklikh,\n    author_sort = \"Gliklikh, Yuri E.\",\n    author = \"Yuri E. Gliklikh\",\n    calibreid = \"85\",\n    isbn = \"\",\n    year = \"2010\",\n    month = \"Dec\",\n    publisher = \"Springer\",\n    title = \"Global and Stochastic Analysis With Applications to Mathematical Physics\",\n    title_sort = \"Global and Stochastic Analysis With Applications to Mathematical Physics\" }\n\n@book{ KiyosiIto,\n    author_sort = \"Ito, Kiyosi\",\n    author = \"Kiyosi Ito\",\n    calibreid = \"86\",\n    isbn = \"\",\n    year = \"1984\",\n    month = \"Oct\",\n    publisher = \"North Holland\",\n    title = \"Stochastic Analysis\",\n    title_sort = \"Stochastic Analysis\" }\n\n@book{ MichelLedoux,\n    author_sort = \"Ledoux, Michel \\& Talagrand, Michel\",\n    author = \"Michel Ledoux and Michel Talagrand\",\n    calibreid = \"88\",\n    isbn = \"\",\n    year = \"1991\",\n    month = \"Jan\",\n    publisher = \"Springer\",\n    title = \"Probability in Banach Spaces: Isoperimetry and Processes\",\n    title_sort = \"Probability in Banach Spaces: Isoperimetry and Processes\" }\n\n@book{ IoannisKaratzas,\n    author_sort = \"Karatzas, Ioannis \\& Shreve, Steven E.\",\n    author = \"Ioannis Karatzas and Steven E. Shreve\",\n    calibreid = \"89\",\n    isbn = \"\",\n    year = \"1988\",\n    month = \"Jan\",\n    publisher = \"Springer\",\n    title = \"Brownian Motion and Stochastic Calculus\",\n    title_sort = \"Brownian Motion and Stochastic Calculus\" }\n\n@book{ WlodzimierzBryc,\n    author_sort = \"Bryc, Wlodzimierz\",\n    author = \"Wlodzimierz Bryc\",\n    calibreid = \"91\",\n    isbn = \"\",\n    year = \"1995\",\n    month = \"Mar\",\n    publisher = \"Springer\",\n    title = \"The Normal Distribution: Characterizations With Applications\",\n    title_sort = \"Normal Distribution: Characterizations With Applications, The\" }\n\n@book{ DanielRevuz,\n    author_sort = \"Revuz, Daniel \\& Yor, Marc\",\n    author = \"Daniel Revuz and Marc Yor\",\n    calibreid = \"92\",\n    isbn = \"\",\n    year = \"1991\",\n    month = \"Jan\",\n    publisher = \"Springer\",\n    title = \"Continuous Martingales and Brownian Motion\",\n    title_sort = \"Continuous Martingales and Brownian Motion\" }\n\n@book{ C.Foias,\n    author_sort = \"Foias, C. \\& Manley, O. \\& Rosa, R. \\& Temam, R.\",\n    author = \"C. Foias and O. Manley and R. Rosa and R. Temam\",\n    calibreid = \"93\",\n    isbn = \"\",\n    year = \"2001\",\n    month = \"Aug\",\n    publisher = \"Cambridge University Press\",\n    title = \"Navier-Stokes Equations and Turbulence\",\n    title_sort = \"Navier-Stokes Equations and Turbulence\" }\n\n@book{ JackK.Hale,\n    author_sort = \"Hale, Jack K. \\& Magalhaes, Luis T. \\& Oliva, Waldyr\",\n    author = \"Jack K. Hale and Luis T. Magalhaes and Waldyr Oliva\",\n    calibreid = \"94\",\n    isbn = \"\",\n    year = \"2002\",\n    month = \"Jul\",\n    publisher = \"Springer\",\n    title = \"Dynamics in Infinite Dimensions\",\n    title_sort = \"Dynamics in Infinite Dimensions\" }\n\n@book{ PierreAlart,\n    author_sort = \"Alart, Pierre \\& Maisonneuve, Olivier \\& Rockafellar, R. Tyrrell\",\n    author = \"Pierre Alart and Olivier Maisonneuve and R. Tyrrell Rockafellar\",\n    calibreid = \"95\",\n    isbn = \"\",\n    year = \"2006\",\n    month = \"Jan\",\n    publisher = \"Springer\",\n    title = \"Nonsmooth Mechanics and Analysis: Theoretical and Numerical Advances\",\n    title_sort = \"Nonsmooth Mechanics and Analysis: Theoretical and Numerical Advances\" }\n\n@book{ RalphTyrellRockafellar,\n    author_sort = \"Rockafellar, Ralph Tyrell\",\n    author = \"Ralph Tyrell Rockafellar\",\n    calibreid = \"96\",\n    isbn = \"\",\n    year = \"1972\",\n    month = \"Jan\",\n    publisher = \"Princeton University Press\",\n    title = \"Convex Analysis\",\n    title_sort = \"Convex Analysis\" }\n\n@book{ I.M.Gelfand,\n    author_sort = \"Gelfand, I. M. \\& Fomin, S. V.\",\n    author = \"I. M. Gelfand and S. V. Fomin\",\n    calibreid = \"97\",\n    isbn = \"\",\n    year = \"1963\",\n    month = \"Jan\",\n    publisher = \"Dover Publications\",\n    title = \"Calculus of Variations\",\n    title_sort = \"Calculus of Variations\" }\n\n@book{ R.TyrrellRockafellar,\n    author_sort = \"Rockafellar, R. Tyrrell \\& Wets, Roger J.-B. \\& Wets, Maria\",\n    author = \"R. Tyrrell Rockafellar and Roger J.-B. Wets and Maria Wets\",\n    calibreid = \"98\",\n    isbn = \"\",\n    year = \"2004\",\n    month = \"Jan\",\n    publisher = \"Springer\",\n    title = \"Variational Analysis\",\n    title_sort = \"Variational Analysis\" }\n\n@book{ AsenL.Dontchev,\n    author_sort = \"Dontchev, Asen L. \\& Rockafellar, R. Tyrrell\",\n    author = \"Asen L. Dontchev and R. Tyrrell Rockafellar\",\n    calibreid = \"99\",\n    isbn = \"\",\n    year = \"2009\",\n    month = \"Jan\",\n    publisher = \"Springer\",\n    title = \"Implicit Functions and Solution Mappings: A View From Variational Analysis\",\n    title_sort = \"Implicit Functions and Solution Mappings: A View From Variational Analysis\" }\n\n@book{ ErichNovak,\n    author_sort = \"Novak, Erich \\& Wozniakowski, Henryk\",\n    author = \"Erich Novak and Henryk Wozniakowski\",\n    calibreid = \"100\",\n    isbn = \"\",\n    year = \"2008\",\n    month = \"Jun\",\n    publisher = \"European Mathematical Society\",\n    title = \"Tractability of Multivariate Problems: Linear Information\",\n    title_sort = \"Tractability of Multivariate Problems: Linear Information\" }\n\n@book{ ErichNovak,\n    author_sort = \"Novak, Erich \\& Wozniakowski, Henryk\",\n    author = \"Erich Novak and Henryk Wozniakowski\",\n    calibreid = \"101\",\n    isbn = \"\",\n    year = \"2010\",\n    month = \"Jun\",\n    publisher = \"European Mathematical Society\",\n    title = \"Tractability of Multivariate Problems: Standard Information for Functionals\",\n    title_sort = \"Tractability of Multivariate Problems: Standard Information for Functionals\" }\n\n@book{ IanH.SloanJosephF.Traub,\n    author_sort = \"Ian H. Sloan, Joseph F. Traub \\& Novak, Henryk Wozniakowski Erich\",\n    author = \"Ian H. Sloan, Joseph F. Traub and Henryk Wozniakowski Erich Novak\",\n    calibreid = \"102\",\n    isbn = \"\",\n    year = \"2009\",\n    month = \"Jun\",\n    publisher = \"European Mathematical Society\",\n    title = \"Essays on the Complexity of Continuous Problems\",\n    title_sort = \"Essays on the Complexity of Continuous Problems\" }\n\n@book{ JamesDugundji,\n    author_sort = \"Dugundji, James\",\n    author = \"James Dugundji\",\n    calibreid = \"104\",\n    year = \"1967\",\n    month = \"Oct\",\n    publisher = \"Allyn and Bacon\",\n    title = \"Topology\",\n    title_sort = \"Topology\" }\n\n@book{ N.Bourbaki,\n    author_sort = \"Bourbaki, N.\",\n    author = \"N. Bourbaki\",\n    calibreid = \"105\",\n    isbn = \"\",\n    year = \"1966\",\n    month = \"Jan\",\n    publisher = \"Springer\",\n    title = \"Topologie Générale: Chapitres 5 à 10\",\n    title_sort = \"Topologie Générale: Chapitres 5 à 10\" }\n\n@book{ K.D.Joshi,\n    author_sort = \"Joshi, K. D.\",\n    author = \"K. D. Joshi\",\n    calibreid = \"106\",\n    isbn = \"\",\n    year = \"1985\",\n    month = \"Jan\",\n    publisher = \"New Age International\",\n    title = \"Introduction to General Topology\",\n    title_sort = \"Introduction to General Topology\" }\n\n@book{ JanuszGórniak,\n    author_sort = \"Górniak, Janusz \\& Pytlik, Tadeusz\",\n    author = \"Janusz Górniak and Tadeusz Pytlik\",\n    calibreid = \"110\",\n    year = \"1992\",\n    month = \"Oct\",\n    publisher = \"Wydawn. Politechniki Wrocławskiej\",\n    title = \"Analiza Funkcjonalna\",\n    title_sort = \"Analiza Funkcjonalna W Zadaniach\" }\n\n@book{ GottfriedKöthe,\n    author_sort = \"Köthe, Gottfried \\& Garling, D. J. H.\",\n    author = \"Gottfried Köthe and D. J. H. Garling\",\n    calibreid = \"112\",\n    isbn = \"\",\n    year = \"2012\",\n    month = \"Jul\",\n    publisher = \"Springer\",\n    title = \"Topological Vector Spaces I\",\n    title_sort = \"Topological Vector Spaces I\" }\n\n@book{ AvnerFriedman,\n    author_sort = \"Friedman, Avner \\& Littman, Walter\",\n    author = \"Avner Friedman and Walter Littman\",\n    calibreid = \"114\",\n    isbn = \"\",\n    year = \"1993\",\n    month = \"Jan\",\n    publisher = \"SIAM\",\n    title = \"Industrial Mathematics: A Course in Solving Real-World Problems\",\n    title_sort = \"Industrial Mathematics: A Course in Solving Real-World Problems\" }\n\n@book{ TrevorHastie,\n    author_sort = \"Hastie, Trevor \\& Tibshirani, Robert \\& Friedman, Jerome\",\n    author = \"Trevor Hastie and Robert Tibshirani and Jerome Friedman\",\n    calibreid = \"115\",\n    isbn = \"\",\n    year = \"2009\",\n    month = \"Feb\",\n    publisher = \"Springer\",\n    title = \"The Elements of Statistical Learning: Data Mining, Inference, and Prediction, Second Edition\",\n    title_sort = \"Elements of Statistical Learning: Data Mining, Inference, and Prediction, Second Edition, The\" }\n\n@book{ N.D.Macheras,\n    author_sort = \"Macheras, N. D. \\& Strauss, W.\",\n    author = \"N. D. Macheras and W. Strauss\",\n    calibreid = \"116\",\n    year = \"1994\",\n    month = \"Oct\",\n    publisher = \"Fundamenta Mathematicae\",\n    title = \"On strong liftings for projection limits\",\n    title_sort = \"On strong liftings for projection limits\" }\n\n@book{ OliverKnill,\n    author_sort = \"Knill, Oliver\",\n    author = \"Oliver Knill\",\n    calibreid = \"120\",\n    isbn = \"\",\n    year = \"2009\",\n    month = \"Aug\",\n    publisher = \"Overseas Press\",\n    title = \"Probability Theory and Stochastic Processes With Applications\",\n    title_sort = \"Probability Theory and Stochastic Processes With Applications\" }\n\n@book{ RobertJ.Barro,\n    author_sort = \"Barro, Robert J. \\& Sala-I-martin, Xavier I.\",\n    author = \"Robert J. Barro and Xavier I. Sala-I-martin\",\n    calibreid = \"121\",\n    isbn = \"\",\n    year = \"1995\",\n    month = \"Jan\",\n    publisher = \"Mit Press\",\n    title = \"Economic Growth\",\n    title_sort = \"Economic Growth\" }\n\n@book{ ShmuelOnn,\n    author_sort = \"Onn, Shmuel\",\n    author = \"Shmuel Onn\",\n    calibreid = \"122\",\n    isbn = \"\",\n    year = \"2010\",\n    month = \"Sep\",\n    publisher = \"European Mathematical Society\",\n    title = \"Nonlinear Discrete Optimization\",\n    title_sort = \"Nonlinear Discrete Optimization\" }\n\n@book{ KeirThomas,\n    author_sort = \"Thomas, Keir\",\n    author = \"Keir Thomas\",\n    calibreid = \"123\",\n    isbn = \"\",\n    year = \"2009\",\n    month = \"Jan\",\n    publisher = \"Ubuntu Pocket Guide\",\n    title = \"Ubuntu Pocket Guide and Reference\",\n    title_sort = \"Ubuntu Pocket Guide and Reference\" }\n\n@book{ RitaNugari,\n    author_sort = \"Nugari, Rita\",\n    author = \"Rita Nugari\",\n    calibreid = \"124\",\n    year = \"2012\",\n    month = \"Oct\",\n    publisher = \"Commentationes Mathematicae\",\n    title = \"Further remarks on the Nemitskii operator in Holder spaces\",\n    title_sort = \"Further remarks on the Nemitskii operator in Holder spaces\" }\n\n@book{ André-AbrahamWeil,\n    author_sort = \"Weil, André-Abraham\",\n    author = \"André-Abraham Weil\",\n    calibreid = \"125\",\n    year = \"1940\",\n    month = \"Oct\",\n    publisher = \"Hermann\",\n    title = \"L'Intégration Dans Les Groupes Topologiques Et Ses Applications, Par André Weil\",\n    title_sort = \"Intégration Dans Les Groupes Topologiques Et Ses Applications, Par André Weil, L'\" }\n\n@book{ LuigiAmbrosio,\n    author_sort = \"Ambrosio, Luigi \\& Caffarelli, Luis A. \\& Crandall, Michael G. \\& Evans, Lawrence C. \\& Fusco, Nicola \\& Dacorogna, Bernard \\& Marcellini, Paolo \\& Mascolo, E.\",\n    author = \"Luigi Ambrosio and Luis A. Caffarelli and Michael G. Crandall and Lawrence C. Evans and Nicola Fusco and Bernard Dacorogna and Paolo Marcellini and E. Mascolo\",\n    calibreid = \"126\",\n    isbn = \"\",\n    year = \"2008\",\n    month = \"Jan\",\n    publisher = \"Springer\",\n    title = \"Calculus of Variations and Nonlinear Partial Differential Equations: Lectures Given at the C.I.M.E. Summer School Held in Cetraro, Italy, June 27 - July 2, 2005\",\n    title_sort = \"Calculus of Variations and Nonlinear Partial Differential Equations: Lectures Given at the C.I.M.E. Summer School Held in Cetraro, Italy, June 27 - July 2, 2005\" }\n\n@book{ HenryKissinger,\n    author_sort = \"Kissinger, Henry\",\n    author = \"Henry Kissinger\",\n    calibreid = \"142\",\n    isbn = \"\",\n    year = \"1994\",\n    month = \"Jan\",\n    publisher = \"Simon \\& Schuster\",\n    title = \"Diplomacy\",\n    title_sort = \"Diplomacy\" }\n\n@book{ BruceEckel,\n    author_sort = \"Eckel, Bruce\",\n    author = \"Bruce Eckel\",\n    calibreid = \"144\",\n    isbn = \"\",\n    year = \"2000\",\n    month = \"Mar\",\n    publisher = \"Prentice Hall\",\n    title = \"Thinking in C++: Introduction to Standard C++, Volume One\",\n    title_sort = \"Thinking in C++: Introduction to Standard C++, Volume One\" }\n\n@book{ ЕвгенийМихайловичЛифшиц,\n    author_sort = \"Лифшиц, Евгений Михайлович \\& Ландау, Лев Давидович\",\n    author = \"Евгений Михайлович Лифшиц and Лев Давидович Ландау\",\n    calibreid = \"145\",\n    isbn = \"\",\n    year = \"2008\",\n    month = \"Oct\",\n    publisher = \"Физматлит\",\n    title = \"Physical Kinetics\",\n    title_sort = \"Physical Kinetics\" }\n\n@book{ ЛевДавидовичЛандау,\n    author_sort = \"Ландау, Лев Давидович \\& Лифшиц, Евгений Михайлович\",\n    author = \"Лев Давидович Ландау and Евгений Михайлович Лифшиц\",\n    calibreid = \"146\",\n    year = \"1988\",\n    month = \"Oct\",\n    publisher = \"Изд-во {\"}Наука{\"}, Глав. ред. физико-математической лит-ры\",\n    title = \"Механика\",\n    title_sort = \"Механика\" }\n\n@book{ JamesClerkMaxwell,\n    author_sort = \"Maxwell, James Clerk\",\n    author = \"James Clerk Maxwell\",\n    calibreid = \"147\",\n    isbn = \"\",\n    year = \"2011\",\n    month = \"Aug\",\n    publisher = \"Nabu Press\",\n    title = \"A Treatise on Electricity and Magnetism, Volume 2\",\n    title_sort = \"Treatise on Electricity and Magnetism, Volume 2, A\" }\n\n@book{ R.Shankar,\n    author_sort = \"Shankar, R.\",\n    author = \"R. Shankar\",\n    calibreid = \"149\",\n    isbn = \"\",\n    year = \"1980\",\n    month = \"Jan\",\n    publisher = \"Springer\",\n    title = \"Principles of Quantum Mechanics\",\n    title_sort = \"Principles of Quantum Mechanics\" }\n\n@book{ ChiakiHara,\n    author_sort = \"Hara, Chiaki \\& Segal, Ilya \\& Tadelis, Steve \\& Mas-Colell, Andreu\",\n    author = \"Chiaki Hara and Ilya Segal and Steve Tadelis and Andreu Mas-Colell\",\n    calibreid = \"150\",\n    isbn = \"\",\n    year = \"1997\",\n    month = \"Oct\",\n    publisher = \"Oxford University Press\",\n    title = \"Solutions Manual for Microeconomic Theory: Mas-Colell, Whinston and Green\",\n    title_sort = \"Solutions Manual for Microeconomic Theory: Mas-Colell, Whinston and Green\" }\n\n@book{ JeffreyRohaly,\n    author_sort = \"Rohaly, Jeffrey\",\n    author = \"Jeffrey Rohaly\",\n    calibreid = \"151\",\n    isbn = \"\",\n    year = \"2006\",\n    month = \"Oct\",\n    publisher = \"McGraw-Hill\",\n    title = \"Solutions Manual to Accompany Advanced MacRoeconomics\",\n    title_sort = \"Solutions Manual to Accompany Advanced MacRoeconomics\" }\n\n@book{ YvesBalasko,\n    author_sort = \"Balasko, Yves\",\n    author = \"Yves Balasko\",\n    calibreid = \"153\",\n    isbn = \"\",\n    year = \"2009\",\n    month = \"Apr\",\n    publisher = \"Mit Press\",\n    title = \"The Equilibrium Manifold: Postmodern Developments in the Theory of General Economic Equilibrium\",\n    title_sort = \"Equilibrium Manifold: Postmodern Developments in the Theory of General Economic Equilibrium, The\" }\n\n@book{ TrumanF.Bewley,\n    author_sort = \"Bewley, Truman F. \\& Bewley, Truman F\",\n    author = \"Truman F. Bewley and Truman F Bewley\",\n    calibreid = \"154\",\n    isbn = \"\",\n    year = \"2007\",\n    month = \"Feb\",\n    publisher = \"Harvard University Press\",\n    title = \"General Equilibrium, Overlapping Generations Models, and Optimal Growth Theory\",\n    title_sort = \"General Equilibrium, Overlapping Generations Models, and Optimal Growth Theory\" }\n\n@book{ GrzegorzKlima,\n    author_sort = \"Klima, Grzegorz\",\n    author = \"Grzegorz Klima\",\n    calibreid = \"160\",\n    year = \"2005\",\n    month = \"Oct\",\n    publisher = \"Narodowy Bank Polski. Departament Komunikacji Społecznej\",\n    title = \"Programowanie Dynamiczne I Modele Rekursywne W Ekonomii: Zagadnienia Analityczne I Metody Numeryczne Z Przykładowymi Implementacjami W Je̜zyku Matlab/Octave\",\n    title_sort = \"Programowanie Dynamiczne I Modele Rekursywne W Ekonomii: Zagadnienia Analityczne I Metody Numeryczne Z Przykładowymi Implementacjami W Je̜zyku Matlab/Octave\" }\n\n@book{ NancyL.Stokey,\n    author_sort = \"Stokey, Nancy L. \\& Lucas, Robert E. Jr. \\& Prescott, Edward C.\",\n    author = \"Nancy L. Stokey and Robert E. Lucas Jr. and Edward C. Prescott\",\n    calibreid = \"162\",\n    isbn = \"\",\n    year = \"1989\",\n    month = \"Oct\",\n    publisher = \"Harvard University Press\",\n    title = \"Recursive Methods in Economic Dynamics\",\n    title_sort = \"Recursive Methods in Economic Dynamics\" }\n\n@book{ ClaudioIrigoyen,\n    author_sort = \"Irigoyen, Claudio \\& Rossi-Hansberg, Esteban \\& Wright, Mark L. J \\& Irigoyen, Claudio\",\n    author = \"Claudio Irigoyen and Esteban Rossi-Hansberg and Mark L. J Wright\",\n    calibreid = \"163\",\n    isbn = \"\",\n    year = \"2002\",\n    month = \"Oct\",\n    publisher = \"Harvard University Press\",\n    title = \"Solutions Manual for Recursive Methods in Economic Dynamics\",\n    title_sort = \"Solutions Manual for Recursive Methods in Economic Dynamics\" }\n\n@book{ DavidRicardo,\n    author_sort = \"Ricardo, David\",\n    author = \"David Ricardo\",\n    calibreid = \"164\",\n    isbn = \"\",\n    year = \"2005\",\n    month = \"Jan\",\n    publisher = \"Liberty Fund Inc.\",\n    title = \"Notes on Malthus's Principles of Political Economy: Volume 2\",\n    title_sort = \"Notes on Malthus's Principles of Political Economy: Volume 2\" }\n\n@book{ MartinJ.Osborne,\n    author_sort = \"Osborne, Martin J. \\& Rubinstein, Ariel\",\n    author = \"Martin J. Osborne and Ariel Rubinstein\",\n    calibreid = \"165\",\n    isbn = \"\",\n    year = \"1994\",\n    month = \"Jul\",\n    publisher = \"Mit Press\",\n    title = \"A Course in Game Theory\",\n    title_sort = \"Course in Game Theory, A\" }\n\n@book{ LéonWalras,\n    author_sort = \"Walras, Léon\",\n    author = \"Léon Walras\",\n    calibreid = \"167\",\n    isbn = \"\",\n    year = \"2010\",\n    month = \"Apr\",\n    publisher = \"BiblioBazaar\",\n    title = \"Théorie Mathématique De La Richesse Sociale\",\n    title_sort = \"Théorie Mathématique De La Richesse Sociale\" }\n\n@book{ MichaelWickens,\n    author_sort = \"Wickens, Michael\",\n    author = \"Michael Wickens\",\n    calibreid = \"168\",\n    isbn = \"\",\n    year = \"2012\",\n    month = \"Mar\",\n    publisher = \"Princeton University Press\",\n    title = \"MacRoeconomic Theory: A Dynamic General Equilibrium Approach\",\n    title_sort = \"MacRoeconomic Theory: A Dynamic General Equilibrium Approach\" }\n\n@book{ MauriceObstfeld,\n    author_sort = \"Obstfeld, Maurice \\& Rogoff, Kenneth S.\",\n    author = \"Maurice Obstfeld and Kenneth S. Rogoff\",\n    calibreid = \"169\",\n    isbn = \"\",\n    year = \"1996\",\n    month = \"Sep\",\n    publisher = \"The MIT Press\",\n    title = \"Foundations of International MacRoeconomics\",\n    title_sort = \"Foundations of International MacRoeconomics\" }\n\n@book{ PaulA.Samuelson,\n    author_sort = \"Samuelson, Paul A. \\& Nordhaus, William D.\",\n    author = \"Paul A. Samuelson and William D. Nordhaus\",\n    calibreid = \"170\",\n    isbn = \"\",\n    year = \"1998\",\n    month = \"Jan\",\n    publisher = \"McGraw-Hill Companies\",\n    title = \"Economics\",\n    title_sort = \"Economics\" }\n\n@book{ DirkWerner,\n    author_sort = \"Werner, Dirk\",\n    author = \"Dirk Werner\",\n    calibreid = \"171\",\n    isbn = \"\",\n    year = \"1997\",\n    month = \"Jan\",\n    publisher = \"Springer\",\n    title = \"Funktionalanalysis\",\n    title_sort = \"Funktionalanalysis\" }\n\n@book{ JeanMawhin,\n    author_sort = \"Mawhin, Jean\",\n    author = \"Jean Mawhin\",\n    calibreid = \"172\",\n    year = \"1999\",\n    month = \"Oct\",\n    publisher = \"Journal of the Juliusz Schauder Center\",\n    title = \"Leray-Schauder degree: a half century of extensions and applications\",\n    title_sort = \"Leray-Schauder degree: a half century of extensions and applications\" }\n\n@book{ Shu-HengChen,\n    author_sort = \"Chen, Shu-Heng\",\n    author = \"Shu-Heng Chen\",\n    calibreid = \"173\",\n    year = \"2012\",\n    month = \"Oct\",\n    publisher = \"Journal of Economic Dynamics and Control\",\n    title = \"Varieties of agents in agent-based computational economics A historical and an interdisciplinary perspective\",\n    title_sort = \"Varieties of agents in agent-based computational economics A historical and an interdisciplinary perspective\" }\n\n@book{ RobertCauty,\n    author_sort = \"Cauty, Robert\",\n    author = \"Robert Cauty\",\n    calibreid = \"177\",\n    year = \"2001\",\n    month = \"Oct\",\n    publisher = \"Fundamenta Mathematicae\",\n    title = \"Solution du problème de point fixe de Schauder\",\n    title_sort = \"Solution du problème de point fixe de Schauder\" }\n\n@book{ T.E.Lawrence,\n    author_sort = \"Lawrence, T. E.\",\n    author = \"T. E. Lawrence\",\n    calibreid = \"179\",\n    isbn = \"\",\n    year = \"2011\",\n    month = \"Jan\",\n    publisher = \"Wilder Publications\",\n    title = \"Seven Pillars of Wisdom: A Triumph: The Complete 1922 Text\",\n    title_sort = \"Seven Pillars of Wisdom: A Triumph: The Complete 1922 Text\" }\n\n@book{ BogusławKluge,\n    author_sort = \"Kluge, Bogusław \\& Gambin, Anna \\& Niemiro, Wojciech\",\n    author = \"Bogusław Kluge and Anna Gambin and Wojciech Niemiro\",\n    calibreid = \"180\",\n    year = \"2009\",\n    month = \"Oct\",\n    publisher = \"Journal of Computational Biology\",\n    title = \"Modeling Exopeptidase Activity from LC-MS Data\",\n    title_sort = \"Modeling Exopeptidase Activity from LC-MS Data\" }\n\n@book{ AnnaGambin,\n    author_sort = \"Gambin, Anna \\& Kluge, Bogusław\",\n    author = \"Anna Gambin and Bogusław Kluge\",\n    calibreid = \"181\",\n    year = \"2010\",\n    month = \"Nov\",\n    publisher = \"Fundamenta Informaticae\",\n    title = \"Modeling Proteolysis from Mass Spectroscometry Proteomic Data\",\n    title_sort = \"Modeling Proteolysis from Mass Spectroscometry Proteomic Data\" }\n\n@book{ MartaŁuksza,\n    author_sort = \"Łuksza, Marta \\& Kluge, Bogusaw \\& Ostrowski, Jerzy \\& Karczmarski, Jakub \\& Gambin, Anna\",\n    author = \"Marta Łuksza and Bogusaw Kluge and Jerzy Ostrowski and Jakub Karczmarski and Anna Gambin\",\n    calibreid = \"183\",\n    year = \"2012\",\n    month = \"Oct\",\n    publisher = \"Statistical Applications in Genetics and Molecular Biology\",\n    title = \"Two-stage model-based clustering for liquid chromatography mass spectrometry data analysis\",\n    title_sort = \"Two-stage model-based clustering for liquid chromatography mass spectrometry data analysis\" }\n\n@book{ AleksandrIakovlevichKhinchin,\n    author_sort = \"Khinchin, Aleksandr Iakovlevich\",\n    author = \"Aleksandr Iakovlevich Khinchin\",\n    calibreid = \"186\",\n    isbn = \"\",\n    year = \"1949\",\n    month = \"Jun\",\n    publisher = \"Dover Pubns\",\n    title = \"Mathematical Foundations of Quantum Statistics\",\n    title_sort = \"Mathematical Foundations of Quantum Statistics\" }\n\n@book{ JohnleCarre,\n    author_sort = \"Carre, John le\",\n    author = \"John le Carre\",\n    calibreid = \"188\",\n    isbn = \"\",\n    year = \"2010\",\n    month = \"Jan\",\n    publisher = \"Penguin Books\",\n    title = \"Our Kind of Traitor: A Novel\",\n    title_sort = \"Our Kind of Traitor: A Novel\" }\n\n@book{ JacksonJohnDavid,\n    author_sort = \"David, Jackson John\",\n    author = \"Jackson John David\",\n    calibreid = \"189\",\n    isbn = \"\",\n    year = \"1975\",\n    month = \"Oct\",\n    publisher = \"Wiley Eastern Limited\",\n    title = \"Classical Electrodynamics\",\n    title_sort = \"Classical Electrodynamics\" }\n\n@book{ JudeaPearl,\n    author_sort = \"Pearl, Judea\",\n    author = \"Judea Pearl\",\n    calibreid = \"190\",\n    isbn = \"\",\n    year = \"2000\",\n    month = \"Mar\",\n    publisher = \"Cambridge University Press\",\n    title = \"Causality: Models, Reasoning, and Inference\",\n    title_sort = \"Causality: Models, Reasoning, and Inference\" }\n\n@book{ PeterSpirtes,\n    author_sort = \"Spirtes, Peter \\& Glymour, Clark \\& Scheines, Richard\",\n    author = \"Peter Spirtes and Clark Glymour and Richard Scheines\",\n    calibreid = \"191\",\n    year = \"2012\",\n    month = \"Oct\",\n    publisher = \"Mit Press\",\n    title = \"Causation, Prediction, and Search, Second Edition (Adaptive Computation and Machine Learning)\",\n    title_sort = \"Causation, Prediction, and Search, Second Edition (Adaptive Computation and Machine Learning)\" }\n\n@book{ DynareTeam,\n    author_sort = \"Dynare Team\",\n    author = \"Dynare Team\",\n    calibreid = \"193\",\n    year = \"2012\",\n    month = \"Nov\",\n    publisher = \"Dynare Working Papers Series\",\n    title = \"Dynare: reference manual version 4\",\n    title_sort = \"Dynare: reference manual version 4\" }\n\n@book{ JamesF.Crow,\n    author_sort = \"Crow, James F. \\& Kimura, Motoo\",\n    author = \"James F. Crow and Motoo Kimura\",\n    calibreid = \"194\",\n    isbn = \"\",\n    year = \"1970\",\n    month = \"Jan\",\n    publisher = \"Blackburn Press\",\n    title = \"An Introduction to Population Genetics Theory\",\n    title_sort = \"Introduction to Population Genetics Theory, An\" }\n\n@book{ CarlEdwardRasmussen,\n    author_sort = \"Rasmussen, Carl Edward \\& Williams, Christopher K. I.\",\n    author = \"Carl Edward Rasmussen and Christopher K. I. Williams\",\n    calibreid = \"195\",\n    isbn = \"\",\n    year = \"2006\",\n    month = \"Dec\",\n    publisher = \"Mit Press\",\n    title = \"Gaussian Processes for Machine Learning\",\n    title_sort = \"Gaussian Processes for Machine Learning\" }\n\n@book{ NobuyukiIkeda,\n    author_sort = \"Ikeda, Nobuyuki \\& Watanabe, Shinzo\",\n    author = \"Nobuyuki Ikeda and Shinzo Watanabe\",\n    calibreid = \"197\",\n    isbn = \"\",\n    year = \"1981\",\n    month = \"Feb\",\n    publisher = \"North-Holland\",\n    title = \"Stochastic Differential Equations and Diffusion Processes\",\n    title_sort = \"Stochastic Differential Equations and Diffusion Processes\" }\n\n@book{ CharlesJ.Geyer,\n    author_sort = \"Charles J. Geyer\",\n    author = \"Charles J. Geyer\",\n    calibreid = \"200\",\n    year = \"2012\",\n    month = \"Dec\",\n    publisher = \"Unpublished.\",\n    title = \"Markov Chain Monte Carlo Lecture Notes\",\n    title_sort = \"Markov Chain Monte Carlo Lecture Notes\" }\n\n@book{ ChristinaS.Leslie,\n    author_sort = \"Christina S. Leslie \\& Eleazar Eskin \\& Adiel Cohen \\& Jason Weston \\& William Stafford Noble\",\n    author = \"Christina S. Leslie and Eleazar Eskin and Adiel Cohen and Jason Weston and William Stafford Noble\",\n    calibreid = \"201\",\n    year = \"2012\",\n    month = \"Dec\",\n    publisher = \"Bioinformatics\",\n    title = \"Mismatch string kernels for discriminative protein classification\",\n    title_sort = \"Mismatch string kernels for discriminative protein classification\" }\n\n@book{ MaximeCrochmore,\n    author_sort = \"Crochmore, Maxime \\& Rytter, Wojciech\",\n    author = \"Maxime Crochmore and Wojciech Rytter\",\n    calibreid = \"202\",\n    isbn = \"\",\n    year = \"1994\",\n    month = \"Dec\",\n    publisher = \"Maxime Crochemore\",\n    title = \"Text Algorithms\",\n    title_sort = \"Text Algorithms\" }\n\n@book{ RichardDawkins,\n    author_sort = \"Dawkins, Richard\",\n    author = \"Richard Dawkins\",\n    calibreid = \"206\",\n    isbn = \"\",\n    year = \"2007\",\n    month = \"Mar\",\n    publisher = \"Oxford University Press\",\n    title = \"The Selfish Gene,3/Ed.\",\n    title_sort = \"Selfish Gene,3/Ed., The\" }\n\n@book{ RichardYamarone,\n    author_sort = \"YAMARONE, RICHARD\",\n    author = \"Richard Yamarone\",\n    calibreid = \"213\",\n    isbn = \"\",\n    year = \"2004\",\n    month = \"Jan\",\n    publisher = \"Bloomberg Press\",\n    title = \"The Trader's Guide to Key Economic Indicators\",\n    title_sort = \"Trader's Guide to Key Economic Indicators, The\" }\n\n@comment{ BłażejMiasojedow1,\n    author_sort = \"Błażej Miasojedow \\& Eric Moulines \\& Matti Vihola\",\n    author = \"Błażej Miasojedow and Eric Moulines and Matti Vihola\",\n    calibreid = \"216\",\n    year = \"2013\",\n    month = \"Jan\",\n    publisher = \"Arxive\",\n    title = \"Adaptive Parallel Tempering Algorithm\",\n    title_sort = \"Adaptive Parallel Tempering Algorithm\" }\n\n\n@article{ BłażejMiasojedow2,\nauthor = {Miasojedow, Błażej and Moulines, Eric and Vihola, Matti},\ntitle = {An Adaptive parallel tempering algorithm},\njournal = {Journal of Computational and Graphical Statistics},\nvolume = {I},\nnumber = {january},\npages = {CHECK IT SOMEWHERE},\nyear = {2013},\ndoi = {10.1080/10618600.2013.778779},\n\nURL = {http://www.tandfonline.com/doi/abs/10.1080/10618600.2013.778779},\neprint = {http://www.tandfonline.com/doi/pdf/10.1080/10618600.2013.778779}\n}\n\n@article{ Jon,\nauthor = \"Jon L. Bentley\",\ntitle = \"Multidimensional Divide-and-Conquer\",\njournal = \"Communications of the ACM\",\nvolume = \"23\",\nnumber = \"4\",\npages = \"214-229\", \nyear = \"April 1980\"\n}\n\n@article{ ,\nauthor = \"Jon L. Bentley\",\ntitle = \"Multidimensional Divide-and-Conquer\",\njournal = \"Communications of the ACM\",\nvolume = \"23\",\nnumber = \"4\",\npages = \"214-229\", \nyear = \"April 1980\"\n}\n\n\n@book{ JeffPotter,\n    author_sort = \"Potter, Jeff\",\n    author = \"Jeff Potter\",\n    calibreid = \"217\",\n    isbn = \"\",\n    year = \"2010\",\n    month = \"Aug\",\n    publisher = \"O'Reilly Media\",\n    title = \"Cooking for Geeks: Real Science, Great Hacks, and Good Food\",\n    title_sort = \"Cooking for Geeks: Real Science, Great Hacks, and Good Food\" }\n\n@book{ WeifengLiu,\n    author_sort = \"Liu, Weifeng \\& Principe, Jose C. \\& Haykin, Simon\",\n    author = \"Weifeng Liu and Jose C. Principe and Simon Haykin\",\n    calibreid = \"219\",\n    isbn = \"\",\n    year = \"2010\",\n    month = \"Mar\",\n    publisher = \"Wiley\",\n    title = \"Kernel Adaptive Filtering: A Comprehensive Introduction\",\n    title_sort = \"Kernel Adaptive Filtering: A Comprehensive Introduction\" }\n\n@book{ DavidApplebaum,\n    author_sort = \"Applebaum, David\",\n    author = \"David Applebaum\",\n    calibreid = \"221\",\n    year = \"2009\",\n    month = \"May\",\n    publisher = \"Cambridge University Press\",\n    title = \"Levy Processes and Stochastic Calculus\",\n    title_sort = \"Levy Processes and Stochastic Calculus\" }\n\n@book{ AndreasE.Kyprianou,\n    author_sort = \"Kyprianou, Andreas E.\",\n    author = \"Andreas E. Kyprianou\",\n    calibreid = \"222\",\n    isbn = \"\",\n    year = \"2006\",\n    month = \"Aug\",\n    publisher = \"Springer\",\n    title = \"Introductory Lectures on Fluctuations of Lévy Processes With Applications\",\n    title_sort = \"Introductory Lectures on Fluctuations of Lévy Processes With Applications\" }\n\n@book{ LeoBreiman,\n    author_sort = \"Breiman, Leo\",\n    author = \"Leo Breiman\",\n    calibreid = \"223\",\n    isbn = \"\",\n    year = \"1968\",\n    month = \"Jan\",\n    publisher = \"SIAM\",\n    title = \"Probability\",\n    title_sort = \"Probability\" }\n\n@book{ AndreasE.Kyprianou,\n    author_sort = \"Kyprianou, Andreas E.\",\n    author = \"Andreas E. Kyprianou\",\n    calibreid = \"224\",\n    isbn = \"\",\n    year = \"2006\",\n    month = \"Jan\",\n    publisher = \"Springer\",\n    title = \"Introductory Lectures on Fluctuations of Lévy Processes With Applications\",\n    title_sort = \"Introductory Lectures on Fluctuations of Lévy Processes With Applications\" }\n\n@book{ OlavKallenberg,\n    author_sort = \"Kallenberg, Olav\",\n    author = \"Olav Kallenberg\",\n    calibreid = \"225\",\n    isbn = \"\",\n    year = \"1997\",\n    month = \"Jan\",\n    publisher = \"Springer\",\n    title = \"Foundations of Modern Probability\",\n    title_sort = \"Foundations of Modern Probability\" }\n\n@book{ MingLi,\n    author_sort = \"Li, Ming \\& Vitányi, Paul M. B.\",\n    author = \"Ming Li and Paul M. B. Vitányi\",\n    calibreid = \"228\",\n    isbn = \"\",\n    year = \"1993\",\n    month = \"Jan\",\n    publisher = \"Springer\",\n    title = \"An Introduction to Kolmogorov Complexity and Its Applications\",\n    title_sort = \"Introduction to Kolmogorov Complexity and Its Applications, An\" }\n\n@book{ ThomasM.Cover,\n    author_sort = \"Cover, Thomas M. \\& Thomas, Joy A.\",\n    author = \"Thomas M. Cover and Joy A. Thomas\",\n    calibreid = \"229\",\n    isbn = \"\",\n    year = \"1991\",\n    month = \"Aug\",\n    publisher = \"John Wiley \\& Sons\",\n    title = \"Elements of Information Theory\",\n    title_sort = \"Elements of Information Theory\" }\n\n@book{ DonaldE.Knuth,\n    author_sort = \"Knuth, Donald E.\",\n    author = \"Donald E. Knuth\",\n    calibreid = \"232\",\n    isbn = \"\",\n    year = \"2005\",\n    month = \"Feb\",\n    publisher = \"Addison-Wesley Professional\",\n    title = \"The Art of Computer Programming, Volume 1, Fascicle 1: MMIX -- a RISC Computer for the New Millennium\",\n    title_sort = \"Art of Computer Programming, Volume 1, Fascicle 1: MMIX -- a RISC Computer for the New Millennium, The\" }\n\n@book{ DonaldE.Knuth,\n    author_sort = \"Knuth, Donald E.\",\n    author = \"Donald E. Knuth\",\n    calibreid = \"233\",\n    isbn = \"\",\n    year = \"1997\",\n    month = \"Jan\",\n    publisher = \"ADDISON WESLEY\",\n    title = \"The Art of Computer Programming, Volume 2\",\n    title_sort = \"Art of Computer Programming, Volume 2, The\" }\n\n@book{ DavidR.Kincaid,\n    author_sort = \"Kincaid, David R. \\& Cheney, E. Ward\",\n    author = \"David R. Kincaid and E. Ward Cheney\",\n    calibreid = \"235\",\n    isbn = \"\",\n    year = \"1991\",\n    month = \"Jan\",\n    publisher = \"Brooks Cole\",\n    title = \"Numerical Analysis: Mathematics of Scientific Computing\",\n    title_sort = \"Numerical Analysis: Mathematics of Scientific Computing\" }\n\n@book{ PeterHall,\n    author_sort = \"Hall, Peter \\& Heyde, C. C.\",\n    author = \"Peter Hall and C. C. Heyde\",\n    calibreid = \"236\",\n    isbn = \"\",\n    year = \"1980\",\n    month = \"Jun\",\n    publisher = \"Academic Pr\",\n    title = \"Martingale Limit Theory and Its Application\",\n    title_sort = \"Martingale Limit Theory and Its Application\" }\n\n@book{ RichardPhillipsFeynman,\n    author_sort = \"Feynman, Richard Phillips \\& Leighton, Robert B. \\& Sands, Matthew Linzee \\& Gottlieb, Michael A.\",\n    author = \"Richard Phillips Feynman and Robert B. Leighton and Matthew Linzee Sands and Michael A. Gottlieb\",\n    calibreid = \"237\",\n    isbn = \"\",\n    year = \"1963\",\n    month = \"Mar\",\n    publisher = \"Basic Books\",\n    title = \"The Feynman Lectures on Physics\",\n    title_sort = \"Feynman Lectures on Physics, The\" }\n\n@book{ RichardP.Feynman,\n    author_sort = \"Feynman, Richard P. \\& Leighton, Ralph \\& Hutchings, Edward \\& Hibbs, Albert R.\",\n    author = \"Richard P. Feynman and Ralph Leighton and Edward Hutchings and Albert R. Hibbs\",\n    calibreid = \"238\",\n    isbn = \"\",\n    year = \"1997\",\n    month = \"Apr\",\n    publisher = \"W. W. Norton \\& Company\",\n    title = \"Surely You're Joking, Mr. Feynman!\",\n    title_sort = \"Surely You're Joking, Mr. Feynman!\" }\n\n@book{ RichardP.Feynman,\n    author_sort = \"Feynman, Richard P. \\& Hey, Anthony\",\n    author = \"Richard P. Feynman and Anthony Hey\",\n    calibreid = \"239\",\n    isbn = \"\",\n    year = \"2000\",\n    month = \"Jul\",\n    publisher = \"Westview Press\",\n    title = \"Feynman Lectures on Computation\",\n    title_sort = \"Feynman Lectures on Computation\" }\n\n@book{ RodneyCotterill,\n    author_sort = \"Cotterill, Rodney\",\n    author = \"Rodney Cotterill\",\n    calibreid = \"240\",\n    isbn = \"\",\n    year = \"2009\",\n    month = \"Jan\",\n    publisher = \"Wiley-Blackwell\",\n    title = \"Biophysics\",\n    title_sort = \"Biophysics\" }\n\n@book{ F.Strocchi,\n    author_sort = \"Strocchi, F.\",\n    author = \"F. Strocchi\",\n    calibreid = \"241\",\n    isbn = \"\",\n    year = \"2008\",\n    month = \"Oct\",\n    publisher = \"World Scientific Publishing Company\",\n    title = \"An Introduction to the Mathematical Structure of Quantum Mechanics: A Short Course for Mathematicians\",\n    title_sort = \"Introduction to the Mathematical Structure of Quantum Mechanics: A Short Course for Mathematicians, An\" }\n\n@book{ PiotrDittwald,\n    author_sort = \"Piotr Dittwald\",\n    author = \"Piotr Dittwald\",\n    calibreid = \"242\",\n    year = \"2013\",\n    month = \"Mar\",\n    publisher = \"American Society for Mass Spectrometry\",\n    title = \"An efficient method to calculate the aggregated isotopic distribution and exact center-masses\",\n    title_sort = \"An efficient method to calculate the aggregated isotopic distribution and exact center-masses\" }\n\n@book{ RisiKondor,\n    author_sort = \"Risi Kondor\",\n    author = \"Risi Kondor\",\n    calibreid = \"243\",\n    year = \"2013\",\n    month = \"Mar\",\n    publisher = \"Columbia University\",\n    title = \"Group theoretical methods in machine learning\",\n    title_sort = \"Group theoretical methods in machine learning\" }\n\n@book{ NeilC.Jones,\n    author_sort = \"Jones, Neil C. \\& Pevzner, Pavel A.\",\n    author = \"Neil C. Jones and Pavel A. Pevzner\",\n    calibreid = \"248\",\n    isbn = \"\",\n    year = \"2004\",\n    month = \"Aug\",\n    publisher = \"The MIT Press\",\n    title = \"An Introduction to Bioinformatics Algorithms\",\n    title_sort = \"Introduction to Bioinformatics Algorithms, An\" }\n\n@book{ GeorgeW.Evans,\n    author_sort = \"Evans, George W. \\& Honkapohja, Seppo\",\n    author = \"George W. Evans and Seppo Honkapohja\",\n    calibreid = \"249\",\n    isbn = \"\",\n    year = \"2001\",\n    month = \"Feb\",\n    publisher = \"Princeton University Press\",\n    title = \"Learning and Expectations in MacRoeconomics\",\n    title_sort = \"Learning and Expectations in MacRoeconomics\" }\n\n@book{ JamesDouglasHamilton,\n    author_sort = \"Hamilton, James Douglas\",\n    author = \"James Douglas Hamilton\",\n    calibreid = \"253\",\n    year = \"1994\",\n    month = \"Jan\",\n    publisher = \"Princeton University Press\",\n    title = \"Time Series Analysis\",\n    title_sort = \"Time Series Analysis\" }\n\n@book{ JoaquimP.MarquesdeSá,\n    author_sort = \"Sá, Joaquim P. Marques de\",\n    author = \"Joaquim P. Marques de Sá\",\n    calibreid = \"256\",\n    isbn = \"\",\n    year = \"2007\",\n    month = \"Jul\",\n    publisher = \"Springer\",\n    title = \"Applied Statistics Using SPSS, STATISTICA, MATLAB and R\",\n    title_sort = \"Applied Statistics Using SPSS, STATISTICA, MATLAB and R\" }\n\n@book{ RainerWinkelmann,\n    author_sort = \"Winkelmann, Rainer\",\n    author = \"Rainer Winkelmann\",\n    calibreid = \"259\",\n    isbn = \"\",\n    year = \"1997\",\n    month = \"Jan\",\n    publisher = \"Springer\",\n    title = \"Econometric Analysis of Count Data\",\n    title_sort = \"Econometric Analysis of Count Data\" }\n\n@book{ RainerWinkelmann,\n    author_sort = \"Winkelmann, Rainer \\& Boes, Stefan\",\n    author = \"Rainer Winkelmann and Stefan Boes\",\n    calibreid = \"260\",\n    isbn = \"\",\n    year = \"2006\",\n    month = \"Mar\",\n    publisher = \"Springer\",\n    title = \"Analysis of Microdata\",\n    title_sort = \"Analysis of Microdata\" }\n\n@book{ ChristopheAndrieu,\n    author_sort = \"Christophe Andrieu \\& Eric Moulines\",\n    author = \"Christophe Andrieu and Eric Moulines\",\n    calibreid = \"263\",\n    year = \"101\",\n    month = \"Jan\",\n    publisher = \"Annals of Applied Probability\",\n    title = \"On the Ergodicity Properties of some Adaptive MCMC algorithms\",\n    title_sort = \"On the Ergodicity Properties of some Adaptive MCMC algorithms\" }\n\n@book{ ChristopheAndrieu,\n    author_sort = \"Christophe Andrieu \\& Johannes Thoms\",\n    author = \"Christophe Andrieu and Johannes Thoms\",\n    calibreid = \"264\",\n    year = \"2008\",\n    month = \"Apr\",\n    publisher = \"Statistical Computing\",\n    title = \"A tutorial on adaptive MCMC\",\n    title_sort = \"A tutorial on adaptive MCMC\" }\n\n@book{ JeffreyBanfield,\n    author_sort = \"Jeffrey Banfield \\& Adrian Raftery\",\n    author = \"Jeffrey Banfield and Adrian Raftery\",\n    calibreid = \"269\",\n    year = \"1992\",\n    month = \"Mar\",\n    publisher = \"Journal of the American Statistical Association\",\n    title = \"Ice Floe Identification in Satellite Images Using Mathematical Morphology and Clustering About Principal Curves\",\n    title_sort = \"Ice Floe Identification in Satellite Images Using Mathematical Morphology and Clustering About Principal Curves\" }\n\n@book{ GersendeFort,\n    author_sort = \"Gersende Fort \\& Eric Moulines \\& Pierre Priouret\",\n    author = \"Gersende Fort and Eric Moulines and Pierre Priouret\",\n    calibreid = \"271\",\n    year = \"2011\",\n    month = \"May\",\n    publisher = \"The Annals of Statistics\",\n    title = \"Convergence of adaptive and interacting Markov chain Monte Carlo algorithms\",\n    title_sort = \"Convergence of adaptive and interacting Markov chain Monte Carlo algorithms\" }\n\n@book{ FamingLiang,\n    author_sort = \"Faming Liang \\& Wing Hung Wong\",\n    author = \"Faming Liang and Wing Hung Wong\",\n    calibreid = \"272\",\n    year = \"2001\",\n    month = \"Aug\",\n    publisher = \"Journal of Chemical Physics\",\n    title = \"Evolutionary Monte Carlo for protein folding simulations\",\n    title_sort = \"Evolutionary Monte Carlo for protein folding simulations\" }\n\n@book{ UlrichPaquet,\n    author_sort = \"Ulrich Paquet\",\n    author = \"Ulrich Paquet\",\n    calibreid = \"274\",\n    year = \"2007\",\n    month = \"Mar\",\n    publisher = \"Wolfson COllege, University of Cambridge\",\n    title = \"Bayesian Inference for Latent Variable Models\",\n    title_sort = \"Bayesian Inference for Latent Variable Models\" }\n\n@book{ GuillaumeDesjardins,\n    author_sort = \"Guillaume Desjardins \\& Aaron Courville \\& Yoshua Bengio \\& Pascal Vincent \\& Olivier Delalleau\",\n    author = \"Guillaume Desjardins and Aaron Courville and Yoshua Bengio and Pascal Vincent and Olivier Delalleau\",\n    calibreid = \"275\",\n    year = \"2010\",\n    month = \"Apr\",\n    publisher = \"Proceedings of the 13-th International Conference of Artificial Intelligence and Statistics\",\n    title = \"Parallel Tempering for Training of Restricted Boltzmann Machines\",\n    title_sort = \"Parallel Tempering for Training of Restricted Boltzmann Machines\" }\n\n@book{ RogerPenrose,\n    author_sort = \"Penrose, Roger\",\n    author = \"Roger Penrose\",\n    calibreid = \"278\",\n    isbn = \"\",\n    year = \"1999\",\n    month = \"Mar\",\n    publisher = \"Oxford University Press\",\n    title = \"The Emperor's New Mind: Concerning Computers, Minds, and the Laws of Physics\",\n    title_sort = \"Emperor's New Mind: Concerning Computers, Minds, and the Laws of Physics, The\" }\n\n@book{ JeremyM.Berg,\n    author_sort = \"Berg, Jeremy M. \\& Tymoczko, John L. \\& Stryer, Lubert\",\n    author = \"Jeremy M. Berg and John L. Tymoczko and Lubert Stryer\",\n    calibreid = \"279\",\n    isbn = \"\",\n    year = \"2007\",\n    month = \"Jan\",\n    publisher = \"W. H. Freeman\",\n    title = \"Lecture Notebook for Biochemistry\",\n    title_sort = \"Lecture Notebook for Biochemistry\" }\n\n@book{ RobertSwendsen,\n    author_sort = \"Robert Swendsen\",\n    author = \"Robert Swendsen and Jian-Sheng Wang\",\n    calibreid = \"281\",\n    year = \"2013\",\n    month = \"Apr\",\n    publisher = \"Physical Review Letters\",\n    title = \"Replica Monte Carlo Simulation of Spin-Glasses, Parallel Tempering\",\n    title_sort = \"Replica Monte Carlo Simulation of Spin-Glasses, Parallel Tempering\" }\n\n@book{ MeiliBaragatti,\n    author_sort = \"Meili Baragatti\",\n    author = \"Meili Baragatti\",\n    calibreid = \"283\",\n    year = \"2011\",\n    month = \"Nov\",\n    publisher = \"Aix Marseille Universite\",\n    title = \"Selection bayesienne de variables et methodes de type Parallel Tempering avec et sans vraisemblance\",\n    title_sort = \"Selection bayesienne de variables et methodes de type Parallel Tempering avec et sans vraisemblance\" }\n\n@book{ LukeBornn,\n    author_sort = \"Luke Bornn \\& Pierre Jacob \\& Pierre Del Moral \\& Arnaud Doucet\",\n    author = \"Luke Bornn and Pierre Jacob and Pierre Del Moral and Arnaud Doucet\",\n    calibreid = \"284\",\n    year = \"2012\",\n    month = \"Jun\",\n    publisher = \"Arxive\",\n    title = \"An Adaptive Interacting Wang-Landau Algorithm for Automatic Density Exploration. Parallel Tempering.\",\n    title_sort = \"Adaptive Interacting Wang-Landau Algorithm for Automatic Density Exploration, An\" }\n\n@book{ DanielL.Hartl,\n    author_sort = \"Hartl, Daniel L. \\& Clark, Andrew G.\",\n    author = \"Daniel L. Hartl and Andrew G. Clark\",\n    calibreid = \"291\",\n    isbn = \"\",\n    year = \"1980\",\n    month = \"Jan\",\n    publisher = \"Sinauer Associates, Inc.\",\n    title = \"Principles of Population Genetics\",\n    title_sort = \"Principles of Population Genetics\" }\n\n@book{ ArnaudLeRouzic,\n    author_sort = \"Rouzic, Arnaud Le \\& Payen, Thibaut \\& Hua-Van, Aurelie\",\n    author = \"Arnaud Le Rouzic and Thibaut Payen and Aurelie Hua-Van\",\n    calibreid = \"292\",\n    year = \"2012\",\n    month = \"Dec\",\n    publisher = \"Genome Biology and Evolution\",\n    series = \"5(1): 77-86\",\n    title = \"Reconstructing the Evolutionary History of Transposable Elements\",\n    title_sort = \"Reconstructing the Evolutionary History of Transposable Elements\" }\n\n@book{ Jean-RénéBarra,\n    author_sort = \"Jean-Réné Barra\",\n    author = \"Jean-Réné Barra\",\n    calibreid = \"305\",\n    year = \"1971\",\n    month = \"Jun\",\n    publisher = \"Dunod\",\n    title = \"Notions Fondamentales De Statistique Mathématique\",\n    title_sort = \"Notions Fondamentales De Statistique Mathématique\" }\n\n@book{ WarrenJ.Ewens,\n    author_sort = \"Ewens, Warren J. \\& Grant, Gregory R.\",\n    author = \"Warren J. Ewens and Gregory R. Grant\",\n    calibreid = \"306\",\n    isbn = \"\",\n    year = \"2002\",\n    month = \"Jan\",\n    publisher = \"Springer\",\n    title = \"Statistical Methods in Bioinformatics: An Introduction\",\n    title_sort = \"Statistical Methods in Bioinformatics: An Introduction\" }\n\n@book{ Anonymous,\n    author_sort = \"Anonymous \\& George, Andrew\",\n    author = \"Anonymous and Andrew George\",\n    calibreid = \"307\",\n    isbn = \"\",\n    year = \"1884\",\n    month = \"Jan\",\n    publisher = \"Penguin Classics\",\n    title = \"The Epic of Gilgamesh\",\n    title_sort = \"Epic of Gilgamesh, The\" }\n\n",
+			"file": "bibliography/myBooks.bib",
+			"file_size": 65772,
+			"file_write_time": 1376592612000000,
+			"settings":
+			{
+				"buffer_size": 65389,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "parallelTemperingMaster.tex",
+			"settings":
+			{
+				"buffer_size": 675,
 				"line_ending": "Unix"
 			}
 		}
 	],
-	"build_system": "Packages/User/R.sublime-build",
+	"build_system": "Packages/User/MyTex.sublime-build",
 	"command_palette":
 	{
-		"height": 54.0,
+		"height": 285.0,
 		"selected_items":
 		[
 			[
+				"repl r",
+				"SublimeREPL: R"
+			],
+			[
 				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
 				"Package Control: Install Package"
 			],
 			[
@@ -499,36 +619,79 @@
 	},
 	"file_history":
 	[
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/stateSpaces/stateSpaces.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/bibliography/myBooks.bib",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/theory.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/presentingOOPstructure.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/introduction.tex",
+		"/media/My Passport/Matteo/Nauka/Economia/Magisterka/Praca TEX/matteo_master.tex",
+		"/home/matteo/Documents/Scienza/scientificProjects/dialysis/dialisi.tex",
+		"/home/matteo/Documents/Scienza/scientificProjects/petrol/dane/tex_files/rappaport.tex",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/stateSpaces/realStateSpaces.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/simulations/simulations.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/data/2013-06-22 21:46:38.csv",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/targetMeasures/targetLiangDensities.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/data/2013-06-22 21:37:43.csv",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/implementation.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/simulations/simulations.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/parallelTemperingMaster.tex",
+		"/home/matteo/.config/sublime-text-2/Packages/User/Main.sublime-menu",
+		"/home/matteo/.config/sublime-text-2/Packages/User/MyTex.sublime-build",
+		"/home/matteo/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/mystyle.sty",
+		"/home/matteo/Documents/Scienza/scientificProjects/spectroscopy/modellingIsotopes/additionalNeutrons/mystyle.sty",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Biology_Group_Seminar/tex/Belgium/motivationBelgium.tex",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/algorithms/parallelTemperings.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/stateSpaces/stateSpaces.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/algorithms/metropolisHastings.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/algorithms/algorithms.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/stateSpaces/realTemperedStateSpaces.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/targetMeasures/targetMeasures.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/IonBetleyEcdfAtSamplePoints.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/targetMeasures/targetMatteoDensities.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/to+do",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/implementingEcdf2.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/implementingEcdf2test.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/gettingConditionalSampling.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/examplarySession.Rout",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/controllers/controllers.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/targetMeasures/targetUnnormalisedDensities.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/.gitignore",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/parallelTemperingMaster.log",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/examplarySession.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/strategies/strategies.R",
+		"/home/matteo/Desktop/Linux ideas",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/simulations/simuli.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/data/LiangApproximateQuantiles.csv",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/data/LiangApproximateQuantiles_1000.csv",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/data/LiangTrueValues.csv",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Data/Liang_Density_Values_For_Contour_gg2plot.csv",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Data/Liang_Density_Values.csv",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/strategies/stateIndependentStrategies.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/strategies/stateDependentStrategies.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/garbage/try.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/strategies/examplaryStrategies.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/toDo.txt",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/garbage/entityDiagramStyle.sty",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/metaInfo/descriptions/mystyle.sty",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/terzoPrototipo/Distributions_to_check/Liang_Example.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/terzoPrototipo/Main_Simulation.R",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/garbage/GenderHistogram.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/terzoPrototipo/Functions/ploting.R",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_III/Progetto_3/Tex/fastness_comparison.Rnw",
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/tex/mystyle.sty",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/data/2013-06-22 21:46:38.csv",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/data/2013-06-22 21:37:43.csv",
 		"/home/matteo/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
 		"/home/matteo/.config/sublime-text-2/Packages/User/SublimeREPL.sublime-settings",
-		"/home/matteo/.config/sublime-text-2/Packages/User/Main.sublime-menu",
 		"/home/matteo/.config/sublime-text-2/Packages/User/Package Control.sublime-settings",
 		"/home/matteo/.config/sublime-text-2/Packages/User/R.sublime-build",
-		"/home/matteo/.config/sublime-text-2/Packages/User/MyTex.sublime-build",
 		"/etc/apt/sources.list",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/master.sublime-project",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/targetMeasures/targetUnnormalisedDensities.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/parallelTemperingMaster.tex",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/bibliography/myBooks.bib",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/citationCommand.tex",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/theory.tex",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/mystyle.sty",
 		"/home/matteo/Documents/Scienza/Latex/Poligon/tikz-er2.sty",
 		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/metaInfo/texTabelki/mystyle.sty",
 		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/metaInfo/texTabelki/Main.tex",
 		"/home/matteo/Documents/Scienza/Latex/Poligon/testingOOP.tex",
 		"/home/matteo/Documents/Scienza/Latex/Poligon/entityRelationshipTest.tex",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/targetMeasures/targetMeasures.R",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/classDetails.sty",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/abstract.tex",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/introduction.tex",
 		"/home/matteo/Documents/Dropbox/PT/Questions_in_Order/tex/MHG_algorithm.tex",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/swap_kernel.tex",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/misc/Corrispondenza.tex",
@@ -556,7 +719,6 @@
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/parallelTemperingMaster.aux",
 		"/home/matteo/Documents/Scienza/Corepetizioni/Esercizi/Sistematizzato/estremamente_sistematizzato/tex/logics.tex",
 		"/home/matteo/Documents/Scienza/Corepetizioni/Esercizi/Sistematizzato/estremamente_sistematizzato/high_school_manual.tex",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/implementation.tex",
 		"/home/matteo/Documents/Scienza/Corepetizioni/Esercizi/Sistematizzato/estremamente_sistematizzato/tex/logics.aux",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/pracamgr.cls",
 		"/home/matteo/Documents/Scienza/Latex/Poligon/xetex_test.tex",
@@ -570,17 +732,12 @@
 		"/home/matteo/.config/sublime-text-2/Packages/User/LaTeXTools/LaTeX.sublime-commands",
 		"/home/matteo/.config/sublime-text-2/Packages/User/LaTeXTools/evince/evince_sync",
 		"/home/matteo/.config/sublime-text-2/Packages/LaTeXTools/LaTeX.sublime-build",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/parallelTemperingMaster.log",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/histogram.svg",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/matteo_master.tex",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/terzoPrototipo/Distributions_to_check/tested_distribution.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/terzoPrototipo/Distributions_to_check/Liang_Example.R",
 		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/scripts/Matteo_Analysis.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/examplarySession.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/algorithms/algorithms.R",
 		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/scripts/forMichal[]data1.R",
 		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/scripts/forMichal[]data2.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/terzoPrototipo/Main_Simulation.R",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/terzoPrototipo/Functions/additional_functions.R",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/terzoPrototipo/Functions/additional_functions_for_simulation.R",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/terzoPrototipo/Distributions_to_check/My_Example.R",
@@ -589,44 +746,7 @@
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/targetMeasures.R",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/realStateSpace.R",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/stateSpace.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/parallelTempering.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/algorithm.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/simulations.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/liangRealStateSpace.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/to+do",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Distributions_to_check/Liang_Example.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Functions/generating_plots_in_a_stupid_way.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Functions/ploting.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/LiangExample.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Functions/simulation_mechanism.R",
-		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Simulazioni_Stochastiche/aprile_ultimo.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/unnormalisedDensities.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/loadingObjects.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Functions/additional_functions.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Functions/additional_functions_for_simulation.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/testing_parallel_tempering.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Main_Simulation.R",
-		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/lab_MIMUW7.R",
-		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/preparingSwapUpdates.R",
-		"/home/matteo/Desktop/Linux ideas",
-		"/home/matteo/Downloads/review_form_5.txt",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Distributions_to_check/My_Example.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Distributions_to_check/tested_distribution.R",
-		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/preparingCovariances.R",
-		"/home/matteo/Upload/fileSplitting/subScript.R",
-		"/home/matteo/Upload/fileSplitting/mainFile.R",
-		"/home/matteo/Upload/fileSplitting/sufFolder/subFile2.R",
-		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/preparingShows.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Functions/original_Metropolis_Hasting.R",
-		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/preparingGoodUnitManagement.R",
-		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/preparingDataStructureMethods.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/stateSpaceStructure.R",
-		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/testing.R",
-		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Poligono/testingReferenceClasses7.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/.gitignore",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Strategies_to_check/tested_strategies.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/Functions/ploting.R~",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/objects/Simulations.R"
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/parallelTempering.R"
 	],
 	"find":
 	{
@@ -644,134 +764,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"simulatedStates",
-			"\nLiangWangExample <- simulation$new(\n	iterationsNo= 10,\n	strategyNo 	= 3,\n	example 	= TRUE\n)\n\nLiangWangExample\nLiangWangExample$simulate()\n",
-			"rm( list = ls())\ndirectory <- \"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation\"\nsetwd(directory)\n\nsource(\"./targetMeasures/targetMeasures.R\")\nsource(\"./targetMeasures/targetUnnormalisedDensities.R\")\nsource(\"./targetMeasures/targetLiangDensities.R\")\nsource(\"./stateSpaces/stateSpaces.R\")\nsource(\"./stateSpaces/realStateSpaces.R\")\nsource(\"./algorithms/algorithms.R\")\nsource(\"./algorithms/parallelTemperings.R\")\nsource(\"./simulations/simulations.R\")\n\n\nLiangWangExample <- simulation$new(\n	iterationsNo= 10,\n	strategyNo 	= 3,\n	example 	= TRUE\n)\n\nLiangWangExample\nLiangWangExample$simulate()",
-			"simulatedStates",
-			"Random Walk NO",
-			"swapProposal",
-			"detailedOutput",
-			"accepted",
-			"\nclass(LiangWangExample$algorithm$rejectedRandomWalksNo)\nclass(LiangWangExample$algorithm$acceptedRandomWalksNo)",
-			"LiangWangExample$algorithm$acceptedRandomWalksNo",
-			"updatedStates",
+			"Jon",
+			"\\cite{BłażejMiasojedow}",
+			"cite",
+			"pcite",
+			"include",
+			"distinctPointsNo",
+			"}.",
+			"findTranspositionsForUpdate",
+			"insertTranspositions",
+			"transpositionHistory",
+			"insertStates",
+			"storeStates",
+			"insertStates",
 			"acceptedRandomWalksNo",
-			"LiangWangExample <- simulation$new(\n	iterationsNo= 1000,\n	strategyNo 	= 3,\n	example 	= TRUE	\n)\n",
-			"LiangWangExample <- simulation$new(\n	iterationsNo= 1000,\n	strategyNo 	= 4,\n	example 	= TRUE	\n)\n\nLiangWangExample",
-			"LiangWangExample$algorithm$plotHistory()\n",
-			"deb http://<my.favorite.cran.mirror>/bin/linux/ubuntu precise/",
-			"precise/",
-			"precise",
-			"strategy ",
-			"Following",
-			"cite",
-			"promo",
-			"geyer",
-			"cite",
-			"bfseries",
-			"geyer",
-			"bib",
-			"publisher",
-			"team",
-			"R-team",
-			"geyer",
-			"Geyer",
-			"Charles",
-			"Geyer",
-			"Maxime",
-			"format.note output",
-			"note",
-			"Miasojed",
-			"is catalog of 292 entries was generated by calibre on Friday, 21. June 2013 17:38\nThis catalog",
-			"*{",
-			"\\newpage",
-			"Wprowadzenie",
-			"\\addcontentsline",
-			"\\addcontentsline{toc}{chapter}{Wprowadzenie}",
-			"textbf",
-			"abstract",
-			"topskip",
-			"opskip",
-			"titlepage",
-			"tytul",
-			"\\k",
-			" \n",
-			"sdsd",
-			"ploit",
-			"transpositionHistory",
-			"lastTranspositionNo",
-			"transpositionHistory",
-			"accepted",
-			"iterationsNO",
-			"here",
-			"updatedStates",
-			"colnames",
-			"do.call",
-			"grid",
-			"OTHER_VALUE_ESTABLISHER",
-			"Liang_Density_Values_For_Contour_gg2plot",
-			"target",
-			"Hello",
-			"HERE",
-			"iteration",
-			"show",
-			"OMG",
-			"show",
+			"33",
 			"iterationsNo",
-			"proposeLogsOfUMeasures",
-			"lastStatesLogUDensities",
-			"strategyNo",
-			"translatorFromLexicOrderToTranspositions",
-			"strategyNumber",
-			"tmpStrategyNumber",
-			"strategyNumber",
-			"swapStrategy",
-			"updateSwapUProbs",
-			"OMG3",
-			"OMG",
-			"OMG4",
-			"updateSwapUProbs",
-			"lastSwapUProbs",
+			"approxim",
+			"currentEcdf",
+			"ecdfData",
+			"currentEcdf",
+			"trueCDF",
+			"value",
+			"maximiser",
+			"distincPointsNo",
+			"observationsNo",
+			"pointWithInfo",
+			"North",
+			"print",
+			"ecdfData",
+			"ecdfDate",
+			"ecdfDate$char",
+			"ecdfUpLeft",
+			"ecdfUp",
+			"ecdfLeft",
+			"ecdf",
+			"ecdfData",
+			"Points of interest",
+			"con",
+			"2D",
+			"Metropoli",
+			"tmpState",
+			"tmpStates",
+			"chainsNO",
+			"chains",
+			"algotrithm",
+			"proposalCovariances",
 			"show",
-			"proposeLogsOfUMeasures",
-			"updateSwapUProbs",
-			"proposeLogsOfUMeasures",
-			"updatedStates",
-			"prepareSimulation",
+			"chainNames",
+			"insertChainNames",
+			"character( chainsNo",
+			"character( chainsNo)",
+			"character(chainsNo)",
+			"chainsNo",
+			"length",
+			"insertStrategyNo",
+			"insertTranspositions",
+			"insertChainNames",
+			"fuck",
+			"proceedi",
+			"proceeding",
+			"iterationsNo",
+			"checkIterationsNo",
+			"iterationsNo",
+			"iterations",
+			"iterationsNo",
+			"path",
+			"checkIterationsNo",
+			"plotBas",
+			"plot",
+			"pot",
+			"temperaturesNo",
+			"temperatures",
+			"temperaturesNo",
+			"temperatures",
+			"#<method>",
+			"plotBas",
+			"show",
+			"plotBasics",
+			"plotBa",
+			"Hello",
+			"plotBaseTemperature",
 			"getIteration",
 			"getStates",
-			"temperatures",
-			"iteration",
-			"show",
-			"tmpTemp",
-			"tmpNoOfIterations",
-			"noOfIterations",
-			"algorithmInitializator",
-			"HERE",
-			"chol",
-			"detailedOutput",
-			"temperaturesNo",
-			"proposeLogsOfUMeasures",
-			"targetDensity",
-			"proposeLogsOfUMeasures",
-			"getProposalLogsOfUDensities",
-			"insertStates",
-			"freeSlotNo",
-			"freeSlotNo -1",
-			"initialStates",
-			"temperaturesNo",
-			"ParallelTempering",
-			"problemDimension",
-			"translatorFromLexicOrderToTranspositions",
+			"getState",
+			"#<method>",
+			"got here",
+			"proposalCovariancesCholeskised",
+			"spaceDim",
+			"get",
+			"prepareDataForPlot",
+			"dataForPlot",
+			"Progress",
+			"#<method>",
+			"Temperatures",
+			"random",
+			"inverseTemperatures",
+			"triggerUpdateAfterRandomWalk",
+			"randomWalk",
+			"triggerUpdateAfterRandomWalk",
+			"updateA",
 			"prepareSimulation",
-			"proposalCovariances",
-			"insertTemperatures",
-			"temperatures",
-			"showState",
-			"temperatures",
-			"algorithmInitializator",
-			"parallelTemperingInitializator",
-			"Simulation"
+			"#<method>",
+			"updatedStates",
+			"anyUpda",
+			"any",
+			"updateStatesA",
+			"anyUpdate",
+			"updateStatesAfterRandomWalk",
+			"anyUpdate",
+			"#<method>",
+			"times",
+			"checkIterationsNo",
+			"insertStates",
+			"#<method>",
+			"slotsNo",
+			"checkTemperatures",
+			"#<method>",
+			"insertStates",
+			"got here",
+			"= chainsNo",
+			"chainsNo",
+			"proposal cove",
+			"rep.int",
+			"insertProposalCovariances",
+			"insertSTates",
+			"rep.int",
+			"chainsNo",
+			"rep.int"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -779,6 +899,35 @@
 		"regex": false,
 		"replace_history":
 		[
+			"\\cite{BłażejMiasojedow2}",
+			"storeStates",
+			"currentECDF",
+			"currentCDF",
+			"currentEcdf",
+			"distinctPointsNo",
+			"distincPointsNo",
+			"iPointInfo",
+			"South",
+			"ecdfNorthWest",
+			"ecdfNorth",
+			"ecdfWest",
+			"tmp",
+			"covariances",
+			"setIterationsNo`",
+			"tmpIterationsNo",
+			"chainsNo",
+			"",
+			"plotBasics",
+			"",
+			"proposalCholCovariances",
+			"",
+			"Matteo",
+			"quantiles",
+			"chainsNo",
+			"triggerUpdateAfterRandomWalk",
+			"chainsNo",
+			"tmpChainsNo",
+			"distribuantInGrid",
 			"rejected",
 			"BłażejMiasojedow",
 			"CharlesJ.Geyer",
@@ -877,36 +1026,7 @@
 			"lastSwapUProbabilities",
 			"strategyNo",
 			"jes",
-			"permutation",
-			"lastProposalSwapProbabilities",
-			"lastSwapProbabilities",
-			"lastProposalLogUnDensities",
-			"lastStatesLogUnDensities",
-			"statesUpdatedByRandomWalk",
-			"stateUpdatedByRandomWalk",
-			"noOfLexicals",
-			"lexicals",
-			"translateLexicalToTranspostions",
-			"massTranslateLexicalToTranspostions",
-			"noOfLastPermutation",
-			"proposalCovariances",
-			"proposalCovariancesCholeskised",
-			"function(){}",
-			"noOfIterations",
-			"noOfTemperatures",
-			"tmpNoOfTemperatures",
-			"tmpNoOfIterations",
-			"stateSpaceStructure",
-			"",
-			"freeSlotNo",
-			"lastSlotNo",
-			"simulatedStates",
-			"tmpNoOfIterations",
-			"noOfIterations",
-			"noOfTemperatures",
-			"noOfIterations",
-			"whichSlotNo",
-			"freeSlotNo"
+			"permutation"
 		],
 		"reverse": true,
 		"show_context": true,
@@ -922,27 +1042,29 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/examplarySession.R",
+					"file": "tex/implementation.tex",
 					"settings":
 					{
-						"buffer_size": 812,
+						"buffer_size": 6831,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								627,
-								0
+								4569,
+								4569
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/R/R.tmLanguage",
-							"word_wrap": true
+							"encoding_helper_confidence": 0.99,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1900.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -950,8 +1072,105 @@
 			]
 		},
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 1,
+					"file": "mystyle.sty",
+					"settings":
+					{
+						"buffer_size": 2909,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								188,
+								188
+							]
+						],
+						"settings":
+						{
+							"encoding_helper_confidence": 0.99,
+							"encoding_helper_encoding": "GB2312",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"syntax": "Packages/LaTeX/TeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "bibliography/myBooks.bib",
+					"settings":
+					{
+						"buffer_size": 65389,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								48837,
+								48837
+							]
+						],
+						"settings":
+						{
+							"encoding_helper_confidence": 0.99,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"syntax": "Packages/LaTeX/Bibtex.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 31340.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "parallelTemperingMaster.tex",
+					"settings":
+					{
+						"buffer_size": 675,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								478,
+								478
+							]
+						],
+						"settings":
+						{
+							"encoding_helper_confidence": 1.0,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 205.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -971,13 +1190,19 @@
 				0,
 				0,
 				1,
-				1
+				2
 			],
 			[
 				1,
 				0,
 				2,
 				1
+			],
+			[
+				1,
+				1,
+				2,
+				2
 			]
 		],
 		"cols":
@@ -989,13 +1214,14 @@
 		"rows":
 		[
 			0.0,
+			0.5,
 			1.0
 		]
 	},
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 164.0
+		"height": 92.0
 	},
 	"replace":
 	{
@@ -1007,6 +1233,266 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"theo",
+				"master/tex/theory.tex"
+			],
+			[
+				"implem",
+				"master/tex/implementation.tex"
+			],
+			[
+				"real",
+				"Implementation/stateSpaces/realStateSpaces.R"
+			],
+			[
+				"liant",
+				"Implementation/targetMeasures/targetLiangDensities.R"
+			],
+			[
+				"simu",
+				"Implementation/simulations/simulations.R"
+			],
+			[
+				"imp",
+				"master/tex/implementation.tex"
+			],
+			[
+				"myst",
+				"master/mystyle.sty"
+			],
+			[
+				"para",
+				"master/parallelTemperingMaster.tex"
+			],
+			[
+				"par",
+				"master/parallelTemperingMaster.tex"
+			],
+			[
+				"motivation",
+				"Biology_Group_Seminar/tex/Belgium/motivationBelgium.tex"
+			],
+			[
+				"impl",
+				"master/tex/implementation.tex"
+			],
+			[
+				"stat",
+				"Implementation/stateSpaces/stateSpaces.R"
+			],
+			[
+				"metr",
+				"Implementation/algorithms/metropolisHastings.R"
+			],
+			[
+				"algor",
+				"Implementation/algorithms/algorithms.R"
+			],
+			[
+				"metro",
+				"Implementation/algorithms/metropolisHastings.R"
+			],
+			[
+				"realtem",
+				"Implementation/stateSpaces/realTemperedStateSpaces.R"
+			],
+			[
+				"st",
+				"Implementation/stateSpaces/stateSpaces.R"
+			],
+			[
+				"sta",
+				"Implementation/stateSpaces/stateSpaces.R"
+			],
+			[
+				"state",
+				"Implementation/stateSpaces/stateSpaces.R"
+			],
+			[
+				"algo",
+				"Implementation/algorithms/algorithms.R"
+			],
+			[
+				"targe",
+				"Implementation/targetMeasures/targetMeasures.R"
+			],
+			[
+				"target",
+				"Implementation/targetMeasures/targetMeasures.R"
+			],
+			[
+				"realt",
+				"Implementation/stateSpaces/realTemperedStateSpaces.R"
+			],
+			[
+				"",
+				"Implementation/to+do"
+			],
+			[
+				"algori",
+				"Implementation/algorithms/algorithms.R"
+			],
+			[
+				"parall",
+				"Implementation/algorithms/parallelTemperings.R"
+			],
+			[
+				"liang",
+				"Implementation/targetMeasures/targetLiangDensities.R"
+			],
+			[
+				"lian",
+				"Implementation/targetMeasures/targetLiangDensities.R"
+			],
+			[
+				"meas",
+				"Implementation/targetMeasures/targetMeasures.R"
+			],
+			[
+				"tar",
+				"Implementation/targetMeasures/targetMeasures.R"
+			],
+			[
+				"sim",
+				"Implementation/simulations/simulations.R"
+			],
+			[
+				"reat",
+				"Implementation/stateSpaces/realTemperedStateSpaces.R"
+			],
+			[
+				"realte",
+				"Implementation/stateSpaces/realTemperedStateSpaces.R"
+			],
+			[
+				"alo",
+				"Implementation/algorithms/algorithms.R"
+			],
+			[
+				"simul",
+				"Implementation/simulations/simulations.R"
+			],
+			[
+				"targ",
+				"Implementation/targetMeasures/targetLiangDensities.R"
+			],
+			[
+				"met",
+				"Implementation/algorithms/metropolisHastings.R"
+			],
+			[
+				"paral",
+				"Implementation/algorithms/parallelTemperings.R"
+			],
+			[
+				"al",
+				"Implementation/algorithms/algorithms.R"
+			],
+			[
+				"alog",
+				"master/parallelTemperingMaster.log"
+			],
+			[
+				"pa",
+				"Implementation/algorithms/parallelTemperings.R"
+			],
+			[
+				"alg",
+				"Implementation/algorithms/algorithms.R"
+			],
+			[
+				"re",
+				"Implementation/stateSpaces/realTemperedStateSpaces.R"
+			],
+			[
+				"temper",
+				"Implementation/stateSpaces/realTemperedStateSpaces.R"
+			],
+			[
+				"simulation",
+				"Implementation/simulations/simulations.R"
+			],
+			[
+				"tempere",
+				"Implementation/stateSpaces/realTemperedStateSpaces.R"
+			],
+			[
+				"mer",
+				"Implementation/algorithms/metropolisHastings.R"
+			],
+			[
+				"rea",
+				"Implementation/stateSpaces/realTemperedStateSpaces.R"
+			],
+			[
+				"reals",
+				"Implementation/stateSpaces/realStateSpaces.R"
+			],
+			[
+				"rela",
+				"Implementation/stateSpaces/realStateSpaces.R"
+			],
+			[
+				"simulat",
+				"Implementation/simulations/simulations.R"
+			],
+			[
+				"simulatio",
+				"Implementation/simulations/simulations.R"
+			],
+			[
+				"parallel",
+				"Implementation/algorithms/parallelTemperings.R"
+			],
+			[
+				"paralle",
+				"Implementation/algorithms/parallelTemperings.R"
+			],
+			[
+				"temperer",
+				"Implementation/stateSpaces/realTemperedStateSpaces.R"
+			],
+			[
+				"measure",
+				"Implementation/targetMeasures/targetMatteoDensities.R"
+			],
+			[
+				"to",
+				"Implementation/to+do"
+			],
+			[
+				"simulati",
+				"Implementation/simulations/simulations.R"
+			],
+			[
+				"app",
+				"Implementation/data/LiangApproximateQuantiles_1000.csv"
+			],
+			[
+				"liangtru",
+				"Implementation/data/LiangTrueValues.csv"
+			],
+			[
+				"data",
+				"Implementation/Data/Liang_Density_Values.csv"
+			],
+			[
+				"measu",
+				"Implementation/targetMeasures/targetMeasures.R"
+			],
+			[
+				"rel",
+				"Implementation/stateSpaces/realTemperedStateSpaces.R"
+			],
+			[
+				"strat",
+				"Implementation/strategies/strategies.R"
+			],
+			[
+				"stra",
+				"Implementation/strategies/examplaryStrategies.R"
+			],
 			[
 				"master",
 				"master/parallelTemperingMaster.tex"
@@ -1030,6 +1516,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 239.0,
+	"side_bar_width": 264.0,
 	"status_bar_visible": true
 }

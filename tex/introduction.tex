@@ -1,3 +1,13 @@
 \chapter*{Introduction}
 \addcontentsline{toc}{chapter}{Introduction}
 
+
+Parallel Tempering (PT) is an extension to standard Metropolis-Hastings (MH) algorithm for simulating samples from a given distribution, also called the target-distribution. 
+
+Many modern statististical models (e.g. Bayesian models) require calculating some intergral with respect to the taget distribution. The main idea behind simulation is to approximate these integrals by averages generated at random from that distribution. Some MH algorithm-scheme is then usually applied by the practitioners to carry out the simulations. If done parallely, these simulations are also known as chains.
+
+In the case of multimodial probability distributions this approach is oversimplistic. The standard MH algorithm with high probability remains a local algorithm, in the sense that samples are drawn from some local probability mass cluster. This is highly problematic in case of multimodial distributions that appear in applications. The PT algorithm is one of most celebrated possible solutions to that problem. 
+
+The PT algorithm consist of two main ideas: one is to draw samples from several distributions, and the other to exchange these samples between different simulation chains. The new distributions have their probability mass spread in regions around the clusters of probability of the target-measure in a less and less concentrated way. Consequently, simulations from these distributions explore more of the state-space at the cost of higher variance. The subsequent random interchange between samples generated from different chains enables the base-level chain, corresponding to the target distribution, to explore most of its structure resulting in simulations better estimates.
+
+The applicability of the PT algorithm in molecular biology stems mostly from the ever growing interest in the Bayesian inference. The mixture models for instance have been applied in the identification of gene co-expression patterns in microarray data. With the spread of use of such methods, the PT algorithm gains of importance.
