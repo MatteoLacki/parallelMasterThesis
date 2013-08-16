@@ -20,14 +20,17 @@
 	\addcontentsline{toc}{section}{List of tables}
 	\listoftables
 
-\newpage
 	\setcounter{page}{1}
 	\pagenumbering{arabic}
 
 	\include{./tex/introduction}
-	\include{./tex/theory}
-	\include{./tex/implementation}
-	\include{./tex/simulationsResults}
+	\include{./tex/theory/theory}
+	
+	\include{./tex/implementation/implementation}
+		\include{./tex/implementation/divisionIntoObjects}
+		\include{./tex/implementation/kolmogorovSmirnov}
+
+	\include{./tex/simulationsResults/simulationsResults}
 	\include{./tex/summary}
 
 	\bibliographystyle{./bibliography/eccaNoNotes}

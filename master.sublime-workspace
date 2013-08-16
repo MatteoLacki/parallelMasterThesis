@@ -520,10 +520,18 @@
 	"buffers":
 	[
 		{
+			"file": "tex/implementation/divisionIntoObjects.tex",
+			"settings":
+			{
+				"buffer_size": 1921,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "mystyle.sty",
 			"settings":
 			{
-				"buffer_size": 3002,
+				"buffer_size": 3024,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,7 +539,7 @@
 			"file": "parallelTemperingMaster.tex",
 			"settings":
 			{
-				"buffer_size": 1135,
+				"buffer_size": 1274,
 				"line_ending": "Unix"
 			}
 		}
@@ -600,15 +608,20 @@
 	},
 	"file_history":
 	[
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/simulationsResults/simulationsResults.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/implementation/kolmogorovSmirnov.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/bibliography/eccaNoNotes.bst",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/implementation/implementation.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/implementation/divisionIntoObjects.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Biology_Group_Seminar/tex/implementation.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/implementation.tex",
+		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/bibliography/myBooks.bib",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/simulationsResults.tex",
 		"/tmp/evince-20965/image.7BYK1W.png",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Biology_Group_Seminar/tex/localness.tex",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Biology_Group_Seminar/tex/implementation.tex",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Biology_Group_Seminar/tex/motivation.tex",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Biology_Group_Seminar/BelgiumHyperSuperPresentation.log",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/implementation.tex",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/stateSpaces/realStateSpaces.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/bibliography/myBooks.bib",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/theory.tex",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/presentingOOPstructure.tex",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/tex/introduction.tex",
@@ -722,12 +735,7 @@
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/master/matteo_master.tex",
 		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/terzoPrototipo/Distributions_to_check/tested_distribution.R",
 		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/scripts/Matteo_Analysis.R",
-		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/scripts/forMichal[]data1.R",
-		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/scripts/forMichal[]data2.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/terzoPrototipo/Functions/additional_functions.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/terzoPrototipo/Functions/additional_functions_for_simulation.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/terzoPrototipo/Distributions_to_check/My_Example.R",
-		"/home/matteo/Documents/Scienza/Laurea_di_Matematica/Implementation/referenceObjects/targetUnnormalisedDensities.R"
+		"/home/matteo/Documents/Scienza/Data_Mining/R_and_SAS/Progetto_V/scripts/forMichal[]data1.R"
 	],
 	"find":
 	{
@@ -745,6 +753,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Jon",
 			"\\",
 			"algorithm",
 			"Jon",
@@ -871,8 +880,7 @@
 			"proposal cove",
 			"rep.int",
 			"insertProposalCovariances",
-			"insertSTates",
-			"rep.int"
+			"insertSTates"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1018,36 +1026,31 @@
 	"groups":
 	[
 		{
-			"sheets":
-			[
-			]
-		},
-		{
 			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "mystyle.sty",
+					"file": "tex/implementation/divisionIntoObjects.tex",
 					"settings":
 					{
-						"buffer_size": 3002,
+						"buffer_size": 1921,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								361,
-								361
+								1852,
+								1852
 							]
 						],
 						"settings":
 						{
-							"encoding_helper_confidence": 0.99,
-							"encoding_helper_encoding": "GB2312",
+							"encoding_helper_confidence": 1.0,
+							"encoding_helper_encoding": "UTF-8",
 							"encoding_helper_encoding_sublime": "UTF-8",
-							"syntax": "Packages/LaTeX/TeX.tmLanguage"
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1063,18 +1066,53 @@
 			[
 				{
 					"buffer": 1,
-					"file": "parallelTemperingMaster.tex",
+					"file": "mystyle.sty",
 					"settings":
 					{
-						"buffer_size": 1135,
+						"buffer_size": 3024,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								711,
-								711
+								1005,
+								1005
+							]
+						],
+						"settings":
+						{
+							"encoding_helper_confidence": 0.99,
+							"encoding_helper_encoding": "GB2312",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"syntax": "Packages/LaTeX/TeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 418.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "parallelTemperingMaster.tex",
+					"settings":
+					{
+						"buffer_size": 1274,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								415,
+								415
 							]
 						],
 						"settings":
@@ -1086,7 +1124,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 662.0,
+						"translation.y": 187.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1154,6 +1192,18 @@
 		"selected_items":
 		[
 			[
+				"ks",
+				"master/tex/implementation/kolmogorovSmirnov.tex"
+			],
+			[
+				"divi",
+				"master/tex/implementation/divisionIntoObjects.tex"
+			],
+			[
+				"imp",
+				"master/tex/implementation/implementation.tex"
+			],
+			[
 				"belg",
 				"Biology_Group_Seminar/BelgiumHyperSuperPresentation.log"
 			],
@@ -1176,10 +1226,6 @@
 			[
 				"simu",
 				"Implementation/simulations/simulations.R"
-			],
-			[
-				"imp",
-				"master/tex/implementation.tex"
 			],
 			[
 				"myst",
