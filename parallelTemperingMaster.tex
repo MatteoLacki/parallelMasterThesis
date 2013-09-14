@@ -23,11 +23,23 @@
 	\setcounter{page}{1}
 	\pagenumbering{arabic}
 
-	\include{./tex/introduction}
-	\include{./tex/theory/theory}
+	% Chapter
+		% Section
+		% Section
+		% ...
+
+	\chapter*{Introduction}
+		\include{./tex/introduction}
+		
+	\chapter{ Motivation }\label{motivation}	
+		\include{./tex/motivation/motivation}	
+	
+	\chapter{ Theory }\label{theory}	
+		\include{./tex/theory/theory}
 	
 	\include{./tex/implementation/implementation}
 		\include{./tex/implementation/divisionIntoObjects}
+		\include{./tex/implementation/methodsAndFunctions}
 		\include{./tex/implementation/kolmogorovSmirnov}
 
 	\include{./tex/simulationsResults/simulationsResults}
@@ -56,3 +68,5 @@
 	\end{minipage}
 	\caption{Calculations of the KS-distance.}\label{fig:1}
 \end{figure}
+s
+The applicability of the PT algorithm in molecular biology stems mostly from the ever growing interest in the Bayesian inference. The mixture models for instance have been applied in the identification of gene co-expression patterns in microarray data. With the spread of use of such methods, the PT algorithm gains of importance.

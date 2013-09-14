@@ -1,0 +1,7 @@
+
+1. Implement Sojourn Time verifier : two classifiers: Promo and Distancio.
+2. Move the example to introduction: will serve as motivation. 
+3. Merge real and realTempered, for it is absurd the way it is now. 
+4. Understand better the theory behind the simulations. The convergence. The sojourn times. What is mixing all about ( this would probably require enrolling on a course in dynamic systems ).
+5. Compare every results with the basic generation method, when
+the formula is known.

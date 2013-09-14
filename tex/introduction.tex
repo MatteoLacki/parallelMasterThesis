@@ -1,13 +1,19 @@
-\chapter*{Introduction}
 \addcontentsline{toc}{chapter}{Introduction}
 
+Parallel Tempering (PT) (also reffered to as Replica Monte Carlo Simulation) is an extension to standard Metropolis-Hastings (MH) algorithm for simulating samples from a given distribution, also called the target-distribution. The principle aim of the algorithm is to approximate the integrals 
 
-Parallel Tempering (PT) is an extension to standard Metropolis-Hastings (MH) algorithm for simulating samples from a given distribution, also called the target-distribution. 
+\begin{equation}\label{mainGoal}
+	\expect g(X) = \int_\Omega g(x) \dip
+\end{equation}
 
-Many modern statististical models (e.g. Bayesian models) require calculating some intergral with respect to the taget distribution. The main idea behind simulation is to approximate these integrals by averages generated at random from that distribution. Some MH algorithm-scheme is then usually applied by the practitioners to carry out the simulations. If done parallely, these simulations are also known as chains.
+where $X\sim \pi$, $\pi$ is a measure, and $g$ is some $\mathbb{L}^1(\pi)$ function. In practical applications $\pi$ has either a density function, or a probability function. The \MH\, proceeds by creating a sequence of sample points, \sample,\,from the limiting distribution of a certain operator, $\mathcal{Q}$, chosen so that its invariant distribution exists, is unique, and coincides with $\pi$. The approximation is then taken to be simply
 
-In the case of multimodial probability distributions this approach is oversimplistic. The standard MH algorithm with high probability remains a local algorithm, in the sense that samples are drawn from some local probability mass cluster. This is highly problematic in case of multimodial distributions that appear in applications. The PT algorithm is one of most celebrated possible solutions to that problem. 
+\begin{equation*}
+	\expect g(X) \approx \frac{1}{\nn}\sum_{i = 1}^\nn g(X^{[i]}).
+\end{equation*}
 
-The PT algorithm consist of two main ideas: one is to draw samples from several distributions, and the other to exchange these samples between different simulation chains. The new distributions have their probability mass spread in regions around the clusters of probability of the target-measure in a less and less concentrated way. Consequently, simulations from these distributions explore more of the state-space at the cost of higher variance. The subsequent random interchange between samples generated from different chains enables the base-level chain, corresponding to the target distribution, to explore most of its structure resulting in simulations better estimates.
+The problem with the usual \MH\, is that it has poor mixing abilities, so that the above approximations may be biased when $\pi$ is multimodial. The \PT\, provides a potential solution to this problem by enlarging the state space. Several copies of progressively modified operators are run on this space, the differences between them depending on one parameter only\footnote{There are many similarities with the homotopy theory in this regard.}. This parameter is traditionally called {\it the temperature}, because of the physical interpretion it had in the seminal work of \cite{RobertSwendsen}. 
 
-The applicability of the PT algorithm in molecular biology stems mostly from the ever growing interest in the Bayesian inference. The mixture models for instance have been applied in the identification of gene co-expression patterns in microarray data. With the spread of use of such methods, the PT algorithm gains of importance.
+The sample points created by individual operators are sometimes refered to as chains. The idea of simultaneous simulations is the first of two consituents of the \PT, the other being that of interlacing results from different chains. The new distributions have their probability mass spread in regions around the clusters of probability of the target-measure in a less and less concentrated way. Consequently, simulations from these distributions explore more of the state-space at the cost of higher variance. The subsequent random interchange between samples generated from different chains enables the base-level chain, corresponding to the target distribution, to explore most of its structure resulting in simulations better estimates.
+
+The applicability of the \PT\, stems from the more and more widespread use of the Bayesian modeling. In fact, it is the need of calculating some the a posteriori distributions that in many cases has driven scientists to develop efficient sampling techniques in the first place. Nowadays the use of Bayesian models spreads from meteorology, to chemistry, from OCRs, to biogenetics. And in all of these fields it is very natural for the multimodial distributions at some point to appear.
