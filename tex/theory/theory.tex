@@ -1,3 +1,4 @@
+%!TEX root = <parallelTemperingMaster.tex>
 \section*{Problem statement}
 
 \subsection*{Target}
@@ -45,7 +46,7 @@ The idea behind the algorithm is that of simulating the MC $X$ so that its coord
 
 	\subsection*{Solution's Details}
 
-The update mechanism consists of two stages. Assume that the algorithm has reached $n^\text{th}$ step, $X^{[n]}$. Following notation used in \citet*{BłażejMiasojedow1} we introduce two kernels that act subsequently on the MC
+The update mechanism consists of two stages. Assume that the algorithm has reached $n^\text{th}$ step, $X^{[n]}$. Following notation used in \citet*{BM1} we introduce two kernels that act subsequently on the MC
 
 $$X^{[n-1]} \overset{\swap}{\rightarrow} \widetilde{X}^{[n-1]} \overset{\metro}{\rightarrow} X^{[n]}.$$
 
@@ -72,7 +73,7 @@ In the above equations the proposal distribution being used, following notation 
 
 The simple form of Eq. \ref{acceptance prob} stems from proposal distribution symmetry, $$q(x_l,y_l) = q(y_l,x_l).$$
 
-As indicated in \cite{BłażejMiasojedow2}, the execution of $\metro$ requires separate simulation of $\metrobis{l}$ for each of the coordinate chains,  $\widetilde{X}^{[n-1]}_l$.
+As indicated in \cite{BM2}, the execution of $\metro$ requires separate simulation of $\metrobis{l}$ for each of the coordinate chains,  $\widetilde{X}^{[n-1]}_l$.
 
 
 	\subsection*{Metropolis-Hastings-Green algorithm.}
@@ -194,7 +195,7 @@ In our computer simulations we shall test the following swapping strategies:
 			p_{ij}(x) \propto 
 			\frac{\pi (x_j)}{\pi( x_i )} \wedge \frac{\pi (x_i)}{\pi( x_j )} = 
 			\exp \Big( - \big| \log ( \pi(x_j) ) - \log ( \pi(x_i) ) \big| \Big).
-		$ 
+		$\label{strat1} 
 \end{strategy}
 
 This strategy assures that the more probable swaps will occur between coordinates that are relatively the same, i.e. $\pi (x_j) \approx \pi (x_i)$. 
@@ -204,7 +205,7 @@ This strategy assures that the more probable swaps will occur between coordinate
 		$
 			p_{ij}(x) \propto 
 			\frac{\pi (x_j)}{\pi (x_i)} \wedge 1 = 
-			\exp \Big( - \big[ \log ( \pi(x_j) ) - \log ( \pi(x_j) ) \big]\Big) \wedge 1.$
+			\exp \Big( - \big[ \log ( \pi(x_j) ) - \log ( \pi(x_j) ) \big]\Big) \wedge 1.$\label{strat2}
 \end{strategy}
 
 This strategy breaks the symmetry of the previous one. Here, if only $\pi(x_j)$\dots 
@@ -217,16 +218,28 @@ The subsequent strategies are again functions of the fist strategy.
 		$p_{ij} \propto 
 			\Big( \frac{\pi (x_j)}{\pi( x_i )} \wedge 
 			\frac{\pi (	x_i)}{\pi( x_j )} \Big)^{\beta_i - \beta_j} = 
-		\exp \Big( - (\beta_i - \beta_j)\big| \log ( \pi(x_j) ) - \log ( \pi(x_i) ) \big| \Big).$ 
+		\exp \Big( - (\beta_i - \beta_j)\big| \log ( \pi(x_j) ) - \log ( \pi(x_i) ) \big| \Big).$\label{strat3} 
 \end{strategy}
 
 This strategy permits us to soften a bit the requirement that $\pi(x_j) \approx \pi (x_i)$. This effect is strengthened for coordinates that are similarly tempered, i.e. where $\beta_i - \beta_j \approx 0$. Swaps between adjacent chains will be therefore more probable. 
 
-Finally
+One can also use a strategy that incorporates some distance measure between points, $\rho$ being any quasi-metric. \ref{strat4} is a good example of such procedure - the more distant the points, the less probable it is for them to get swapped.  
 
 \begin{strategy}[resume]
 	\item 
-		$p_{ij} \propto \Big( \frac{\pi (x_j)}{\pi( x_i )} \wedge \frac{\pi (x_i)}{\pi( x_j )} \Big)^\frac{\beta_i - \beta_j}{1 + \rho(x_i, x_j)} = \exp \Big( - \frac{(\beta_i - \beta_j)| \log ( \pi(x_j) ) - \log ( \pi(x_i) ) |}{{1 + \rho(x_i, x_j)}} \Big).$
+		$p_{ij} \propto \Big( \frac{\pi (x_j)}{\pi( x_i )} \wedge \frac{\pi (x_i)}{\pi( x_j )} \Big)^\frac{\beta_i - \beta_j}{1 + \rho(x_i, x_j)} = \exp \Big( - \frac{(\beta_i - \beta_j)| \log ( \pi(x_j) ) - \log ( \pi(x_i) ) |}{{1 + \rho(x_i, x_j)}} \Big).$\label{strat4}
 \end{strategy} 
 
-This strategy generalises the last one - $\rho$ is any quasi-metric. 
+Finally, for purposes of comparisons with \citet{BaragattiParallelTemperingWithEquiEnergyMoves}, we include also strategies that are \sspace\, independent, i.e. the probability of swaps does not depend on the evaluations of the density $\pi$ in the sample points. Such na\"ive strategies include 
+
+\begin{strategy}[resume]
+	\item $p_{ij} = \frac{2}{\lll (\lll - 1)}$\label{strat5}
+\end{strategy}
+
+and 
+
+\begin{strategy}[resume]
+	\item $p_{ij} = \frac{1}{\lll - 1} \ind{\{|i-j|=1\}}$\label{strat6}
+\end{strategy}
+
+amounting to choosing uniformly among all possible swaps and all neighbouring-in-temperature swap respectively. 

@@ -22,6 +22,8 @@
 *.csv
 *.RData
 *.png
+*.sublime-project
+*.sublime-workspace
 
 # Packages #
 ############
