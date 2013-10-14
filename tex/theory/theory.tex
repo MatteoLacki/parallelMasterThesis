@@ -187,7 +187,7 @@ Now, since $y \in \mathfrak{S}_x $, the tagetted $\pi_\beta$ is a tensor of meas
 	\alpha_\text{swap}(x,S_{ij} x) = \Big[  \Big(\frac{\pi(x_j)}{\pi(x_i)} \Big)^{\beta_i - \beta_j}  \frac{ p_{ij}(S_{ij} x )}{ p_{ij}( x ) }\Big] \wedge 1
 \end{equation*}	
 
-In our computer simulations we shall test the following swapping strategies:
+In our computer simulations the following swapping strategies have been tested.
 
 \begin{strategy}
 	\item 
@@ -198,7 +198,20 @@ In our computer simulations we shall test the following swapping strategies:
 		$\label{strat1} 
 \end{strategy}
 
-This strategy assures that the more probable swaps will occur between coordinates that are relatively the same, i.e. $\pi (x_j) \approx \pi (x_i)$. 
+This strategy assures that the more probable swaps will occur between coordinates whose proposals have relatively the same $\pi$ density values, i.e. $\pi (x_j) \approx \pi (x_i)$. Observe also that in this particular the proportionality is in fact equality, because the above expression is transposition symmetric and this considerably simplifies the statistical sum analysis. In general, we want $p_{ij}(x) \propto h(x_i,x_j)$ for some function $h$. Thus,
+
+\begin{equation*}
+	\frac{p_{kl}(S_{kl}x)}{p_{kl}(x)} = \frac{\frac{h(x_l,x_k)}{A(\tilde{x}_{kl})+f(x_k)+g(x_l)+h(x_l,x_k)}}{
+	\frac{h(x_k,x_l)}{A(\tilde{x}_{kl})+f(x_l)+g(x_k)+h(x_k,x_l)}
+	} = 
+	\underbrace{\frac{h(x_l,x_k)}{h(x_k,x_l)}}_\text{'direct effect'} 
+	\times 
+	\underbrace{\frac{A(\tilde{x}_{kl})+f(x_l)+g(x_k)+h(x_k,x_l)}{A(\tilde{x}_{kl})+f(x_k)+g(x_l)+h(x_l,x_k)}}_\text{'distribution effect'},	 	 	
+\end{equation*}  
+where $\tilde{x}_{kl}$ is $x$ without its $k^\text{th}$ and $l^\text{th}$ coordinates, $f(x_l) = \sum_{i<l, i\not=k} h(x_i, x_l)$, and $g(x_k) = \sum_{j>k, i\not=l}h(x_k, x_j)$. As we see it is fairly straightforward to compare the above expression to $1$ if the 'distribution effect' equals $1$, and difficult had it been the other case. To assure this happens, one can settle for a function  
+
+
+ the statistical sums the suming is exactly over all possible transpositions. This is purely an interpretorial remark, since the cost of calculation and storage of these expressions in neglectable, given that in all cases the $\pi_\beta(x)$ has to be calculated. 
 
 \begin{strategy}[resume]
 	\item 
@@ -208,7 +221,7 @@ This strategy assures that the more probable swaps will occur between coordinate
 			\exp \Big( - \big[ \log ( \pi(x_j) ) - \log ( \pi(x_j) ) \big]\Big) \wedge 1.$\label{strat2}
 \end{strategy}
 
-This strategy breaks the symmetry of the previous one. Here, if only $\pi(x_j)$\dots 
+This strategy breaks the symmetry of the previous one. Here, we promote swaps between proposals such that 
 
 
 The subsequent strategies are again functions of the fist strategy.

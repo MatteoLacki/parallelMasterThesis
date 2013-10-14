@@ -16,6 +16,7 @@
 *.synctex.gz
 *.sty~
 
+
 # Ready files and data #
 ###########
 *.pdf
