@@ -4,43 +4,66 @@
 \begin{document}
 
 %!TEX root = <parallelTemperingMaster.tex>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Problem statement}
 
-\subsection*{Target}
-Let $(\Omega, \mathfrak{F})$ be a measurable space, $\Omega$ - a subset of a Polish space, $\mathfrak{F}$ - Borel subsets, hopefully countably-generated, $\mathcal{I} = [0,1]$.
+Let $(\Omega, \mathfrak{F})$ be a measurable space. $\Omega$ --- the \sspace, a subset of a Polish space, and $\mathfrak{F}$ - the Borel subsets, hopefully countably-generated. Finally, denote the unit interval by $\mathcal{I} = [0,1]$. 
 
-Suppose that we want to draw sample from a given distribution $ \pi: \mathfrak{F} \mapsto \mathcal{I}$. We assume that $\pi$ is absolutely continuous with respect to some measure on $\mathbb{R}^n$ and call $\pi$ its appropriate density function. We assume to know $\pi$ up to its proportionality factor. If $\pi$ is multi-modal then the usual Metropolis-Hasting-Green algorithm might get stuck in one of $\pi$'s modes and renders completely erroneous results.
+\begin{Problem}
+	\item{\label{Problem}
+		Given a distribution $\Pi: \mathfrak{F} \mapsto \mathcal{I}$
+		\begin{Problem}
+		 	\item absolutely continuous with respect to some measure on $\Omega$, with a density $\pi$ that we know to evaluate 
+		 	\item density $\pi$ known up to its proportionality factor
+		 	\item \label{multiModality}density $\pi$ being multi-modal
+		\end{Problem} 
+		draw a sample $\{ X_1, \dots, X_\nn \}$ from $\Pi$ so that for any function $g \in \mathbb{L}^1(\Pi)$ one can approximate well the integrals with empirical means
+		$$\int_\Omega g \,\dip \approx \frac{1}{\nn}\sum_{i = 1}^\nn g(X^{[i]}). $$ 
+	}
+\end{Problem}
 
+The rather abstract setting might seem to be an overshot, because, as the reader suspects, the most obvious and natural choice would be that of $\Omega = \real^\nn$ and $\mathfrak{F}$ the corresponding Borel sets. That, however, is not always the case, for very often one encounters some discrete spaces as well. Moreover, the abstract setting underlines the modularity of the implementation of the algorithm itself, being described in CHAPTER.
 
-\subsection*{Solution's Ideology} 
-The Parallel Tempering algorithm is based on the idea of observing a Markov chain over the product space $$(\Omega^L, \mathfrak{F}^{\otimes L}, \pi_\beta)$$
+Had it been that $\pi$ was not multi-modal then by using the usual Metropolis-Hasting algorithm one could have easily solved the \ref{Problem}. Adding condition \ref{multiModality} however makes the use of that algorithm problematic because of its localness --- a phenomenon visualised in CHAPTER.
 
-where 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	$$\mathfrak{F}^{\otimes L} \equiv \underbrace{\mathfrak{F} \otimes \dots \otimes \mathfrak{F}}_{\text{$L$ times}},$$
-
-is the usual product sigma algebra, and finally 
+\subsection*{The \PT} 
+The Parallel Tempering algorithm is based on the idea of extending our attention to product $(\Omega^\lll, \mathfrak{F}^{\otimes \lll}, \pi_\beta)$ and equiping it with a specific Markov chain\footnote{Here $\mathfrak{F}^{\otimes \lll} \equiv \underbrace{\mathfrak{F} \otimes \dots \otimes \mathfrak{F}}_{\text{L times}}$ is the usual product sigma algebra.}. The main idea is that on each copy of $\Omega$ the corresponding chain will encounter a slightly modified version of the density of interest $\pi$. In the usual \PT\, one settles for 
 
 \begin{assumptions}
-	\item $\pi_\beta \propto \pi^{\beta_1} \times \dots \times \pi^{\beta_L},$\label{product form}
+	\item $\pi_\beta \propto \pi^{\beta_1} \times \dots \times \pi^{\beta_\lll},$\label{product form}
 \end{assumptions}	
 
-where $\beta = (\beta_1 , \dots , \beta_L)$ are inverse temperatures s.t. $1 = \beta_1 > \dots > \beta_L > 0$, so that the temperatures are growing, $1 = T_1 < \dots < T_L < \infty$.
+where $\beta = (\beta_1 , \dots , \beta_\lll)$ are such that $1 = \beta_1 > \dots > \beta_\lll > 0$. Their inversions, $T_i = \frac{1}{\beta_i}$, called temperatures, do form therefore a growing sequence of numbers. This naming convention finds its origin in the use of the \PT\, in statistical physics where the $T_i$ parameters had a direct interpretation. 
 
-We do not assume to know the normalising constants for each $\pi^{\beta_l}$, since we don't know it for $\pi$ itself.
+We do not assume to know the normalising constants for each $\pi^{\beta_l}$ --- we might even not know it for $\pi$ itself.
 
-The Markov chain $X \equiv \{ X^{[k]}\}_{k \geq 0}$ has $\Omega^L$ for its state-space \footnote{For the algorithm step numbering we shall henceforth use the square brackets notation.}. Thus $$X^{[k]} = (X_1^{[k]}, \dots, X_L^{[k]}).$$
+A Markov Chain\footnote{For the algorithm step numbering we shall henceforth use the square brackets notation.} $X \equiv \{ X^{[k]}\}_{k \geq 0}$ is then constructed on $\Omega^L$. Its construction will make use of two kernels that will make explicit use of $\pi^\beta_l$: one, the standard \randomWalk, will be responsible for the exploration of the \sspace, the other , called the \swapStep, for communication between different subchains, as $X$ can also be thought of as a collection of coordinate subchains 
+$$X^{[k]} = (X_1^{[k]}, \dots, X_\lll^{[k]}).$$
+Observe that the first one corresponds to the solution of the \ref{Problem}.
 
-The idea behind the algorithm is that of simulating the MC $X$ so that its coordinates with higher temperatures influence the coordinates with lower temperatures. This influence should be beneficial because coordinates with higher temperatures are drawn from distributions that are "less multi-modial" in the sense that
+The main idea behind the construction of chain $X$ is that the subchains operating on tempered versions of $\pi$ influence the subchains linked with lower temperatures by offering them their own accepted proposals. This should be highly beneficial, as more tempered chains will encounter less problems in accepting proposals from regions where the first chain would hardly ever stray.  
+
+To make this approach work at all we are still bound to make some other assumptions. 
 
 \begin{assumptions}[resume]
-	\item $\pi > 0$ on its support \dots
+	\item The starting points $X^{[0]}$ are selected so that $\pi(X_l^{[0]}) > 0$ for $l \in \{1,\dots,\lll\}$.
 \end{assumptions}
 	
+Obviously, what follows is that $\pi(X_l^{[0]})^\beta_k > 0$ as well. It is important, for otherwise, what will be demonstrated in the following sections, the algorithm would be dividing by $0$ and break. 
+
+The choice of modifying $\pi$ by exponentiation, besides its simplicity\footnote{For in general one could settle for some other kind of homotopic deformation.}, has considerable advantages in the analysis of the algorithm. For in the \randomWalk\,phase of the algorithm's step suppose a proposal $y$ generated by the $l^\text{th}$ chain from a region with less $\Pi$ probability on it in comparison to the position $x$ occupied in the last step, meaning $\pi(y) < \pi(x)$. Then
+
+$$ 
+	\alpha_{\beta_l}(x,y) =  1 \wedge \Biggl(\frac{\pi(y)}{\pi(x)}\Biggl)^{\beta_l} = 
+	\Biggl(\frac{\pi(y)}{\pi(x)}\Biggl)^{\beta_l} > \frac{\pi(y)}{\pi(x)} = 1 \wedge \frac{\pi(y)}{\pi(x)} = \alpha_{\beta_1}(x,y),
+$$
+
+meaning that the probability of accepting such a proposal is larger on the more tempered chains. If on the other hand $\pi(y) > \pi(x)$, then this probability remains the same, $\alpha_{\beta_1}(x,y) = \alpha_{\beta_k}(x,y)$. This assures that more tempered chains can make longer excursions into regions not so much $\Pi$-probable. However, observe that 
+
 
 \begin{itemize}	
-	\item then $\pi^{\beta_k} > \pi$ for $k \geq 2$\dots
-	\item so $\alpha_{\beta_1}(x,y) = 1 \wedge \frac{\pi(y)}{\pi(x)} = \frac{\pi(y)}{\pi(x)} <  (\frac{\pi(y)}{\pi(x)})^{\beta_k} = 1 \wedge (\frac{\pi(y)}{\pi(x)})^{\beta_k} = \alpha_{\beta_k}(x,y)$ if only $\pi(y) < \pi(x)$, and $\alpha_{\beta_1}(x,y) = \alpha_{\beta_k}(x,y)$ otherwise. Therefore the probability of accepting the proposal $y$ is significantly higher in case of the more tempered chains when $\frac{\pi(y)}{\pi(x)} < 1$.
 	\item If we suppose that our distribution is multimodial, then simulating $\pi^{\beta_k}$ should genuinely enlarge the regions from which the proposals would get accepted. 
 	\item However, if $\pi$'s modes are separated by regions as vast as to contain most of the proposal's probability, and yet bearing some insignificant amount of $\pi$'s mass, then the algorithm will stay local. This could be the case of modes separated by vast regions of $\pi$-measure zero. 
 	\item Since the simulations will be carried out in the computer's finite arithmetic, it's possible that the mass of certain regions will be rounded down to zero, e.g. where the density is below the smallest representable number.  
@@ -141,15 +164,19 @@ where $\alpha(x,y_k) \equiv 1\wedge R_K (x,y_k)$. Note that this kernel is stoch
 
 	\subsection*{The swap kernels}
 
-Now we address the question of how to interlace the independent chains generated with kernel $\metro$. We want to swap the generated states so that chains with higher temperature influence the regions of lower temperatures. Being more precise, the swapping gives some possibility to the chains with lower temperatures to find themeselves in states that would otherwise be very less probable to occur. The swaps will be random and the probability of swaps should take into account some properties of $\pi$. Here we propose several state-dependent strategies of how to promote certain swaps.
+Now we address the question of how to interlace the independent chains generated with kernel $\metro$. We want to swap the generated states so that chains with higher temperature influence the regions of lower temperatures. Being more precise, the swapping gives some possibility to the chains with lower temperatures to find themeselves in states that would otherwise be very unlikely to happen, the path leading to them being very unlikely to occur - these paths are rendered more probable for the chains with higher temperature. The swaps are made at random so that the probability of swaps takes into account some properties of $\pi$ evaluated on the last points from all the chains. 
 
-Let us first describe the swap kernel $\swap$. 
+Before passing to detailed description of different ways the swaps might be made, which we call \strats, let us first describe the properties of the swap kernel $\swap$ common to all \strats. In all cases, we rely on the following assumption
 
 \begin{assumptions}[resume]
 	\item At one step of the algorithm, there will be only one possible swap between a chosen at random pair of coordinates.
 \end{assumptions}
 
-Let $S_{ij} x = (x_1, \dots, x_{i-1}, x_j, x_{i+1}, \dots, x_{j-1}, x_i, x_{j+1}, \dots, x_L)$. We require $\swap(x, \circ )$ to be a measure concentrated on the set of all possible pairs of swaps between coordinates of $x = (x_1, \dots, x_L)$, i.e. on the set $\mathfrak{S}_x \equiv \{ S_{ij}x : i < j  \}$. Let's assume that the proposal measure for the swap kernel $\mathcal{Q}$ is of the following form 
+The restriction here is not so much in the number of swaps per step. What seems to be more relevant is rather the constraint to a particular subset of the group of all permutations --- for one could certainly envisage that any random permutation could take place. However, it simplifies the interpretation of \strats\, that are to be described. 
+
+Let us denote the swap operator by $S_{ij}$, so that 
+$$S_{ij} x = (x_1, \dots, x_{i-1}, x_j, x_{i+1}, \dots, x_{j-1}, x_i, x_{j+1}, \dots, x_L).$$ 
+We require $\swap(x, \circ )$ to be a measure concentrated on the set of all possible pairs of swaps between coordinates of $x = (x_1, \dots, x_L)$, i.e. on the set $\mathfrak{S}_x \equiv \{ S_{ij}x : i < j  \}$. We note that the proposal measure for the swap kernel $\mathcal{Q}$ is of the following form 
 
 \begin{equation*}
 	\mathcal{Q}(x, A) \equiv \underset{i < j}{\sum} p_{ij}(x) \mathbb{I}_A (S_{ij} x)
@@ -225,14 +252,14 @@ where $\tilde{x}_{kl}$ is $x$ without its $k^\text{th}$ and $l^\text{th}$ coordi
 			\exp \Big( - \big[ \log ( \pi(x_j) ) - \log ( \pi(x_j) ) \big]\Big) \wedge 1.$\label{strat2}
 \end{strategy}
 
-This strategy breaks the symmetry of the previous one rendering the evaluation of the effect on the $\alpha_\tetx{swap}$ challenging, if not impossible.  
+This strategy breaks the symmetry of the previous one rendering the evaluation of the effect on the $\alpha_\text{swap}$ challenging, if not impossible. The main idea behind this strategy was to  
 
 
 The subsequent strategies are again functions of the fist strategy.
 
 \begin{strategy}[resume]
 	\item 
-		$p_{ij} \propto 
+		$p_{ij}(x) \propto 
 			\Big( \frac{\pi (x_j)}{\pi( x_i )} \wedge 
 			\frac{\pi (	x_i)}{\pi( x_j )} \Big)^{|\beta_i - \beta_j|} = 
 		\exp \Big( - |\beta_i - \beta_j| \times \big| \log ( \pi(x_j) ) - \log ( \pi(x_i) ) \big| \Big).$\label{strat3} 
@@ -244,7 +271,7 @@ One can also use a strategy that incorporates some distance measure between poin
 
 \begin{strategy}[resume]
 	\item 
-		$p_{ij} \propto \Big( \frac{\pi (x_j)}{\pi( x_i )} \wedge \frac{\pi (x_i)}{\pi( x_j )} \Big)^\frac{|\beta_i - \beta_j|}{1 + \rho(x_i, x_j)} = \exp \Big( - \frac{|\beta_i - \beta_j| \times | \log ( \pi(x_j) ) - \log ( \pi(x_i) ) |}{{1 + \rho(x_i, x_j)}} \Big).$\label{strat4}
+		$p_{ij}(x) \propto \Big( \frac{\pi (x_j)}{\pi( x_i )} \wedge \frac{\pi (x_i)}{\pi( x_j )} \Big)^\frac{|\beta_i - \beta_j|}{1 + \rho(x_i, x_j)} = \exp \Big( - \frac{|\beta_i - \beta_j| \times | \log ( \pi(x_j) ) - \log ( \pi(x_i) ) |}{{1 + \rho(x_i, x_j)}} \Big).$\label{strat4}
 \end{strategy} 
 
 Finally, for purposes of comparisons with \citet{BaragattiParallelTemperingWithEquiEnergyMoves}, we include also strategies that are \sspace\, independent, i.e. the probability of swaps does not depend on the evaluations of the density $\pi$ in the sample points. Such na\"ive strategies include 

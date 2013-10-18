@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex quicky"] 1381750918 "quicky.aux" "quicky.bbl" "quicky" 1381753175
+["bibtex quicky"] 1382096945 "quicky.aux" "quicky.bbl" "quicky" 1382097093
   "./bibliography/eccaNoNotes.bst" 1381480392 33340 f7e46ae9e2c72c6482be7b5060f2ace5 ""
   "./bibliography/myBooks.bib" 1381494518 66692 a400856ee04e5e973ecfab831b1b0aa2 ""
-  "quicky.aux" 1381753175 1831 6814c07e10182a617c4860549776b36b ""
+  "quicky.aux" 1382097093 2106 64a8cd5344b24a16621963cf558e4456 ""
   "quicky.bcf" 0 -1 0 ""
   (generated)
   "quicky.blg"
   "quicky.bbl"
-["pdflatex"] 1381753174 "quicky.tex" "quicky.pdf" "quicky" 1381753175
+["pdflatex"] 1382097092 "quicky.tex" "quicky.pdf" "quicky" 1382097093
   "/usr/local/texlive/2013/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2013/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -130,16 +130,16 @@
   "/usr/local/texlive/2013/texmf-dist/web2c/texmf.cnf" 1366045088 31707 0953c15448e216a6585e92ee639d2dc2 ""
   "/usr/local/texlive/2013/texmf-var/web2c/xetex/xelatex.fmt" 1380801882 3165041 beb890c43e0d3fd1b797e0cabb91a04a ""
   "/usr/local/texlive/2013/texmf.cnf" 1380801818 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "mystyle.sty" 1381497113 6000 7ea5fbec8ba0f5f7fe1fa8ba72f9abda ""
-  "quicky.aux" 1381753175 1831 6814c07e10182a617c4860549776b36b ""
-  "quicky.bbl" 1381750918 532 98d87cf83c3ad6b36383f0c8eba26b0b "bibtex quicky"
-  "quicky.out" 1381753175 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "quicky.tex" 1381753173 16943 dad18546e0dfe75b2721840e743d6235 ""
+  "mystyle.sty" 1382096220 6313 e85b406b1298fe0225561b0bfb6cad15 ""
+  "quicky.aux" 1382097093 2106 64a8cd5344b24a16621963cf558e4456 ""
+  "quicky.bbl" 1382096945 532 98d87cf83c3ad6b36383f0c8eba26b0b "bibtex quicky"
+  "quicky.out" 1382097093 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "quicky.tex" 1382097091 20750 092586ebc73bf8348f5c26fe5bb0944b ""
   (generated)
   "tex/theory/theory.aux"
   "quicky.pdf"
-  "tex/theory.aux"
   "quicky.aux"
+  "tex/theory.aux"
   "tex/introduction.aux"
   "quicky.out"
   "quicky.log"

@@ -6,7 +6,7 @@ Parallel Tempering (PT) (also reffered to as Replica Monte Carlo Simulation) is 
 	\expect g(X) = \int_\Omega g(x) \dip
 \end{equation}
 
-where $X\sim \pi$, $\pi$ is a measure, and $g$ is some $\mathbb{L}^1(\pi)$ function. In practical applications $\pi$ has either a density function, or a probability function. The \MH\, proceeds by creating a sequence of sample points, \sample,\,from the limiting distribution of a certain operator, $\mathcal{Q}$, chosen so that its invariant distribution exists, is unique, and coincides with $\pi$. The approximation is then taken to be simply
+where $X\sim \pi$, $\pi$ is a measure, and $g$ is some $\mathbb{L}^1(\Pi)$ function. In practical applications $\pi$ has either a density function, or a probability function. The \MH\, proceeds by creating a sequence of sample points, \sample,\,from the limiting distribution of a certain operator, $\mathcal{Q}$, chosen so that its invariant distribution exists, is unique, and coincides with $\pi$. The approximation is then taken to be simply
 
 \begin{equation*}
 	\expect g(X) \approx \frac{1}{\nn}\sum_{i = 1}^\nn g(X^{[i]}).
