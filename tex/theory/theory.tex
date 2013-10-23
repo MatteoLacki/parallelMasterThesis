@@ -1,150 +1,158 @@
 %!TEX root = <parallelTemperingMaster.tex>
 \section*{Problem statement}
 
-\subsection*{Target}
-Let $(\Omega, \mathfrak{F})$ be a measurable space, $\Omega$ - a subset of a Polish space, $\mathfrak{F}$ - Borel subsets, hopefully countably-generated, $\mathcal{I} = [0,1]$.
+Let $(\Omega, \mathfrak{F})$ be a measurable space. $\Omega$ --- the \sspace, a subset of a Polish space, and $\mathfrak{F}$ - countably-generated Borel subsets. Finally, denote the unit interval by $\mathcal{I} = [0,1]$. 
 
-Suppose that we want to draw sample from a given distribution $ \pi: \mathfrak{F} \mapsto \mathcal{I}$. We assume that $\pi$ is absolutely continuous with respect to some measure on $\mathbb{R}^n$ and call $\pi$ its appropriate density function. We assume to know $\pi$ up to its proportionality factor. If $\pi$ is multi-modal then the usual Metropolis-Hasting-Green algorithm might get stuck in one of $\pi$'s modes and renders completely erroneous results.
+\begin{Problem}
+	\item{\label{Problem}
+		Given a distribution $\Pi: \mathfrak{F} \mapsto \mathcal{I}$
+		\begin{Problem}
+		 	\item absolutely continuous with respect to some measure on $\Omega$, with a density $\pi$ that we know to evaluate 
+		 	\item density $\pi$ known up to its proportionality factor
+		 	\item \label{multiModality}density $\pi$ being multimodal
+		\end{Problem} 
+		draw a sample $\{ X_1, \dots, X_\nn \}$ from $\Pi$ so that for any function $g \in \mathbb{L}^1(\Pi)$ one can approximate well the integrals with empirical means
+		$$\int_\Omega g \,\dip \approx \frac{1}{\nn}\sum_{i = 1}^\nn g(X^{[i]}). $$ 
+	}
+\end{Problem}
 
+The rather abstract setting might seem to be an overshot, because, as the reader suspects, the most obvious and natural choice would be that of $\Omega = \real^\nn$ and $\mathfrak{F}$ the corresponding Borel sets. That, however, is not always the case --- for very often one encounters some discrete spaces as well. Moreover, the abstract setting underlines the modularity of the implementation of the algorithm itself, being described in CHAPTER.
 
-\subsection*{Solution's Ideology} 
-The Parallel Tempering algorithm is based on the idea of observing a Markov chain over the product space $$(\Omega^L, \mathfrak{F}^{\otimes L}, \pi_\beta)$$
+Had it been that $\pi$ was not multimodal then by using the usual Metropolis-Hasting algorithm one could have easily solved the \ref{Problem}. Adding condition \ref{multiModality}, however, makes the use of that algorithm problematic because of its localness --- a phenomenon well visualised in CHAPTER.
 
-where 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	$$\mathfrak{F}^{\otimes L} \equiv \underbrace{\mathfrak{F} \otimes \dots \otimes \mathfrak{F}}_{\text{$L$ times}},$$
-
-is the usual product sigma algebra, and finally 
+\subsection*{The \PT} 
+The Parallel Tempering algorithm is based on the idea of extending our attention to the product space $(\Omega^\lll, \mathfrak{F}^{\otimes \lll}, \pi_\beta)$ equiped with a specific Markov chain\footnote{Here $\mathfrak{F}^{\otimes \lll} \equiv \underbrace{\mathfrak{F} \otimes \dots \otimes \mathfrak{F}}_{\text{L times}}$ is the usual product sigma algebra.}. The main idea is that on each copy of $\Omega$ the corresponding chain will encounter a slightly modified version of the density of interest $\pi$. In the usual \PT\, one settles for 
 
 \begin{assumptions}
-	\item $\pi_\beta \propto \pi^{\beta_1} \times \dots \times \pi^{\beta_L},$\label{product form}
+	\item $\pi_\beta \propto \pi^{\beta_1} \times \dots \times \pi^{\beta_\lll},$\label{product form}
 \end{assumptions}	
 
-where $\beta = (\beta_1 , \dots , \beta_L)$ are inverse temperatures s.t. $1 = \beta_1 > \dots > \beta_L > 0$, so that the temperatures are growing, $1 = T_1 < \dots < T_L < \infty$.
+where $\beta = (\beta_1 , \dots , \beta_\lll)$ are such that $1 = \beta_1 > \dots > \beta_\lll > 0$. Their inversions, $T_i = \frac{1}{\beta_i}$, called temperatures, do form therefore a growing sequence of numbers. This naming convention finds its origin in the use of the \PT\, in Statistical Physics where the $T_i$ parameters had direct interpretation. 
 
-We do not assume to know the normalising constants for each $\pi^{\beta_l}$, since we don't know it for $\pi$ itself.
+We do stress that the normalising constants for each $\pi^{\beta_l}$ are not assumed to be known, as we might not even know it for $\pi$ itself.
 
-The Markov chain $X \equiv \{ X^{[k]}\}_{k \geq 0}$ has $\Omega^L$ for its state-space \footnote{For the algorithm step numbering we shall henceforth use the square brackets notation.}. Thus $$X^{[k]} = (X_1^{[k]}, \dots, X_L^{[k]}).$$
+A Markov Chain\footnote{For the algorithm step numbering we shall henceforth use the square brackets notation.} $X \equiv \{ X^{[k]}\}_{k \geq 0}$ is then constructed on $\Omega^L$. Its construction makes explicit use of two kernels that make direct reference to $\pi^\beta_l$ --- first one, being a standard \randomWalk, is responsible for the exploration of the \sspace. The other, called the \swapStep, takes care of communication between different subchains ---  for $X$ can also be thought of as being a collection of coordinate subchains 
+$$X^{[k]} = (X_1^{[k]}, \dots, X_\lll^{[k]}).$$
+Observe that the first subchain corresponds to the solution of the \ref{Problem}.
 
-The idea behind the algorithm is that of simulating the MC $X$ so that its coordinates with higher temperatures influence the coordinates with lower temperatures. This influence should be beneficial because coordinates with higher temperatures are drawn from distributions that are "less multi-modial" in the sense that
+The main idea behind the construction of chain $X$ is that the subchains operating on tempered versions of $\pi$ influence the subchains linked with lower temperatures by offering them their own accepted proposals. This should be highly beneficial, as more tempered chains will encounter less problems in accepting proposals from regions where the first chain would hardly ever stray.  
+
+To make this approach work at all we are still bound to make some other assumptions. 
 
 \begin{assumptions}[resume]
-	\item $\pi > 0$ on its support \dots
+	\item The starting points $X^{[0]}$ are selected so that $\pi(X_l^{[0]}) > 0$ for $l \in \{1,\dots,\lll\}$.\label{beginAtFullProbabilitySet}
 \end{assumptions}
 	
+Obviously, what follows is that $\pi(X_l^{[0]})^\beta_k > 0$ as well. It is important, for otherwise, what will be demonstrated in the following sections, the algorithm would be dividing by $0$ and break. Moreover, what follows from \ref{beginAtFullProbabilitySet} is that the algorithm will never find itself in a point on which the density evaluates to zero.  
 
-\begin{itemize}	
-	\item then $\pi^{\beta_k} > \pi$ for $k \geq 2$\dots
-	\item so $\alpha_{\beta_1}(x,y) = 1 \wedge \frac{\pi(y)}{\pi(x)} = \frac{\pi(y)}{\pi(x)} <  (\frac{\pi(y)}{\pi(x)})^{\beta_k} = 1 \wedge (\frac{\pi(y)}{\pi(x)})^{\beta_k} = \alpha_{\beta_k}(x,y)$ if only $\pi(y) < \pi(x)$, and $\alpha_{\beta_1}(x,y) = \alpha_{\beta_k}(x,y)$ otherwise. Therefore the probability of accepting the proposal $y$ is significantly higher in case of the more tempered chains when $\frac{\pi(y)}{\pi(x)} < 1$.
-	\item If we suppose that our distribution is multimodial, then simulating $\pi^{\beta_k}$ should genuinely enlarge the regions from which the proposals would get accepted. 
-	\item However, if $\pi$'s modes are separated by regions as vast as to contain most of the proposal's probability, and yet bearing some insignificant amount of $\pi$'s mass, then the algorithm will stay local. This could be the case of modes separated by vast regions of $\pi$-measure zero. 
-	\item Since the simulations will be carried out in the computer's finite arithmetic, it's possible that the mass of certain regions will be rounded down to zero, e.g. where the density is below the smallest representable number.  
-\end{itemize}  
+The choice of modifying $\pi$ by exponentiation, as in \ref{product form}, besides its simplicity\footnote{For in general one could settle for some other kind of homotopic deformation.}, has considerable advantages in the analysis of the algorithm. For in the \randomWalk\,phase of the algorithm's step suppose a proposal $y$ is generated by the $l^\text{th}$ chain from a region with less $\Pi$ probability on it in comparison to the position $x$ occupied in the last step, so that $\pi(y) < \pi(x)$. What follows,
 
+$$ 
+	\alpha_{\beta_l}(x,y) =  1 \wedge \Biggl(\frac{\pi(y)}{\pi(x)}\Biggl)^{\beta_l} = 
+	\Biggl(\frac{\pi(y)}{\pi(x)}\Biggl)^{\beta_l} > \frac{\pi(y)}{\pi(x)} = 1 \wedge \frac{\pi(y)}{\pi(x)} = \alpha_{\beta_1}(x,y),
+$$
 
+which means that the probability of accepting such a proposal is larger on the more tempered chains. On the other hand, if  $\pi(y) > \pi(x)$, then this probability remains the same, $\alpha_{\beta_1}(x,y) = \alpha_{\beta_k}(x,y)$. This assures that more tempered chains can make longer excursions into regions not so much $\Pi$-probable. 
 
+One cannot neglect one possibility though: if the support of $\pi$ is not connected and the connected components are far away then it is highly improbable that the algorithm will give unbiased results because of poor mixing that cannot be fixed by exponentiation and some other technique should be used. We stress this point because in computer simulations one might tumble upon this problem because of the finite arithmetic --- the rounding of numbers to zero.    
 
-	\subsection*{Solution's Details}
+As pointed out before, the update mechanism of the \PT\,consists of two stages. Assume that the algorithm has reached $n^\text{th}$ step, $X^{[n-1]}$. Following notation used in \citet*{BM1}, we introduce two kernels that act subsequently on $X^{[n-1]}$
 
-The update mechanism consists of two stages. Assume that the algorithm has reached $n^\text{th}$ step, $X^{[n]}$. Following notation used in \citet*{BM1} we introduce two kernels that act subsequently on the MC
+$$X^{[n-1]} \overset{\metro}{\rightarrow} \widetilde{X}^{[n-1]} \overset{\swap}{\rightarrow} X^{[n]}.$$
 
-$$X^{[n-1]} \overset{\swap}{\rightarrow} \widetilde{X}^{[n-1]} \overset{\metro}{\rightarrow} X^{[n]}.$$
-
-We shall refer to $\swap$ and $\metro$ as to the swap kernel and the random-walk kernel respectively.
-
+We shall refer to $\swap$ and $\metro$ as to the swap kernel and the random-walk kernel respectively\footnote{$M$ as Metropolis.}. These will be now presented in greater detail.
 
 
-	\subsubsection*{The random-walk kernel}
+
+	\subsubsection*{The \randomWalk\, Kernel}
 	
-Assume $A_i \in \mathfrak{F}$ and $x \in \Omega^L$. Then $$\metro (x, A_1 \times \dots \times A_L) = \prod_{l=1}^L \metrobis{l}(x_l, A_l),$$
-where $\metrobis{l}(x_l, A_l)$ corresponds to standard Metropolis kernel, as in \citet*{CharlesJ.Geyer}. 
+Take a point in the \sspace, $x = (x_1, \dots, x_\lll) \in \Omega^L$. To assign probabilities to the proposal of the next step, given $x$, we consider events $A_i \in \mathfrak{F}$. We shall assume that 
 
-In more detail 
+\begin{assumptions}[resume]
+	\item{
+		\randomWalk\, proposal generation occurs independently on all subchains 	
+		$$\metro (x, A_1 \times \dots \times A_L) = \prod_{l=1}^L \metrobis{l}(x_l, A_l).$$
+	}
+\end{assumptions}
 
-$$\metrobis{l}(x_l, A_l) \equiv \int_A \alpha_{\beta_l} (x_l, y_l) q_{\Sigma_l} (y_l - x_l) \mathrm{d }y_l + \delta_x (A) \int [1 - \alpha_{\beta_l} (x_l, y_l)] q_{\Sigma_l} (y_l - x_l) \mathrm{d }y_l ,$$
-the probability of accepting the update being precisely 
+The $\metrobis{l}(x_l, A_l)$ corresponds to standard Metropolis kernel, as in \citet*{CharlesJ.Geyer}. To be more precise
+
+\begin{equation}\label{metropolisKernel}
+	\metrobis{l}(x_l, A_l) \equiv \int_A \alpha_{\beta_l} (x_l, y_l) q_{\Sigma_l} (y_l - x_l) \mathrm{d }y_l + \iii(x_l,A) r(x_l) 	
+\end{equation}
+
+where 
+$$r(x_l) = \int [1 - \alpha_{\beta_l} (x_l, y_l)] q_{\Sigma_l} (y_l - x_l) \mathrm{d }y_l$$
+is the probability of not accepting the proposal and the subprobability density of accepting the update \footnote{Also known as the Hastings ratio.} is
 
 \begin{equation}\label{acceptance prob}
 	\alpha_{\beta_l} (x_l, y_l)  \equiv 1 \wedge \frac{\pi^{\beta_l}(y_l)}{\pi^{\beta_l}(x_l)}.
 \end{equation}
 
+To understand why $\metrobis{l}$ is given by Eq. \ref{metropolisKernel} we note that the role of the kernel is to assign probability to the next step of the algorithm given that the previous one assumed value $x$\footnote{So we abstract here from how the actual value $x$ was obtained, being mysteriously revailed to us by Nature, under the guise of random number generator. In fact kernels and their duals play principal role in the Bayesian statistics.}. The \MH\, goes as follows\footnote{We omit the inverse temperatures for time being.}: 
+
+
+\begin{Algo}[Metropolis-Hastings]
+	Initial state $X^{[0]}$ s.t. $\pi(X^{[0]}) \not=0$
+	
+	\begin{algorithmic}
+		\Repeat 
+			\State Suppose $X^{[n]} = x$.
+			\State Draw proposal $Y \sim q(x,y)\mathrm{d}\,y$
+			\State Draw $U \sim \mathcal{U}(0,1)$
+			\If{$U \leq \alpha(x,Y)$}
+				\State $X^{[n+1]} = Y$	
+			\Else
+				\State $X^{[n+1]} = X^{[n]}$	
+			\EndIf
+		\Until{Number of steps reached.}	 
+	\end{algorithmic}		
+\end{Algo}
+
+Therefore, one should assign probability to event $\{ X^{[n+1]} \in A\}$ for all $A \in \mathfrak{F}$. But this is done, as
+
+$$\int_A  \alpha(x,y) q(x,y) \mathrm{d}\,y = \int_A \prob \Big( U \leq \alpha(x,y) \Big)q(x,y) \mathrm{d}\,y =$$
+$$
+	=\int_A \prob\Big( U \leq \alpha(x,Y) | Y=y \Big)q(x,y) \mathrm{d}\,y = \prob\Big( U \leq \alpha(x,Y), Y \in A \Big)=
+$$
+$$
+	= \prob\Big(X^{[n+1]} \not= X^{[n]} , X^{[n+1]} \in A \Big)
+$$
+
+where we assume $Y$ to be drawn out of the proposal distribution and $U$ to be independent of it. Setting $A = \Omega$ one notices that\footnote{Under the sensible assumption that the proposal distribution does not have any atom in $x$ --- this is usually automatically assumed by considering a distribution that is absolutely continous w.r. to Lebesgue measure.} 
+
+$$ \prob\Big(X^{[n+1]} = X^{[n]}\Big) = \int  [ 1 - \alpha(x,y)] q(x,y) \mathrm{d}\,y = r(x)$$
+--- precisely as claimed. 
 
 In the above equations the proposal distribution being used, following notation from \cite{CharlesJ.Geyer}, is $q(x_l,y_l) = q_{\Sigma_l} (y_l - x_l)$, where $q_{\Sigma_l}$ is the density of $\mathcal{N}(0, \Sigma_l)$. 
 
 The simple form of Eq. \ref{acceptance prob} stems from proposal distribution symmetry, $$q(x_l,y_l) = q(y_l,x_l).$$
 
-As indicated in \cite{BM2}, the execution of $\metro$ requires separate simulation of $\metrobis{l}$ for each of the coordinate chains,  $\widetilde{X}^{[n-1]}_l$.
+The choice of $\alpha$ is motivated by assuring the self-adjointness of the $\metro$ operator, which in turn implies that distribution $\Pi$ is preserved, so that
+	
+\begin{equation}
+	\Pi \metro = \Pi.		
+\end{equation}	
 
-
-	\subsection*{Metropolis-Hastings-Green algorithm.}
-
-The ideas behind the random-walk kernel were straightforward. Before passing to the detailed description of the swap kernel, we give here a brief account of how the MHG algorithm works. The description together with the notation are taken from \cite{CharlesJ.Geyer}, pages 79-81. The introduction of this notation will be of considerable help in the understanding of the next section. 
-
-The algorithm aims at generating samples from any distribution $\rho$ on measurable space,
-
-	$$(\Gamma, \mathfrak{G}),$$
-
-where $\Gamma \subset \mathbb{R}^n$ and $\mathfrak{G}$ is the appropriate borel $\sigma$-algebra. We suppose that we know $\rho$ up to a constant, so that $\rho = \frac{\eta}{\eta(\omega)}$, where $\eta$ is any finite real measure \footnote{In order to avoid confusion, in this section we use different notation for spaces and distributions than it was the case before. In the forthcoming applications, we will take $\Gamma$ to be $\Omega^L$, $\rho$ equal to $\pi_\beta$ and so on \dots}, 
-
-	$$\rho: \mathfrak{G} \mapsto \mathbb{R}_{+}.$$  
-
-To generalise the notion of Hasting's ratio, $R(x,y)$, one introduces first a suitable measure $\mu$ on the measurable space 
-
-	$$(\Gamma^2, \mathfrak{G}^{\otimes 2}),$$ 
-
-precisely where we assume our current-state $x$ and proposal $y$ to live together. Since our understanding of $y$ is that it is some value conditioned on the current-state $x$, the natural choice for $\mu$ is that of a regular conditional measure
-
-	$$\mu(\mathrm{d }x, \mathrm{d }y)   \equiv \eta (\mathrm{d} x) Q(x, \mathrm{d } y),$$
-
-where $Q(x,A)$ is our proposal kernel, possibly substochastic.
- 
- 
-We also need a coordinate-swapping mapping $\phi: \Gamma^2 \mapsto \Gamma^2$ given by $$\phi(x,y) = (y,x),$$ which is obviously measurable, being continuous. Our understanding of the Green's ratio is now that of
-
-	$$R(x,y) \equiv	\frac{\mathrm{d }(\mu \circ \phi^{-1})}{\mathrm{d }\mu} (x,y) = \frac{\rho(\mathrm{d y} )Q(y, \mathrm{d }x)}{\rho(\mathrm{d }x) Q(x, \mathrm{d }y)},$$
-
-where $\phi^{-1}$ is the counter-image function related to $\phi$ and the derivative is understood in the Radon-Nikodym sense. 
-
-Since we want to use the MHG algorithm with the state-dependent mixing, we shall equip both $Q$ and $R$ with additional indices $k$ that belong to $\mathcal{K}$, a set\footnote{Which can be infinite. In that case the forthcoming sums should be understood as integrals with respect to the counting measure.}.  
-
-We require that
-
-\begin{itemize}
-	\item $Q_k (x,S)$ is known for all $k$,
-	\item $\forall_{x \in \Gamma} \underset{ k \in \mathcal{K}}{\sum} Q_k (x,S) \leq 1$,
-	\item For all $k \in \mathcal{K}$ $$R_k (x,y_k) \equiv \frac{\rho(\mathrm{d } y_k)Q_k (y_k, \mathrm{d }x)}{\rho(\mathrm{d } x)Q_k (x, \mathrm{d }y_k)}$$ is known ans possible to evaluate for any $x$ and $y_k$ \footnote{We introduce an extra index in $y_k$ to underline the potential difference between proposals under different kernels $Q_k$.},
-	\item For each $x$ and $k$ its possible to draw from $$P_k(x, \circ) \equiv \frac{Q_k (x, \circ)}{Q_k (x, \Gamma)}$$
-\end{itemize}
-
-If these requirements are fulfilled, then the MHG update goes as follows
-
-\begin{algorithm}
-\item Simulate random index $K$ with probability $\mathbb{P}( K = k ) = Q_k (x,\Gamma)$.
-\item[] With probability $1-\underset{k \in \mathcal{K}}{\sum} Q_k (x,\Gamma)$ skip the remaining steps and stay at $x$.
-\item Simulate $Y \sim P_K (x, \circ)$.
-\item Calculate $R_K (x,Y)$.
-\item Accept $Y$ with probability $1\wedge R_K (x,Y)$.
-\end{algorithm}
-
-The kernel of the MHG update is of the following form
-
-	$$P(x,A) \equiv \underset{k \in \mathcal{K}}{\sum} \int_A \alpha_k (x,y_k) Q_k(x, \mathrm{d }y_k) + \delta_x (A) \Big(1 - \underset{k \in \mathcal{K}}{\sum} \int_{\Omega} \alpha(x,y_k) Q_k(x,\mathrm{d }y_k) \Big), $$
-
-where $\alpha(x,y_k) \equiv 1\wedge R_K (x,y_k)$. Note that this kernel is stochastic. According to the general theory, as stated in \cite{CharlesJ.Geyer}, the MHG update is reversible with respect to $\rho$. 
-
-
+As indicated by \cite{BM2}, the implementation of $\metro$ consists of separate simulation of $\metrobis{l}$ for each of the coordinate chains,  $X^{[n-1]}_l$.
 
 	\subsection*{The swap kernels}
 
-Now we address the question of how to interlace the independent chains generated with kernel $\metro$. We want to swap the generated states so that chains with higher temperature influence the regions of lower temperatures. Being more precise, the swapping gives some possibility to the chains with lower temperatures to find themeselves in states that would otherwise be very less probable to occur. The swaps will be random and the probability of swaps should take into account some properties of $\pi$. Here we propose several state-dependent strategies of how to promote certain swaps.
+Now we address the question of how to interlace the independent chains generated with kernel $\metro$. We want to swap the generated states so that chains with higher temperature influence the regions of lower temperatures. Being more precise, the swapping gives some possibility to the chains with lower temperatures to find themeselves in states that would otherwise be very unlikely to happen, the path leading to them being very unlikely to occur - these paths are rendered more probable for the chains with higher temperature. The swaps are made at random so that the probability of swaps takes into account some properties of $\pi$ evaluated on the last points from all the chains. 
 
-Let us first describe the swap kernel $\swap$. 
+Before passing to detailed description of different ways the swaps might be made, which we call \strats, let us first describe the properties of the swap kernel $\swap$ common to all \strats. In all cases, we rely on the following assumption
 
 \begin{assumptions}[resume]
 	\item At one step of the algorithm, there will be only one possible swap between a chosen at random pair of coordinates.
 \end{assumptions}
 
-Let $S_{ij} x = (x_1, \dots, x_{i-1}, x_j, x_{i+1}, \dots, x_{j-1}, x_i, x_{j+1}, \dots, x_L)$. We require $\swap(x, \circ )$ to be a measure concentrated on the set of all possible pairs of swaps between coordinates of $x = (x_1, \dots, x_L)$, i.e. on the set $\mathfrak{S}_x \equiv \{ S_{ij}x : i < j  \}$. Let's assume that the proposal measure for the swap kernel $\mathcal{Q}$ is of the following form 
+The restriction here is not so much in the number of swaps per step. What seems to be more relevant is rather the constraint to a particular subset of the group of all permutations --- for one could certainly envisage that any random permutation could take place. However, it simplifies the interpretation of \strats\, that are to be described. 
+
+Let us denote the swap operator by $S_{ij}$, so that 
+$$S_{ij} x = (x_1, \dots, x_{i-1}, x_j, x_{i+1}, \dots, x_{j-1}, x_i, x_{j+1}, \dots, x_L).$$ 
+We require $\swap(x, \circ )$ to be a measure concentrated on the set of all possible pairs of swaps between coordinates of $x = (x_1, \dots, x_L)$, i.e. on the set $\mathfrak{S}_x \equiv \{ S_{ij}x : i < j  \}$. We note that the proposal measure for the swap kernel $\mathcal{Q}$ is of the following form 
 
 \begin{equation*}
 	\mathcal{Q}(x, A) \equiv \underset{i < j}{\sum} p_{ij}(x) \mathbb{I}_A (S_{ij} x)
@@ -187,7 +195,7 @@ Now, since $y \in \mathfrak{S}_x $, the tagetted $\pi_\beta$ is a tensor of meas
 	\alpha_\text{swap}(x,S_{ij} x) = \Big[  \Big(\frac{\pi(x_j)}{\pi(x_i)} \Big)^{\beta_i - \beta_j}  \frac{ p_{ij}(S_{ij} x )}{ p_{ij}( x ) }\Big] \wedge 1
 \end{equation*}	
 
-In our computer simulations the following swapping strategies have been tested.
+In our computer simulations several swapping strategies have been tested. For instance,
 
 \begin{strategy}
 	\item 
@@ -198,7 +206,7 @@ In our computer simulations the following swapping strategies have been tested.
 		$\label{strat1} 
 \end{strategy}
 
-This strategy assures that the more probable swaps will occur between coordinates whose proposals have relatively the same $\pi$ density values, i.e. $\pi (x_j) \approx \pi (x_i)$. Observe also that in this particular the proportionality is in fact equality, because the above expression is transposition symmetric and this considerably simplifies the statistical sum analysis. In general, we want $p_{ij}(x) \propto h(x_i,x_j)$ for some function $h$. Thus,
+In this particular the proportionality is in fact equality, because the above expression is transposition symmetric and this considerably simplifies the statistical sum analysis. In general, we want $p_{ij}(x) \propto h(x_i,x_j)$ for some function $h$. Thus,
 
 \begin{equation*}
 	\frac{p_{kl}(S_{kl}x)}{p_{kl}(x)} = \frac{\frac{h(x_l,x_k)}{A(\tilde{x}_{kl})+f(x_k)+g(x_l)+h(x_l,x_k)}}{
@@ -208,10 +216,9 @@ This strategy assures that the more probable swaps will occur between coordinate
 	\times 
 	\underbrace{\frac{A(\tilde{x}_{kl})+f(x_l)+g(x_k)+h(x_k,x_l)}{A(\tilde{x}_{kl})+f(x_k)+g(x_l)+h(x_l,x_k)}}_\text{'distribution effect'},	 	 	
 \end{equation*}  
-where $\tilde{x}_{kl}$ is $x$ without its $k^\text{th}$ and $l^\text{th}$ coordinates, $f(x_l) = \sum_{i<l, i\not=k} h(x_i, x_l)$, and $g(x_k) = \sum_{j>k, i\not=l}h(x_k, x_j)$. As we see it is fairly straightforward to compare the above expression to $1$ if the 'distribution effect' equals $1$, and difficult had it been the other case. To assure this happens, one can settle for a function  
+where $\tilde{x}_{kl}$ is $x$ without its $k^\text{th}$ and $l^\text{th}$ coordinates, $f(x_l) = \sum_{i<l, i\not=k} h(x_i, x_l)$, and $g(x_k) = \sum_{j>k, i\not=l}h(x_k, x_j)$. As we see it is fairly straightforward to compare the above expression to $1$ if the 'distribution effect' equals $1$, and difficult had it been the other case. To assure this happens, one can settle for a function $h$ that is transposition invariant, $h(x,y)=h(y,x)$. This is certainly the case of \ref{strat1}. In this strategy therefore we are promoting exactly swaps between coordinates whose proposals have relatively the same $\pi$ density values, i.e. $\pi (x_j) \approx \pi (x_i)$. 
 
 
- the statistical sums the suming is exactly over all possible transpositions. This is purely an interpretorial remark, since the cost of calculation and storage of these expressions in neglectable, given that in all cases the $\pi_\beta(x)$ has to be calculated. 
 
 \begin{strategy}[resume]
 	\item 
@@ -221,17 +228,17 @@ where $\tilde{x}_{kl}$ is $x$ without its $k^\text{th}$ and $l^\text{th}$ coordi
 			\exp \Big( - \big[ \log ( \pi(x_j) ) - \log ( \pi(x_j) ) \big]\Big) \wedge 1.$\label{strat2}
 \end{strategy}
 
-This strategy breaks the symmetry of the previous one. Here, we promote swaps between proposals such that 
+This strategy breaks the symmetry of the previous one rendering the evaluation of the effect on the $\alpha_\text{swap}$ challenging, if not impossible. The main idea behind this strategy was to  
 
 
 The subsequent strategies are again functions of the fist strategy.
 
 \begin{strategy}[resume]
 	\item 
-		$p_{ij} \propto 
+		$p_{ij}(x) \propto 
 			\Big( \frac{\pi (x_j)}{\pi( x_i )} \wedge 
-			\frac{\pi (	x_i)}{\pi( x_j )} \Big)^{\beta_i - \beta_j} = 
-		\exp \Big( - (\beta_i - \beta_j)\big| \log ( \pi(x_j) ) - \log ( \pi(x_i) ) \big| \Big).$\label{strat3} 
+			\frac{\pi (	x_i)}{\pi( x_j )} \Big)^{|\beta_i - \beta_j|} = 
+		\exp \Big( - |\beta_i - \beta_j| \times \big| \log ( \pi(x_j) ) - \log ( \pi(x_i) ) \big| \Big).$\label{strat3} 
 \end{strategy}
 
 This strategy permits us to soften a bit the requirement that $\pi(x_j) \approx \pi (x_i)$. This effect is strengthened for coordinates that are similarly tempered, i.e. where $\beta_i - \beta_j \approx 0$. Swaps between adjacent chains will be therefore more probable. 
@@ -240,7 +247,7 @@ One can also use a strategy that incorporates some distance measure between poin
 
 \begin{strategy}[resume]
 	\item 
-		$p_{ij} \propto \Big( \frac{\pi (x_j)}{\pi( x_i )} \wedge \frac{\pi (x_i)}{\pi( x_j )} \Big)^\frac{\beta_i - \beta_j}{1 + \rho(x_i, x_j)} = \exp \Big( - \frac{(\beta_i - \beta_j)| \log ( \pi(x_j) ) - \log ( \pi(x_i) ) |}{{1 + \rho(x_i, x_j)}} \Big).$\label{strat4}
+		$p_{ij}(x) \propto \Big( \frac{\pi (x_j)}{\pi( x_i )} \wedge \frac{\pi (x_i)}{\pi( x_j )} \Big)^\frac{|\beta_i - \beta_j|}{1 + \rho(x_i, x_j)} = \exp \Big( - \frac{|\beta_i - \beta_j| \times | \log ( \pi(x_j) ) - \log ( \pi(x_i) ) |}{{1 + \rho(x_i, x_j)}} \Big).$\label{strat4}
 \end{strategy} 
 
 Finally, for purposes of comparisons with \citet{BaragattiParallelTemperingWithEquiEnergyMoves}, we include also strategies that are \sspace\, independent, i.e. the probability of swaps does not depend on the evaluations of the density $\pi$ in the sample points. Such na\"ive strategies include 

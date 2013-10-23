@@ -101,19 +101,31 @@ To understand why $\metrobis{l}$ is given by Eq. \ref{metropolisKernel} we note 
 
 
 \begin{Algo}[Metropolis-Hastings]
-	Suppose that $X^{[n]} = x$. Then
+	Initial state $X^{[0]}$ s.t. $\pi(X^{[0]}) \not=0$
 	
-	\begin{algor}
-		\item{ 	Draw proposal $Y \sim q(x,y)\mathrm{d}\,y$ 	}
-		\item{ 	With probability $\alpha(x,Y)$ assign $X^{[n+1]} = Y$. \\With probability $1-\alpha(x,Y)$ stay put, $X^{[n+1]} = X^{[n]}$. }
-	\end{algor}	
-		
+	\begin{algorithmic}
+		\Repeat 
+			\State Suppose $X^{[n]} = x$.
+			\State Draw proposal $Y \sim q(x,y)\mathrm{d}\,y$
+			\State Draw $U \sim \mathcal{U}(0,1)$
+			\If{$U \leq \alpha(x,Y)$}
+				\State $X^{[n+1]} = Y$	
+			\Else
+				\State $X^{[n+1]} = X^{[n]}$	
+			\EndIf
+		\Until{Number of steps reached.}	 
+	\end{algorithmic}		
 \end{Algo}
 
 Therefore, one should assign probability to event $\{ X^{[n+1]} \in A\}$ for all $A \in \mathfrak{F}$. But this is done, as
 
 $$\int_A  \alpha(x,y) q(x,y) \mathrm{d}\,y = \int_A \prob \Big( U \leq \alpha(x,y) \Big)q(x,y) \mathrm{d}\,y =$$
-$$=\int_A \prob\Big( U \leq \alpha(x,Y) | Y=y \Big)q(x,y) \mathrm{d}\,y = \prob\Big( U \leq \alpha(x,Y), Y \in A \Big)=$$
+$$
+	=\int_A \prob\Big( U \leq \alpha(x,Y) | Y=y \Big)q(x,y) \mathrm{d}\,y = \prob\Big( U \leq \alpha(x,Y), Y \in A \Big)=
+$$
+$$
+	= \prob\Big(X^{[n+1]} \not= X^{[n]} , X^{[n+1]} \in A \Big)
+$$
 
 where we assume $Y$ to be drawn out of the proposal distribution and $U$ to be independent of it. Setting $A = \Omega$ one notices that\footnote{Under the sensible assumption that the proposal distribution does not have any atom in $x$ --- this is usually automatically assumed by considering a distribution that is absolutely continous w.r. to Lebesgue measure.} 
 
@@ -258,6 +270,7 @@ and
 
 amounting to choosing uniformly among all possible swaps and all neighbouring-in-temperature swap respectively. 
 
+\todo[inline]{Dodać sekcję o tym, czemu to jądro zachowuje $\Pi$}
 
 
 
