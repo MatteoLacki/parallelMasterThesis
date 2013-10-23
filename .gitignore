@@ -15,6 +15,8 @@
 *.R~
 *.synctex.gz
 *.sty~
+*.fdb_latexmk
+*.fls
 
 
 # Ready files and data #
