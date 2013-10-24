@@ -1,4 +1,7 @@
 %!TEX root = <parallelTemperingMaster.tex>
+
+In this chapter we shall expose the theoretical details of the \PT. The following solutions are implemented in the prepared software, as described in Chapter \ref{Implementation}. 
+
 \section*{Problem statement}
 
 Let $(\Omega, \mathfrak{F})$ be a measurable space. $\Omega$ --- the \sspace, a subset of a Polish space, and $\mathfrak{F}$ - countably-generated Borel subsets. Finally, denote the unit interval by $\mathcal{I} = [0,1]$. 
@@ -93,21 +96,21 @@ is the probability of not accepting the proposal and the subprobability density 
 
 To understand why $\metrobis{l}$ is given by Eq. \ref{metropolisKernel} we note that the role of the kernel is to assign probability to the next step of the algorithm given that the previous one assumed value $x$\footnote{So we abstract here from how the actual value $x$ was obtained, being mysteriously revailed to us by Nature, under the guise of random number generator. In fact kernels and their duals play principal role in the Bayesian statistics.}. The \MH\, goes as follows\footnote{We omit the inverse temperatures for time being.}: 
 
-
 \begin{Algo}[Metropolis-Hastings]
-	Initial state $X^{[0]}$ s.t. $\pi(X^{[0]}) \not=0$
-	
+	\ 	
 	\begin{algorithmic}
-		\Repeat 
-			\State Suppose $X^{[n]} = x$.
-			\State Draw proposal $Y \sim q(x,y)\mathrm{d}\,y$
-			\State Draw $U \sim \mathcal{U}(0,1)$
-			\If{$U \leq \alpha(x,Y)$}
-				\State $X^{[n+1]} = Y$	
-			\Else
-				\State $X^{[n+1]} = X^{[n]}$	
-			\EndIf
-		\Until{Number of steps reached.}	 
+		\Require $X^{[0]}$ such that $\pi(X^{[0]}) \not=0$
+		\Procedure{\textsc{Metro}}{$X^{[0]}$, $N$}
+			\For{$n \in \{0, \dots, N-1\}$}
+				\State Draw proposal $Y \sim q(X^{[n]},y)\mathrm{d}\,y$
+				\State Draw $U \sim \mathcal{U}(0,1)$
+				\If{$U \leq \alpha(X^{[n]},Y)$}
+					\State $X^{[n+1]} \gets Y$	
+				\Else
+					\State $X^{[n+1]} \gets X^{[n]}$	
+				\EndIf
+			\EndFor			
+		\EndProcedure	 
 	\end{algorithmic}		
 \end{Algo}
 
