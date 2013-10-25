@@ -1,4 +1,27 @@
 
+Describe the present state of the algorithm
+	* What does each entity do?
+		** Simulation
+		** Metropolis-Hastings
+		** Differences between Real and RealTempered
+	* Wrappers
+	* Evaluation of results.
+
+Information on data storage.
+Storing the neighbours.
+
+Create appendices, where description of particular functions is stored.
+		
+
+
+Finish off the theoretical part
+
+Combine Data
+
+Describe the results using ggplot2 and combinded data
+
+Finish off the Motivation.
+
 1. Implement Sojourn Time verifier : two classifiers: Promo and Distancio.
 2. Move the example to introduction: will serve as motivation. 
 3. Merge real and realTempered, for it is absurd the way it is now. 

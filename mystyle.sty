@@ -16,6 +16,11 @@
 \usepackage{todonotes}
 \usepackage{newclude}
 
+\usepackage{tikz}
+%\usepackage{PTSansNarrow}
+\usetikzlibrary{matrix}
+%\usepackage[T1]{fontenc}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{enumitem}
   \newlist{assumptions}{enumerate}{1}
@@ -118,13 +123,21 @@ innerbottommargin=0pt]{dBox}
 \newcommand{\cdf}{\textbf{CDF}}
 \newcommand{\ecdf}{\textbf{ECDF}}
 \newcommand{\KS}{\textbf{KS} distance }
-\newcommand{\PT}{Parallel Tempering algorithm}  
-\newcommand{\MH}{Metropolis-Hastings algorithm}
+\newcommand{\mcmc}{\textsc{MCMC}}
+\newcommand{\PTalgo}{\textsc{Parallel Tempering} algorithm} 
+\newcommand{\PT}{\textsc{Parallel Tempering}}   
+\newcommand{\MHalgo}{\textsc{Metropolis-Hastings} algorithm}
+\newcommand{\MH}{\textsc{Metropolis-Hastings}}
 \newcommand{\strat}{\textsc{Strategy}}
 \newcommand{\strats}{\textsc{Strategies}} 
 \newcommand{\realTemp}{\textsc{Real-Tempered}}
+\newcommand{\udensity}{\textsc{Unnormalised Density}}
 \newcommand{\algo}{\textsc{Algorithm}}
-\newcommand{\sspace}{\textsc{State Space}}   
+\newcommand{\simulation}{\textsc{Simulation}}
+\newcommand{\sspace}{\textsc{State Space}}
+\newcommand{\rspace}{\textsc{Real}}
+
+\newcommand{\measure}{\textsc{Target Measure}}   
 \newcommand{\ssimul}{\textsc{stochasticSimulations}}   
 \newcommand{\Fecdf}{$\hat{F}_\nn$}
 \newcommand{\RR}{\textbf{R}}

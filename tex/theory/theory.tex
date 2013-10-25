@@ -94,7 +94,7 @@ is the probability of not accepting the proposal and the subprobability density 
 	\alpha_{\beta_l} (x_l, y_l)  \equiv 1 \wedge \frac{\pi^{\beta_l}(y_l)}{\pi^{\beta_l}(x_l)}.
 \end{equation}
 
-To understand why $\metrobis{l}$ is given by Eq. \ref{metropolisKernel} we note that the role of the kernel is to assign probability to the next step of the algorithm given that the previous one assumed value $x$\footnote{So we abstract here from how the actual value $x$ was obtained, being mysteriously revailed to us by Nature, under the guise of random number generator. In fact kernels and their duals play principal role in the Bayesian statistics.}. The \MH\, goes as follows\footnote{We omit the inverse temperatures for time being.}: 
+To understand why $\metrobis{l}$ is given by Eq. \ref{metropolisKernel} we note that the role of the kernel is to assign probability to the next step of the algorithm given that the previous one assumed value $x$\footnote{So we abstract here from how the actual value $x$ was obtained, being mysteriously revailed to us by Nature, under the guise of random number generator. In fact kernels and their duals play principal role in the Bayesian statistics.}. The \MHalgo\, goes as follows\footnote{We omit the inverse temperatures for time being.}: 
 
 \begin{Algo}[Metropolis-Hastings]
 	\ 	
