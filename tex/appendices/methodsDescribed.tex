@@ -1,0 +1,496 @@
+\chapter{Description of implemented methods within objects}
+
+\subsection*{\algo}
+
+
+\lstset{stepnumber=0,backgroundcolor=\color{white}}
+
+	\begin{center}
+		\begin{tikzpicture}
+		\clip node (m) [matrix,matrix of nodes,
+		fill=black!0,inner sep=0pt,
+		nodes in empty cells,
+		% nodes={minimum height=1cm,minimum width=2.6cm,anchor=center,outer sep=0,font=\sffamily},
+		nodes={minimum height=.5cm,minimum width=2.6cm,anchor=center,outer sep=0},
+		% column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth,text depth=0.5ex}},
+		column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth}},
+		% column 2/.style={text width=.6\textwidth,every odd row/.style={nodes={fill=gray}}},
+		column 2/.style={text width=.6\textwidth, align=justify},
+		every odd row/.style={nodes={fill=gray}},
+		row 1 column 1/.style={nodes={fill=gray,text=white, align=center}},
+		row 1 column 2/.style={nodes={fill=gray,text=white, align=center}},
+		% row 1 column 1/.style={nodes={fill=gray, align=center}},
+		% row 1 column 2/.style={nodes={align=center}},
+		prefix after command={[rounded corners=4mm] (m.north east) rectangle (m.south west)}
+		]{
+		\RR\,\textsc{code}		          & \textsc{Description} \\
+		\newline
+		\begin{lstlisting}
+		initialize = 
+			function(
+				iterationsNo = NULL,
+				burnIn = 2000L,
+				...
+			)	
+		\end{lstlisting} & 
+		\newline {This method initialises the \algo\,object. The default setting of the iterations number to \textsc{NULL} is technical and bypasses an error in the Reference Classes implementation: the Reference Classes objects have their constructors that are again Reference Classes objects. Calling the constructor automatically calls generation of the underlying object. This cannot be constructed properly without user-provided inputs. An easy solution is to include in that objects an if statement that checks whether what happens is not the above-mentioned case and construct an empty structure if that is so.
+
+		A typical burn-in is set to 2000 steps.}\newline\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		show = function(...)
+		anteSimulationShow = function(...)
+		postSimulationShow = function(...)
+		\end{lstlisting} &
+		{These bulk methods divide are responsible for the exploration of the inputs and outputs of the algorithm in the terminal.}\\
+		&\\
+		};
+		\end{tikzpicture}
+	\end{center}
+
+\newpage
+
+	\begin{center}
+		\begin{tikzpicture}
+		\clip node (m) [matrix,matrix of nodes,
+		fill=black!0,inner sep=0pt,
+		nodes in empty cells,
+		% nodes={minimum height=1cm,minimum width=2.6cm,anchor=center,outer sep=0,font=\sffamily},
+		nodes={minimum height=.5cm,minimum width=2.6cm,anchor=center,outer sep=0},
+		% column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth,text depth=0.5ex}},
+		column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth}},
+		% column 2/.style={text width=.6\textwidth,every odd row/.style={nodes={fill=gray}}},
+		column 2/.style={text width=.6\textwidth, align=justify},
+		every odd row/.style={nodes={fill=gray}},
+		row 1 column 1/.style={nodes={fill=gray,text=white, align=center}},
+		row 1 column 2/.style={nodes={fill=gray,text=white, align=center}},
+		% row 1 column 1/.style={nodes={fill=gray, align=center}},
+		% row 1 column 2/.style={nodes={align=center}},
+		prefix after command={[rounded corners=4mm] (m.north east) rectangle (m.south west)}
+		]{
+		\RR\,\textsc{code}		          & \textsc{Description} \\
+		\newline
+		\begin{lstlisting}
+		getDataForVisualisation = function(...)
+		\end{lstlisting}&
+		Orders the state space to manipulate the data so that plotting procedures of the \textbf{ggplot2} package could handle them\\
+		&\\
+		\begin{lstlisting}
+		makeStepOfTheAlgorithm	= 
+			function( 
+				iteration,
+				... 
+			)
+		\end{lstlisting}&
+		{\newline Calls procedures responsible for execution of a single algorithm step: in case of the \MHalgo\, it executes the Random Walk. In case of the \PTalgo it undertakes both the Random Walk and the Random Swap.}\newline\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		turnOnBurnIn = 
+			function(...)
+		turnOffBurnIn = 
+			function(...)	
+		\end{lstlisting} & 
+		\newline {These methods pass the information to the \sspace\, on whether it should avoid remembering sample points because of the burn-in period, or not.}\\
+
+		&\\
+		\newline
+		\begin{lstlisting}
+		simulate = function(...)
+		\end{lstlisting} &
+		{Starts the simulation process.}\\
+		&\\
+		};
+		\end{tikzpicture}
+	\end{center}
+
+\subsection*{\MH}
+
+	\begin{center}
+		\begin{tikzpicture}
+		\clip node (m) [matrix,matrix of nodes,
+		fill=black!0,inner sep=0pt,
+		nodes in empty cells,
+		% nodes={minimum height=1cm,minimum width=2.6cm,anchor=center,outer sep=0,font=\sffamily},
+		nodes={minimum height=.5cm,minimum width=2.6cm,anchor=center,outer sep=0},
+		% column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth,text depth=0.5ex}},
+		column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth}},
+		% column 2/.style={text width=.6\textwidth,every odd row/.style={nodes={fill=gray}}},
+		column 2/.style={text width=.6\textwidth, align=justify},
+		every odd row/.style={nodes={fill=gray}},
+		row 1 column 1/.style={nodes={fill=gray,text=white, align=center}},
+		row 1 column 2/.style={nodes={fill=gray,text=white, align=center}},
+		% row 1 column 1/.style={nodes={fill=gray, align=center}},
+		% row 1 column 2/.style={nodes={align=center}},
+		prefix after command={[rounded corners=4mm] (m.north east) rectangle (m.south west)}
+		]{
+		\RR\,\textsc{code}		          & \textsc{Description} \\
+		\newline
+		\begin{lstlisting}
+			insertChainNames = 
+				function(...)
+		\end{lstlisting} & 
+		{
+			Stores the names of different chains.
+		}\\
+		&\\
+		};
+		\end{tikzpicture}
+	\end{center}
+
+	\begin{center}
+		\begin{tikzpicture}
+		\clip node (m) [matrix,matrix of nodes,
+		fill=black!0,inner sep=0pt,
+		nodes in empty cells,
+		% nodes={minimum height=1cm,minimum width=2.6cm,anchor=center,outer sep=0,font=\sffamily},
+		nodes={minimum height=.5cm,minimum width=2.6cm,anchor=center,outer sep=0},
+		% column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth,text depth=0.5ex}},
+		column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth}},
+		% column 2/.style={text width=.6\textwidth,every odd row/.style={nodes={fill=gray}}},
+		column 2/.style={text width=.6\textwidth, align=justify},
+		every odd row/.style={nodes={fill=gray}},
+		row 1 column 1/.style={nodes={fill=gray,text=white, align=center}},
+		row 1 column 2/.style={nodes={fill=gray,text=white, align=center}},
+		% row 1 column 1/.style={nodes={fill=gray, align=center}},
+		% row 1 column 2/.style={nodes={align=center}},
+		prefix after command={[rounded corners=4mm] (m.north east) rectangle (m.south west)}
+		]{
+		\RR\,\textsc{code}		          & \textsc{Description} \\
+		\newline
+		\begin{lstlisting}
+		prepareSimulation = 
+			function(...)
+		\end{lstlisting} &
+		{Initialises values needed before the simulation.}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		acceptanceRejection = 
+			function(...)
+		\end{lstlisting} &
+		{Tabularises different chains statistics on rejection and acceptance in the Random Walk phase.}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		randomWalk = 
+			function(...)
+		\end{lstlisting} & 
+		{
+			\newline
+			Performs the random walk step: it asks the state-space to generate the logs of unnormalised probabilities evaluated in the proposed points and then performs the usual rejection part. All this could be done parallely if it was needed - this feature will be shipped with version 2.0.
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		randomWalkRejection = 
+			function(...)
+		\end{lstlisting} &
+		{Here the Hastings quotients get compared with randomly generated values from the unit interval. All values are taken in logs for numerical stability.}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		getLogAlpha = 
+			function(...)
+		\end{lstlisting} &
+		{Substracts logarithms of evaluations of the unnormalised densities in the proposal points from their last step counterparts.}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		triggerUpdate-
+		-AfterRandomWalk = 
+			function(...)
+		\end{lstlisting} &
+		{This procedure updates the \sspace\, after an operation consisting of accepting any new proposal in the random-walk phase of the algorithm. Updates are also needed in the probabilities of the last states stored in a field in the parallel-tempering object.}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		updateAfterRandomWalk = 
+			function(...)
+		\end{lstlisting} &
+		{This procedure updates the information gathered by the \algo: it updates the correct logarithms of the unnormalised densities and notes which chains did move in the Random Walk.}\\
+		&\\
+		};
+		\end{tikzpicture}
+	\end{center}
+
+\subsection*{\textsc{ParallelTemperings}}
+
+	\begin{center}
+		\begin{tikzpicture}
+		\clip node (m) [matrix,matrix of nodes,
+		fill=black!0,inner sep=0pt,
+		nodes in empty cells,
+		% nodes={minimum height=1cm,minimum width=2.6cm,anchor=center,outer sep=0,font=\sffamily},
+		nodes={minimum height=.5cm,minimum width=2.6cm,anchor=center,outer sep=0},
+		% column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth,text depth=0.5ex}},
+		column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth}},
+		% column 2/.style={text width=.6\textwidth,every odd row/.style={nodes={fill=gray}}},
+		column 2/.style={text width=.6\textwidth, align=justify},
+		every odd row/.style={nodes={fill=gray}},
+		row 1 column 1/.style={nodes={fill=gray,text=white, align=center}},
+		row 1 column 2/.style={nodes={fill=gray,text=white, align=center}},
+		% row 1 column 1/.style={nodes={fill=gray, align=center}},
+		% row 1 column 2/.style={nodes={align=center}},
+		prefix after command={[rounded corners=4mm] (m.north east) rectangle (m.south west)}
+		]{
+		\RR\,\textsc{code}		          & \textsc{Description} \\
+		\begin{lstlisting}
+		insertStrategyNo = 
+			function(
+				strategyNo
+			)
+		\end{lstlisting} & 
+		{
+			Checks whether user inserted correct swapping strategy number. 
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		getNeighbours = 
+			function(...)
+		\end{lstlisting} & 
+		{
+			Generates the indices of the neighbouring chains in the lexicographic ordering. 
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		insertTranspositions = 
+			function(...)
+		\end{lstlisting} & 
+		{
+			Prepares the dictionary between lexicographic ordering and pair ordering of possible swaps; evaluates the maximal number of potential swaps and inititiates a matrix that stores information on the transitions that occured throughout the simulation.
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		plotHistory = 
+			function(...)
+		\end{lstlisting} & 
+		{
+			Prepares a plot of the swaps distribution that occured during the simulation.
+		}\\
+		&\\
+		\begin{lstlisting}
+		writeSwaps = 
+			function( 
+				directoryToWrite,
+				...
+			)
+		\end{lstlisting} & 
+		{
+			Prepares a \textbf{.csv} file containing the swap history.
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		swapHistory = 
+			function(...)
+		\end{lstlisting} & 
+		{
+			Tabularizes the information on swap history. First row enumerates how many swaps of a given type were proposed. The second one enumerates how many of these were actually accepted.
+		}\\
+		&\\
+		};
+		\end{tikzpicture}
+	\end{center}
+\
+	\begin{center}
+		\begin{tikzpicture}
+		\clip node (m) [matrix,matrix of nodes,
+		fill=black!0,inner sep=0pt,
+		nodes in empty cells,
+		% nodes={minimum height=1cm,minimum width=2.6cm,anchor=center,outer sep=0,font=\sffamily},
+		nodes={minimum height=.5cm,minimum width=2.6cm,anchor=center,outer sep=0},
+		% column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth,text depth=0.5ex}},
+		column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth}},
+		% column 2/.style={text width=.6\textwidth,every odd row/.style={nodes={fill=gray}}},
+		column 2/.style={text width=.6\textwidth, align=justify},
+		every odd row/.style={nodes={fill=gray}},
+		row 1 column 1/.style={nodes={fill=gray,text=white, align=center}},
+		row 1 column 2/.style={nodes={fill=gray,text=white, align=center}},
+		% row 1 column 1/.style={nodes={fill=gray, align=center}},
+		% row 1 column 2/.style={nodes={align=center}},
+		prefix after command={[rounded corners=4mm] (m.north east) rectangle (m.south west)}
+		]{
+		\RR\,\textsc{code}		          & \textsc{Description} \\
+		\begin{lstlisting}
+		swap = 
+			function( 
+				iteration
+			)
+		\end{lstlisting} & 
+		{
+			Performs the swap phase of a given step of the algorithm.	
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		swapProposalGeneration = 
+			function(...)
+		\end{lstlisting} & 
+		{
+			Generates the proposal for the \swapStep. The function differentiates between state-dependent and state-independent swaps. It stores the information about the swap for later analysis. It also marks which chains did exchange their last sample points. 
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		swapRejectionAndUpdate = 
+			function( 
+				iteration,
+				...
+			)
+		\end{lstlisting} & 
+		{	
+			\newline
+			Performs the rejection in the swap step and the resulting update. Basing on the information of which interchanges did occur, it reavaluates the values of the unnormalised probabilities of swaps. It calculate Hastings quotients for the \swapStep\,phase and performs rejection. After the rejection it updates the swap history and the values of the above-mentioned probabilities. Finally, it orders the \sspace\, to reshuffle the sample points and store them.\newline
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		updateSwapUProbs = 
+			function(
+				transpositions-
+				-ForUpdate,
+				...
+			)
+		\end{lstlisting} & 
+		{	
+			Updates values of unnormalised probabilities of swap.
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		findTranspositions-
+		-ForUpdate = 
+			function(...)
+		\end{lstlisting} & 
+		{	
+			Finds numbers of transpositions in the lexical ordering whose probabilities must be updated after the random walk phase. 
+		}\\
+		&\\
+		};
+		\end{tikzpicture}
+	\end{center}
+
+	\begin{center}
+		\begin{tikzpicture}
+		\clip node (m) [matrix,matrix of nodes,
+		fill=black!0,inner sep=0pt,
+		nodes in empty cells,
+		% nodes={minimum height=1cm,minimum width=2.6cm,anchor=center,outer sep=0,font=\sffamily},
+		nodes={minimum height=.5cm,minimum width=2.6cm,anchor=center,outer sep=0},
+		% column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth,text depth=0.5ex}},
+		column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth}},
+		% column 2/.style={text width=.6\textwidth,every odd row/.style={nodes={fill=gray}}},
+		column 2/.style={text width=.6\textwidth, align=justify},
+		every odd row/.style={nodes={fill=gray}},
+		row 1 column 1/.style={nodes={fill=gray,text=white, align=center}},
+		row 1 column 2/.style={nodes={fill=gray,text=white, align=center}},
+		% row 1 column 1/.style={nodes={fill=gray, align=center}},
+		% row 1 column 2/.style={nodes={align=center}},
+		prefix after command={[rounded corners=4mm] (m.north east) rectangle (m.south west)}
+		]{
+		\RR\,\textsc{code}              & \textsc{Description} \\
+		\newline
+		\begin{lstlisting}
+		updateSwapUProbs = 
+			function(
+				transpositions-
+				-ForUpdate
+			)
+		\end{lstlisting} & 
+		{	
+			Updates values of unnormalised probabilities of swap.
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		generateTranspositions = 
+			function( 
+				chainNumbers 
+			)
+		\end{lstlisting} & 
+		{	
+			Creates a matrix that enlists all possible transpositions of supplied indices of the temperature vector.  
+		}\\
+		&\\\newline
+		\begin{lstlisting}
+		translateLexicTo-
+		-Transpositions = 
+			function( 
+				lexics 
+			)
+		\end{lstlisting} & 
+		{	
+			Translates transpositions ennumbered lexicographically into pairs of corresponding numbers.  
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		translateTranspositions-
+		-ToLexic = 
+			function( 
+				transpositions 
+			)
+		\end{lstlisting} & 
+		{	
+			Lexicographically orderes given pairs of transpositions.  
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		swapStrategy = 
+			function( 
+				transposition
+			) 
+		\end{lstlisting} & 
+		{	
+			Calculates the unnormalised probabilities of swaps, based on the preinserted strategy number.
+		}\\
+		&\\
+		};
+
+		\end{tikzpicture}
+	\end{center}
+
+\subsection*{\textsc{StateSpaces}}
+
+	\begin{center}
+		\begin{tikzpicture}
+		\clip node (m) [matrix,matrix of nodes,
+		fill=black!0,inner sep=0pt,
+		nodes in empty cells,
+		% nodes={minimum height=1cm,minimum width=2.6cm,anchor=center,outer sep=0,font=\sffamily},
+		nodes={minimum height=.5cm,minimum width=2.6cm,anchor=center,outer sep=0},
+		% column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth,text depth=0.5ex}},
+		column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth}},
+		% column 2/.style={text width=.6\textwidth,every odd row/.style={nodes={fill=gray}}},
+		column 2/.style={text width=.6\textwidth, align=justify},
+		every odd row/.style={nodes={fill=gray}},
+		row 1 column 1/.style={nodes={fill=gray,text=white, align=center}},
+		row 1 column 2/.style={nodes={fill=gray,text=white, align=center}},
+		% row 1 column 1/.style={nodes={fill=gray, align=center}},
+		% row 1 column 2/.style={nodes={align=center}},
+		prefix after command={[rounded corners=4mm] (m.north east) rectangle (m.south west)}
+		]{
+		\RR\,\textsc{code}              & \textsc{Description} \\
+		\newline
+		\begin{lstlisting}
+		insertInitialStates	= 
+			function( 
+				initialStates = matrix(ncol=0, nrow=0),
+				spaceDim = 0L,
+				chainsNo = 0L,
+				...
+			)
+		\end{lstlisting} & 
+		{	
+			Checks whether the user inserted correct initial states. If their dimension is different then the dimension supplied by the user, or they were not enough of them, i.e. less than the number of chains, or if initial states were not supplied, it generates new ones uniformly from a hypersquare $[0,10]^\text{Problem Dimenstion}$.
+		}\\
+		&\\
+		};
+		\end{tikzpicture}
+	\end{center}
