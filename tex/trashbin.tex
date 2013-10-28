@@ -100,3 +100,31 @@ where $\alpha(x,y_k) \equiv 1\wedge R_K (x,y_k)$. Note that this kernel is stoch
 % \end{tabular}		 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{minipage}[h]{\linewidth}
+\begin{algorithm}
+	\item Let $KS := 0$, $\jj = \nn+1$. 
+	\item Read $\alpha$
+	\item Prepare $\Phi_x$ and $\Phi_y$.
+	\item While $i \in \{1, \dots, \nn+1\}$, and while $j \in \{ 1, \dots, \ii \}$ 
+	\begin{algorithm}
+		\item $B_{ij} := 
+			\begin{cases} 
+				B_{i-1,j-1} + \text{adequate charge}, \text{ if $R_{ij}$'s upper-left vertex is a sample-point} \cr
+				B_{i,j-1} + B_{i-1,j} -  B_{i-1,j-1}, \text{ Otherwise} 
+			\end{cases}$	
+
+		\item\label{whenToEvaluate} If $i,j < \nn+1$ and both $B_{ij} > B_{i,j-1} \vee B_{i-1,j}$, then evaluate $F_{ij} = F(x_i, y_j)$.
+
+		\item If either $i$ or $j$ equals $\nn+1$ evaluate the marginal distribtion.
+
+		\item\label{changes} Evaluate $|F_{ij} - B_{ab}|$ at $a \in \{i-1,i\}$ and $b \in \{j-1,j\}$ or only on $i-1$ and $j-1$ if on border. If it is bigger than $KS$ then update $KS$. If the update occured and the new $KS$ is such, that $F_{ij}\wedge B_{ij} > 1 - KS - \alpha$ then update $\jj$ to $j-1$.
+
+		\item Increase $j$ by one. After the end of loop increase $i$ by one.
+
+	\end{algorithm}
+	\item Return $KS$.
+\end{algorithm}
+\end{minipage}

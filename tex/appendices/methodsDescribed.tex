@@ -1,4 +1,4 @@
-\chapter{Description of implemented methods within objects}
+\chapter{Description of implemented methods within objects}\label{methodsDescribed}
 
 \subsection*{\algo}
 
@@ -455,7 +455,7 @@
 
 		\end{tikzpicture}
 	\end{center}
-
+\newpage
 \subsection*{\textsc{StateSpaces}}
 
 	\begin{center}
@@ -489,6 +489,720 @@
 		\end{lstlisting} & 
 		{	
 			Checks whether the user inserted correct initial states. If their dimension is different then the dimension supplied by the user, or they were not enough of them, i.e. less than the number of chains, or if initial states were not supplied, it generates new ones uniformly from a hypersquare $[0,10]^\text{Problem Dimenstion}$.
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+			turnOnBurnIn = 
+				function(...)
+
+			turnOffBurnIn 		
+				= function(...)
+		\end{lstlisting} &		
+		\newline {These methods pass the information to the \sspace\, on whether it should avoid remembering sample points because of the burn-in period, or not.}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+			proposeLogsOfUMeasures 		
+				= function(...)
+		\end{lstlisting} &		
+		\newline {Calls the \measure\, to evaluate the logarithms of unnormalalised density or probability function.}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+			randomWalkProposal 			
+				= function(...)
+		\end{lstlisting} &		
+		\newline {Generates the proposal in the Random Walk phase and returns the results to the \algo.}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+			updateStatesAfter-
+			-RandomWalk 
+				= function(...)
+
+			updateStatesAfterSwap 		
+				= function(...)
+		\end{lstlisting} &		
+		\newline {Realises the call from the \algo\, to update the required parameters.}\\
+		&\\
+		};
+		\end{tikzpicture}
+	\end{center}
+
+\newpage
+
+	\begin{center}
+		\begin{tikzpicture}
+		\clip node (m) [matrix,matrix of nodes,
+		fill=black!0,inner sep=0pt,
+		nodes in empty cells,
+		% nodes={minimum height=1cm,minimum width=2.6cm,anchor=center,outer sep=0,font=\sffamily},
+		nodes={minimum height=.5cm,minimum width=2.6cm,anchor=center,outer sep=0},
+		% column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth,text depth=0.5ex}},
+		column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth}},
+		% column 2/.style={text width=.6\textwidth,every odd row/.style={nodes={fill=gray}}},
+		column 2/.style={text width=.6\textwidth, align=justify},
+		every odd row/.style={nodes={fill=gray}},
+		row 1 column 1/.style={nodes={fill=gray,text=white, align=center}},
+		row 1 column 2/.style={nodes={fill=gray,text=white, align=center}},
+		% row 1 column 1/.style={nodes={fill=gray, align=center}},
+		% row 1 column 2/.style={nodes={align=center}},
+		prefix after command={[rounded corners=4mm] (m.north east) rectangle (m.south west)}
+		]{
+		\RR\,\textsc{code}              & \textsc{Description} \\
+		\newline
+		\begin{lstlisting}
+			calculateBetweenSteps  		
+				= function(...)
+		\end{lstlisting} &		
+		\newline {General wrapper for updates to be executed between the Random Walk phase and the Random Swap phase.}\\
+		&\\
+		};
+		\end{tikzpicture}
+	\end{center}	
+
+	\subsection*{\textsc{Real} (\sspace)}	
+\begin{center}
+		\begin{tikzpicture}
+		\clip node (m) [matrix,matrix of nodes,
+		fill=black!0,inner sep=0pt,
+		nodes in empty cells,
+		% nodes={minimum height=1cm,minimum width=2.6cm,anchor=center,outer sep=0,font=\sffamily},
+		nodes={minimum height=.5cm,minimum width=2.6cm,anchor=center,outer sep=0},
+		% column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth,text depth=0.5ex}},
+		column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth}},
+		% column 2/.style={text width=.6\textwidth,every odd row/.style={nodes={fill=gray}}},
+		column 2/.style={text width=.6\textwidth, align=justify},
+		every odd row/.style={nodes={fill=gray}},
+		row 1 column 1/.style={nodes={fill=gray,text=white, align=center}},
+		row 1 column 2/.style={nodes={fill=gray,text=white, align=center}},
+		% row 1 column 1/.style={nodes={fill=gray, align=center}},
+		% row 1 column 2/.style={nodes={align=center}},
+		prefix after command={[rounded corners=4mm] (m.north east) rectangle (m.south west)}
+		]{
+		\RR\,\textsc{code}              & \textsc{Description} \\
+		\newline
+		\begin{lstlisting}
+		insertInitialStates	= 
+			function( 
+				initialStates = matrix(ncol=0, nrow=0),
+				spaceDim = 0L,
+				chainsNo = 0L,
+				...
+			)
+		\end{lstlisting} & 
+		{	
+			Checks whether the user inserted correct initial states. If their dimension is 	different then the dimension supplied by the user, or they were not enough of them, i.e. less than the number of chains, or if initial states were not supplied, it generates new ones uniformly from a hypersquare $[0,10]^\text{Problem Dimenstion}$.
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+			createDataStorage = 
+				function(...)
+		\end{lstlisting} &		
+		\newline {Creates an appropriately big matrix for the storage of sample points.}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+			insertProposal-
+			-Covariances = function(
+				proposalCovariances 
+					= matrix(
+						ncol=0, 
+						nrow=0
+				),
+				...
+			)
+		\end{lstlisting} &		
+		\newline {Checks whether the user provided correct proposal covariances. The user can provide one matrix if he wants the covariances to be the same for all chains. If that is not the case, the user is obliged to provide a list of matrices that contains as many matrices as there are temperature levels. 
+
+		If the user provides wrong data, unit variances are to be chosen. If the user provides an object whose type is neither matrix, nor list, then the algorithm stops.}\\
+		&\\		
+		};
+		\end{tikzpicture}
+	\end{center}
+
+\begin{center}
+		\begin{tikzpicture}
+		\clip node (m) [matrix,matrix of nodes,
+		fill=black!0,inner sep=0pt,
+		nodes in empty cells,
+		% nodes={minimum height=1cm,minimum width=2.6cm,anchor=center,outer sep=0,font=\sffamily},
+		nodes={minimum height=.5cm,minimum width=2.6cm,anchor=center,outer sep=0},
+		% column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth,text depth=0.5ex}},
+		column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth}},
+		% column 2/.style={text width=.6\textwidth,every odd row/.style={nodes={fill=gray}}},
+		column 2/.style={text width=.6\textwidth, align=justify},
+		every odd row/.style={nodes={fill=gray}},
+		row 1 column 1/.style={nodes={fill=gray,text=white, align=center}},
+		row 1 column 2/.style={nodes={fill=gray,text=white, align=center}},
+		% row 1 column 1/.style={nodes={fill=gray, align=center}},
+		% row 1 column 2/.style={nodes={align=center}},
+		prefix after command={[rounded corners=4mm] (m.north east) rectangle (m.south west)}
+		]{
+		\RR\,\textsc{code}              & \textsc{Description} \\
+		\newline
+		\begin{lstlisting}
+			checkCovariance = function(
+				covarianceMatrix,
+				...
+			)
+		\end{lstlisting} &		
+		{Returns true of the given object is a matrix and its dimensions match the dimension of the \sspace\, provided by the user beforehand.}\\
+		&\\
+		};
+		\end{tikzpicture}
+	\end{center}
+
+\subsection*{\textsc{Real Tempered} (\sspace)}	
+\begin{center}
+		\begin{tikzpicture}
+		\clip node (m) [matrix,matrix of nodes,
+		fill=black!0,inner sep=0pt,
+		nodes in empty cells,
+		% nodes={minimum height=1cm,minimum width=2.6cm,anchor=center,outer sep=0,font=\sffamily},
+		nodes={minimum height=.5cm,minimum width=2.6cm,anchor=center,outer sep=0},
+		% column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth,text depth=0.5ex}},
+		column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth}},
+		% column 2/.style={text width=.6\textwidth,every odd row/.style={nodes={fill=gray}}},
+		column 2/.style={text width=.6\textwidth, align=justify},
+		every odd row/.style={nodes={fill=gray}},
+		row 1 column 1/.style={nodes={fill=gray,text=white, align=center}},
+		row 1 column 2/.style={nodes={fill=gray,text=white, align=center}},
+		% row 1 column 1/.style={nodes={fill=gray, align=center}},
+		% row 1 column 2/.style={nodes={align=center}},
+		prefix after command={[rounded corners=4mm] (m.north east) rectangle (m.south west)}
+		]{
+		\RR\,\textsc{code}              & \textsc{Description} \\
+		\newline
+		\begin{lstlisting}
+		insertTemperatures = 
+			function(
+				temperatures,
+				...
+			)
+		\end{lstlisting} & 
+		{	
+			Checks whether the user inserted correct temperature values and stores them. 
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		getIteration = 
+			function(
+				iteration 	= 1L,
+				type		= 
+					'initial states',
+				... 
+			)
+		\end{lstlisting} & 
+		{	
+			For a given iteration extracts results of a given step type, to choose among 'initial states', 'random walk', and 'swap'.
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		prepareDataForPlot = 
+			function(...)
+		\end{lstlisting} & 
+		{	
+			Reshuffles the entire history of states so that the entire result conforms to the data frame templates of \textbf{ggplot2}
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		plotAllTemperatures = 
+			function(...)
+		\end{lstlisting} & 
+		{	
+			Performs a plot of all simulated chains with an overlayed map of the real density from the Liang example.
+		}\\
+		&\\
+		};
+		\end{tikzpicture}
+	\end{center}	
+
+\begin{center}
+		\begin{tikzpicture}
+		\clip node (m) [matrix,matrix of nodes,
+		fill=black!0,inner sep=0pt,
+		nodes in empty cells,
+		% nodes={minimum height=1cm,minimum width=2.6cm,anchor=center,outer sep=0,font=\sffamily},
+		nodes={minimum height=.5cm,minimum width=2.6cm,anchor=center,outer sep=0},
+		% column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth,text depth=0.5ex}},
+		column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth}},
+		% column 2/.style={text width=.6\textwidth,every odd row/.style={nodes={fill=gray}}},
+		column 2/.style={text width=.6\textwidth, align=justify},
+		every odd row/.style={nodes={fill=gray}},
+		row 1 column 1/.style={nodes={fill=gray,text=white, align=center}},
+		row 1 column 2/.style={nodes={fill=gray,text=white, align=center}},
+		% row 1 column 1/.style={nodes={fill=gray, align=center}},
+		% row 1 column 2/.style={nodes={align=center}},
+		prefix after command={[rounded corners=4mm] (m.north east) rectangle (m.south west)}
+		]{
+		\RR\,\textsc{code}              & \textsc{Description} \\
+		\newline
+		\newline
+		\begin{lstlisting}
+		plotBasics = 
+			function(
+				algorithmName,
+				... 
+			)
+		\end{lstlisting} & 
+		{	
+			Performs a plot of the base level temperature chain of main interest with an overlayed map of the real density from the Liang example.
+		}\\
+		&\\			
+		\begin{lstlisting}
+		measureQuasiDistance = 
+			function(
+				iState,
+				jState,
+				...
+			)
+		\end{lstlisting} & 
+		{	
+			Measures the quasi distance between states needed for.
+		}\\
+		&\\
+		};
+		\end{tikzpicture}
+	\end{center}	
+
+\subsection*{\measure}	
+
+	\begin{center}
+		\begin{tikzpicture}
+		\clip node (m) [matrix,matrix of nodes,
+		fill=black!0,inner sep=0pt,
+		nodes in empty cells,
+		% nodes={minimum height=1cm,minimum width=2.6cm,anchor=center,outer sep=0,font=\sffamily},
+		nodes={minimum height=.5cm,minimum width=2.6cm,anchor=center,outer sep=0},
+		% column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth,text depth=0.5ex}},
+		column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth}},
+		% column 2/.style={text width=.6\textwidth,every odd row/.style={nodes={fill=gray}}},
+		column 2/.style={text width=.6\textwidth, align=justify},
+		every odd row/.style={nodes={fill=gray}},
+		row 1 column 1/.style={nodes={fill=gray,text=white, align=center}},
+		row 1 column 2/.style={nodes={fill=gray,text=white, align=center}},
+		% row 1 column 1/.style={nodes={fill=gray, align=center}},
+		% row 1 column 2/.style={nodes={align=center}},
+		prefix after command={[rounded corners=4mm] (m.north east) rectangle (m.south west)}
+		]{
+		\RR\,\textsc{code}              & \textsc{Description} \\
+		\newline
+		\begin{lstlisting}
+		measure = 
+			function(...)
+		\end{lstlisting} & 
+		{	
+			Evaluates the density or the probability function at a given point.
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		establishTrueValues = 
+			function(...)
+		\end{lstlisting} & 
+		{	
+			Evaluates the values of the provided density on a grid $[-2,12]^2$ with the mesh set at $0.1$. These are to be plotted so that the user may compare the results of the simulation with how it really looks. 
+		}\\
+		&\\
+		};
+		\end{tikzpicture}
+	\end{center}	
+
+\newpage
+\subsection*{\textsc{Target Unnormalised Densities}}	
+
+	\begin{center}
+		\begin{tikzpicture}
+		\clip node (m) [matrix,matrix of nodes,
+		fill=black!0,inner sep=0pt,
+		nodes in empty cells,
+		% nodes={minimum height=1cm,minimum width=2.6cm,anchor=center,outer sep=0,font=\sffamily},
+		nodes={minimum height=.5cm,minimum width=2.6cm,anchor=center,outer sep=0},
+		% column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth,text depth=0.5ex}},
+		column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth}},
+		% column 2/.style={text width=.6\textwidth,every odd row/.style={nodes={fill=gray}}},
+		column 2/.style={text width=.6\textwidth, align=justify},
+		every odd row/.style={nodes={fill=gray}},
+		row 1 column 1/.style={nodes={fill=gray,text=white, align=center}},
+		row 1 column 2/.style={nodes={fill=gray,text=white, align=center}},
+		% row 1 column 1/.style={nodes={fill=gray, align=center}},
+		% row 1 column 2/.style={nodes={align=center}},
+		prefix after command={[rounded corners=4mm] (m.north east) rectangle (m.south west)}
+		]{
+		\RR\,\textsc{code}              & \textsc{Description} \\
+		\newline
+		\begin{lstlisting}
+		initialize 	= 
+			function(
+				targetDensity = 
+					function(){},
+			...
+		)
+		\end{lstlisting} & 
+		{	
+			Stores the unnormalised density function provided by the user.
+		}\\
+		&\\
+		};
+		\end{tikzpicture}
+	\end{center}
+
+\subsection*{\textsc{Target Liang Densities and Matteo Densities}}	
+
+	\begin{center}
+		\begin{tikzpicture}
+		\clip node (m) [matrix,matrix of nodes,
+		fill=black!0,inner sep=0pt,
+		nodes in empty cells,
+		% nodes={minimum height=1cm,minimum width=2.6cm,anchor=center,outer sep=0,font=\sffamily},
+		nodes={minimum height=.5cm,minimum width=2.6cm,anchor=center,outer sep=0},
+		% column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth,text depth=0.5ex}},
+		column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth}},
+		% column 2/.style={text width=.6\textwidth,every odd row/.style={nodes={fill=gray}}},
+		column 2/.style={text width=.6\textwidth, align=justify},
+		every odd row/.style={nodes={fill=gray}},
+		row 1 column 1/.style={nodes={fill=gray,text=white, align=center}},
+		row 1 column 2/.style={nodes={fill=gray,text=white, align=center}},
+		% row 1 column 1/.style={nodes={fill=gray, align=center}},
+		% row 1 column 2/.style={nodes={align=center}},
+		prefix after command={[rounded corners=4mm] (m.north east) rectangle (m.south west)}
+		]{
+		\RR\,\textsc{code}              & \textsc{Description} \\
+		\begin{lstlisting}
+		initialize 	= 
+			function(
+				iterationsNo = NULL,
+				quantile-
+					-SimulationsNo=,
+				mixturesNo =,
+				mixturesWeight = ,
+				mixturesMeans = , 
+				sigma = ,
+				weightConstant = ,
+				algorithmName = 
+					'Liang',
+				...
+		)
+		\end{lstlisting} & 
+		{	
+			Initialises the reference example of the Liang density described in detail in chapter \dots. 
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		plotDistribuant = 
+			function(...)
+		\end{lstlisting} & 
+		{	
+			Plots the distibuant of Liang density based on the grid points from $[-2,12]^2$ with the mesh set at $0.1$. 
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		distribuant = 
+			function( 
+				x,
+				...
+			)
+		\end{lstlisting} & 
+		{	
+			Calculates the true value of Liang's measure distribuant at point $x$. It serves as a reference value when evaluating the Колмогоров-Смирнов distance.
+		}\\
+		&\\
+		};
+		\end{tikzpicture}
+	\end{center}
+
+	\begin{center}
+		\begin{tikzpicture}
+		\clip node (m) [matrix,matrix of nodes,
+		fill=black!0,inner sep=0pt,
+		nodes in empty cells,
+		% nodes={minimum height=1cm,minimum width=2.6cm,anchor=center,outer sep=0,font=\sffamily},
+		nodes={minimum height=.5cm,minimum width=2.6cm,anchor=center,outer sep=0},
+		% column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth,text depth=0.5ex}},
+		column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth}},
+		% column 2/.style={text width=.6\textwidth,every odd row/.style={nodes={fill=gray}}},
+		column 2/.style={text width=.6\textwidth, align=justify},
+		every odd row/.style={nodes={fill=gray}},
+		row 1 column 1/.style={nodes={fill=gray,text=white, align=center}},
+		row 1 column 2/.style={nodes={fill=gray,text=white, align=center}},
+		% row 1 column 1/.style={nodes={fill=gray, align=center}},
+		% row 1 column 2/.style={nodes={align=center}},
+		prefix after command={[rounded corners=4mm] (m.north east) rectangle (m.south west)}
+		]{
+		\RR\,\textsc{code}              & \textsc{Description} \\
+		\newline
+		\begin{lstlisting}
+		marginalDistribuant	= 
+			function(
+				proposedState,
+				coordinateNo,
+				...
+			)
+		\end{lstlisting} & 
+		{	
+			Calculates the true value of Liang's measure marginal distribuants at point $x$. One can insert the coodinate number, i.e. $1$ or $2$, which does not assume the infinite value. It serves as a reference value when evaluating the Колмогоров-Смирнов distance.
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		getSquareGrid = 
+			function( 
+				minimum , 
+				maximum ,
+				mesh,
+				... 
+			)
+		\end{lstlisting} & 
+		{	
+			Prepares the matrix with values from $[-2,12]^2$ with the mesh set at $0.1$.
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		getQuantiles = 
+			function(
+				simulationsNo,
+				...
+			)
+		\end{lstlisting} & 
+		{	
+			Simulates the values of Liang Measure's quantiles using Monte Carlo simulation scheme.
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		simulateQuantiles = 
+			function(
+				simulationsNo,
+				...
+			)
+		\end{lstlisting} & 
+		{	
+			Writes down the results of the quantile simulation for further calculations. This function is handy when trying to evaluate visually the correctness of different simulation strategies.
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		measureDistance-
+		-FromMeans = 
+			function( 
+				point,
+				...
+			)
+		\end{lstlisting} & 
+		{	
+			Calculates the distance of a given point from all of the means in the mixture of the $20$ gaussian densities.
+		}\\ 
+		&\\
+		};
+		\end{tikzpicture}
+	\end{center}
+
+	\begin{center}
+		\begin{tikzpicture}
+		\clip node (m) [matrix,matrix of nodes,
+		fill=black!0,inner sep=0pt,
+		nodes in empty cells,
+		% nodes={minimum height=1cm,minimum width=2.6cm,anchor=center,outer sep=0,font=\sffamily},
+		nodes={minimum height=.5cm,minimum width=2.6cm,anchor=center,outer sep=0},
+		% column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth,text depth=0.5ex}},
+		column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth}},
+		% column 2/.style={text width=.6\textwidth,every odd row/.style={nodes={fill=gray}}},
+		column 2/.style={text width=.6\textwidth, align=justify},
+		every odd row/.style={nodes={fill=gray}},
+		row 1 column 1/.style={nodes={fill=gray,text=white, align=center}},
+		row 1 column 2/.style={nodes={fill=gray,text=white, align=center}},
+		% row 1 column 1/.style={nodes={fill=gray, align=center}},
+		% row 1 column 2/.style={nodes={align=center}},
+		prefix after command={[rounded corners=4mm] (m.north east) rectangle (m.south west)}
+		]{
+		\RR\,\textsc{code}              & \textsc{Description} \\
+		\newline
+		\begin{lstlisting}
+		classify = function( 
+			point, 
+			... 
+		)
+		\end{lstlisting} & 
+		{	
+			Start the classification procedures. Their aim is to prescribe the sample points to particular densities that are components of the Liang mixture of measures. The aim of this procedure is to check whether the presence of the sample points in the approximity of modes approximates well their probability input to the whole distribution, which is set to $1/20^\text{th}$. 
+		}\\ 
+		&\\
+		\newline
+		\begin{lstlisting}
+		classifyByLength = 
+			function( 
+				point,
+				... 
+			)
+		\end{lstlisting} & 
+		{	
+			Performs the classification of sample points to the modes using the distance-from-mean criterion.  
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		classifyByChiSquare = 
+			function( 
+				point, 
+				...
+			)
+		\end{lstlisting} & 
+		{	
+			Performs the classification of sample points to the modes using the minimal-chi-square criterion.   
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		getFirstAndSecondMoments = 
+			function(...)
+		\end{lstlisting} & 
+		{	
+			Calculates all first and second true moments of the Liang distribution.   
+		}\\
+		&\\
+		};
+		\end{tikzpicture}
+	\end{center}
+
+\newpage
+\subsection*{\textsc{Simulations}}	
+
+	\begin{center}
+		\begin{tikzpicture}
+		\clip node (m) [matrix,matrix of nodes,
+		fill=black!0,inner sep=0pt,
+		nodes in empty cells,
+		% nodes={minimum height=1cm,minimum width=2.6cm,anchor=center,outer sep=0,font=\sffamily},
+		nodes={minimum height=.5cm,minimum width=2.6cm,anchor=center,outer sep=0},
+		% column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth,text depth=0.5ex}},
+		column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth}},
+		% column 2/.style={text width=.6\textwidth,every odd row/.style={nodes={fill=gray}}},
+		column 2/.style={text width=.6\textwidth, align=justify},
+		every odd row/.style={nodes={fill=gray}},
+		row 1 column 1/.style={nodes={fill=gray,text=white, align=center}},
+		row 1 column 2/.style={nodes={fill=gray,text=white, align=center}},
+		% row 1 column 1/.style={nodes={fill=gray, align=center}},
+		% row 1 column 2/.style={nodes={align=center}},
+		prefix after command={[rounded corners=4mm] (m.north east) rectangle (m.south west)}
+		]{
+		\RR\,\textsc{code}              & \textsc{Description} \\
+		\begin{lstlisting}
+		initialize 	= 
+			function(
+				space = ,
+				algo = ,
+				target = ,	
+				example = ,
+				iterationsNo = ,
+				burnIn = ,
+				chainsNo = ,
+				spaceDim = ,
+				initialStates = ,
+				targetDensity = , 
+				temperatures = ,
+				strategyNo = ,
+				quasiMetric = ,
+				covariances = ,
+				detailedOutput = ,
+				save = ,
+				trialNo = ,
+				evaluateKS = ,
+				integratedFunction=,
+				rememberStates = ,
+				evaluateSojourn = ,
+				...
+		)
+		\end{lstlisting} & 
+		{	
+			Initialises the simulation - prepares the appropriate \measure, links it to appropriate \sspace, chooses the right \algo. 
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		checkTemperatures = 
+			function(
+				temperatures,
+				...
+			)
+		\end{lstlisting} & 
+		{	
+			Checks whether the user provided correct temperatures.
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		setIterationsNo = 
+			function( 
+				iterationsNo, 
+				... 
+			)
+		\end{lstlisting} & 
+		{	
+			Checks whether the user provided correct maximal number of iterations that the algorithm is to execute and stores it.
+		}\\
+		&\\
+		};
+		\end{tikzpicture}
+	\end{center}
+
+
+	\begin{center}
+		\begin{tikzpicture}
+		\clip node (m) [matrix,matrix of nodes,
+		fill=black!0,inner sep=0pt,
+		nodes in empty cells,
+		% nodes={minimum height=1cm,minimum width=2.6cm,anchor=center,outer sep=0,font=\sffamily},
+		nodes={minimum height=.5cm,minimum width=2.6cm,anchor=center,outer sep=0},
+		% column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth,text depth=0.5ex}},
+		column 1/.style={nodes={text=black,align=justify,text width=.4\textwidth}},
+		% column 2/.style={text width=.6\textwidth,every odd row/.style={ondes={fill=gray}}},
+		column 2/.style={text width=.6\textwidth, align=justify},
+		every odd row/.style={nodes={fill=gray}},
+		row 1 column 1/.style={nodes={fill=gray,text=white, align=center}},
+		row 1 column 2/.style={nodes={fill=gray,text=white, align=center}},
+		% row 1 column 1/.style={nodes={fill=gray, align=center}},
+		% row 1 column 2/.style={nodes={align=center}},
+		prefix after command={[rounded corners=4mm] (m.north east) rectangle (m.south west)}
+		]{
+		\RR\,\textsc{code}              & \textsc{Description} \\
+		\begin{lstlisting}
+		write = 
+			function(...) 
+		\end{lstlisting} &
+		\newline 
+		{	
+			Creates the file where the results of the simulations will get stored, in the \url{./data} catalogue, under a naming including the number of iterations, number of simulations, and the number of used strategy, in case the user has chosen the \PTalgo. 
+
+			Also, it calls the particular saving procedure of different objects. 
+			\newline
+		}\\
+		&\\
+		\begin{lstlisting}
+		furnishResults = 
+			function(...) 
+		\end{lstlisting} & 
+		\newline
+		{	
+			Prepares a vector containing the statistics on a particular run of the simulation. Among them: the strategy number, the rejections of the Random Walk, the rejections of the Random Swap, the Колмогоров-Смирнов statistic, the sojourn estimates, and the integral estimates. 
+			\newline
+		}\\
+		&\\
+		\newline
+		\begin{lstlisting}
+		simulate = 
+			function(...) 
+		\end{lstlisting} & 
+		{	
+			Performs the simulation. 
 		}\\
 		&\\
 		};
