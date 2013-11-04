@@ -21,10 +21,8 @@
 
 # Ready files and data #
 ###########
-*.pdf
 *.csv
 *.RData
-*.png
 *.sublime-project
 *.sublime-workspace
 
