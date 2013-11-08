@@ -100,7 +100,7 @@ To guarantee user-friendliness, the most common \sspace --- the multidimensional
 
 A detailed enumeration of headers of the implemented methods together with brief description can be found in Appendix \ref{methodsDescribed}.
 
-\section{Two-dimensional Колмогоров-Смирнов distance}
+\section{Two-dimensional Колмогоров-Смирнов distance}\label{KSimplementation}
 
 In order to check how different strategies approximate the toy-example distribution described in the next chapter, one had to settle for some kind of criterion. Recall that the general \ref{Problem} is to approximate an integral
 
@@ -138,7 +138,7 @@ The computations of the \KS might be computationally expensive, requiring, in pe
 
 
 \begin{figure}
-	\centering \includegraphics[scale=1]{./img/KS1.eps}
+	\centering \includegraphics[scale=1]{./img/KS1.pdf}
 	\caption{Sample points and level sets of an examplary \ecdf.}\label{simpleEcdf}
 \end{figure}
 
@@ -165,7 +165,7 @@ where $i,j \in \{0, 1, \dots, \nn+1 \}$. It is easy to realise now, that the num
 To actually derive the \KS\, we must assume that we can evaluate not only the true \cdf\, $F$, but also its two marginals\footnote{Limits of all the possible subsets of coordinates in infinity.}. Similarly to its univariate counterpart, the \KS\, can be calculated on only a finite number of points. Consider any rectangle. \Fecdf\, is constant on it. So the \KS depends solely on the evaluations of $F$ on that set. But $F$ is a distribuant - a function monotone in all its arguments, and so the maximum distance from \Fecdf\, can be attained only on the vertices of the rectangle. On the border rectangles ( $R_{i,\nn+1}$ and $R_{\nn+1,j}$ ) the evaluation simplifies to vertices adjacent to $R_{ij}$ rectangles and it is there, where we have to evaluate the marginals instead of $F$. \Fecdf\, is equal to zero on rectangles on the southern and western extremities. Thus we put $B_{i0} = B_{0j} = 0$. 
 
 \begin{figure}
-	\centering \includegraphics[scale=1]{./img/KS2.eps}
+	\centering \includegraphics[scale=1]{./img/KS2.pdf}
 	\caption{Relation between $B$ matrix and \ecdf\, level sets.}\label{spaceDivision}
 \end{figure}
 
