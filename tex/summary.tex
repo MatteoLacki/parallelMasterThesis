@@ -1,2 +1,18 @@
-\chapter*{Summary}
+\chapter*{Summary and Future Research Directions}
 \addcontentsline{toc}{chapter}{Summary}
+
+As seen in the Chapter \ref{motivation} the standard Metropolis-Hastings algorithm has intrinsic limitations when it comes to solving the \ref{Problem} of drawing sample points from multimodal distributions. The \PT\, serves as a potential solution to that \ref{Problem}, being at the same time quite a flexible approach. 
+
+In this work we have envisaged several Swapping Strategies. These Strategies are nothing else but laws according to which the \PT\, travels through the \sspace. \ref{strat1} served together with \ref{strat5} and \ref{strat6} as reference points for the remaining three strategies. \ref{strat1} is based on the idea of \textsc{PTEEM} devised by \citet{BaragattiParallelTemperingWithEquiEnergyMoves} of swaps occuring between chains that end up having the most similar temperature levels. \ref{strat5} and \ref{strat6} on the other hand are state-independent strategies, as exposed in \citet{BM2}. Two different measures have showed a slight improvement in approximating the target distribution as measured by the two-dimensional \textsc{KS} statistics and the count of undiscovered modes when using \ref{strat3}. On the other hand the criterion based on measuring approximated Average Absolute Error\footnote{Approximated by the arbitrary but reasonable choice of the sample points classifier.} has given better results when using \ref{strat1}. However all the measures yield fairly similar results in that the state-dependent strategies are better than state-independent strategies and so their use seems more than plausible when solving real life problems. 
+
+All the necessary calculations were done using a state-of-the-are programme written in \textbf{R} statistical computation language. The implementation envisages a meticulously applied object oriented programming paradigm dictated by the modularity of the problem, as exposed in Chapter \ref{Implementation}. The modularity of the solution to the \ref{Problem} stems from instrinsic features of the Markov Chain Monte Carlo that can be better understood by the study of its more abstract mathematical formulation that underlines the possibility of using virtually any \sspace. From the statement of this fact the observation, that both the \MH\, and the \PT\, can be understood as algorithms that need as input only evaluations of different probabilities. The probability measure\footnote{With minor exception for the Quasi-Metric applied in \ref{strat4}.} is therefore the only link between the implementation of the \sspace\, and the implementation of the \algo. 
+
+In search for some good measure of comparing different strategies, the \textsc{KS} statistics was given appropriate attention. Because of the lack of a R-implemented software, a new implementation was derived, based on approach derived by \citet{NiVingron}, with minor improvements that prevent from unnecessary calculations.
+
+All of the implemented software is to be shiped soon as an independent \textbf{R} package.           
+
+As for the future plans an implementation of an adaptive version of the \PT\, is planned. The need for such algorithm stems from a potential drawback in the \PT, which is the lack of a unified approach to setting up the temperature levels. In fact the internalisation of such procedures into the algorithmic model could enhance mightly the efficiency parameters of the algorithm, e.g. by reduction in the number of unnecessary chains. 
+
+We also think that implementation of the \textsc{KS} calculator can be significanlty improved by meticulous application of the multi-dimensional {\it divide et impera} approach, originally developed by \citet{Jon}.  
+
+Moreover, for technical reasons the derived template should be re-implemented using a faster and more orderly computer language, such as \textbf{C++}.
